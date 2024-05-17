@@ -1,0 +1,19 @@
+﻿<div>
+    <div class="text-center">
+        <h1 class="text-info text-uppercase">MLB Blog</h1>
+        <form id="mainForm" method="post" enctype="multipart/form-data" asp-controller="Home" asp-action="GetDailySchedule" class="form-group text-center">
+            <input type="date" name="gameDate" value="@DateTime.Today" data-html="@DateTime.Today" />
+            <input id="daily-schedule" formmethod="post" formaction="Home/GetDailySchedule" type="submit" value="Schedule" class="btn btn-primary btn-lg" />
+        </form>
+    </div>
+</div>
+
+<script src="~/Scripts/Index.js"></script>
+
+@section scripts{
+    <script>
+        $(document).ready(function () {
+
+        });
+    </script>
+}

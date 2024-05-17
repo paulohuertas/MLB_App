@@ -1,0 +1,65 @@
+﻿@model MLB_App.Models.DailySchedule
+
+@{
+    ViewBag.Title = "Daily Schedule";
+}
+
+<h2>MLB Daily Schedule - @ViewData["gameDate"]</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th scope="col" class="text-center"></th>
+        <th scope="col" class="text-center">Game Type</th>
+        <th scope="col" class="text-center">Home Starting Pitcher</th>
+        <th scope="col" class="text-center">Home</th>
+        <th scope="col" class="text-center"></th>
+        <th scope="col" class="text-center">Away</th>
+        <th scope="col" class="text-center">Away Starting Pitcher</th>
+        <th scope="col" class="text-center">Game Date</th>
+        <th scope="col" class="text-center">Game Time</th>
+    </tr>
+    @{ int count = 0;}
+
+    @foreach (var item in Model.body)
+    {
+        @*<tr>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                    @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                    @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                </td>
+            </tr>*@
+    DateTime gameDateTime = item.ConvertStringToDateTime(item.gameDate);
+    if (gameDateTime < DateTime.Today)
+    {
+        var tdRow = "<td scope='row' class='text-center'>" + item.GetPlayerNameById(item.probableStartingPitchers.home) + "</td>";
+    }
+    else
+    {
+        string awayId = item.probableStartingPitchers.away != null ? item.probableStartingPitchers.away : "";
+        var tdRowAway = "<td scope='row' class='text-center'>" + Html.ActionLink(item.GetPlayerNameById(awayId), "PlayerInformation", new { id = awayId }) + "</td>";
+
+        string homeId = item.probableStartingPitchers.home != null ? item.probableStartingPitchers.home : "";
+        var tdRowHome = "<td scope='row' class='text-center'>" + Html.ActionLink(item.GetPlayerNameById(homeId), "PlayerInformation", new { id = homeId }) + "</td>";
+    }
+<tr>
+    <td scope="row" class="text-center"><img src="~/Content/Img/mlb_icon.png" style="width: 40px; height: 40px;" /></td>
+    <td scope="row" class="text-center">@item.gameType.Replace("_", " ")</td> +
+    @*<td scope="row" class="text-center">@Html.ActionLink(@item.GetPlayerNameById(homeId), "PlayerInformation", new { id = homeId })</td>*@
+    (tdRowHome == null) ? tdRow : tdRowHome +
+    <td scope="row" class="text-center">@item.home<img src="@item.GetTeamLogoByNameAbbreviation(item.home)" style="width: 20px; height: 20px; margin: 10px;" /></td>
+    <td scope="row" class="text-center">X</td>
+    <td scope="row" class="text-center"><img src="@item.GetTeamLogoByNameAbbreviation(item.away)" style="width: 20px; height: 20px; margin: 10px;" /> @item.away</td>
+    @*<td scope="row" class="text-center">@Html.ActionLink(@item.GetPlayerNameById(awayId), "PlayerInformation", new { id = awayId })</td>*@
+     +
+    (tdRowAway == null) ? tdRow : tdRowAway +
+    <td scope="row" class="text-center">@ViewData["gameDate"]</td>
+    <td scope="row" class="text-center">@item.gameTime.Replace("p", "")</td>
+
+</tr>
+        { count = count + 1; }
+    }
+</table>
