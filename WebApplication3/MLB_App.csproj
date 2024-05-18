@@ -147,6 +147,7 @@
     </Compile>
     <Compile Include="Models\DailySchedule.cs" />
     <Compile Include="Models\Interfaces\IRoot.cs" />
+    <Compile Include="Models\LiveResult.cs" />
     <Compile Include="Models\Player.cs" />
     <Compile Include="Models\ProbableStartingPitchers.cs" />
     <Compile Include="Models\Root.cs" />
@@ -154,6 +155,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utils\ApiCall.cs" />
     <Compile Include="Utils\DateParser.cs" />
+    <Compile Include="Utils\StaticData.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap-theme.css" />
@@ -202,6 +204,7 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\Schedule.cshtml" />
     <Content Include="Views\Home\PlayerDetail.cshtml" />
+    <Content Include="Views\Home\LiveResult.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

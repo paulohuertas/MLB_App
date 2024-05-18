@@ -20,6 +20,7 @@
         <th scope="col" class="text-center">Away Starting Pitcher</th>
         <th scope="col" class="text-center">Game Date</th>
         <th scope="col" class="text-center">Game Time</th>
+        <th scope="col" class="text-center">Game Result</th>
     </tr>
     @{ int count = 0;}
 
@@ -33,32 +34,33 @@
                 </td>
             </tr>*@
     DateTime gameDateTime = item.ConvertStringToDateTime(item.gameDate);
-    if (gameDateTime < DateTime.Today)
+    string awayId = item.probableStartingPitchers.away != null ? item.probableStartingPitchers.away : "";
+    string homeId = item.probableStartingPitchers.home != null ? item.probableStartingPitchers.home : "";
+<tr>
+    <td scope="row" class="text-center"><img src="~/Content/Img/mlb_icon.png" style="width: 60px; height: 30px;" /></td>
+    <td scope="row" class="text-center">@item.gameType.Replace("_", " ")</td>
+    @if (gameDateTime < DateTime.Today)
     {
-        var tdRow = "<td scope='row' class='text-center'>" + item.GetPlayerNameById(item.probableStartingPitchers.home) + "</td>";
+        <td scope="row" class="text-center">@item.GetPlayerNameById(item.probableStartingPitchers.home)</td>
     }
     else
     {
-        string awayId = item.probableStartingPitchers.away != null ? item.probableStartingPitchers.away : "";
-        var tdRowAway = "<td scope='row' class='text-center'>" + Html.ActionLink(item.GetPlayerNameById(awayId), "PlayerInformation", new { id = awayId }) + "</td>";
-
-        string homeId = item.probableStartingPitchers.home != null ? item.probableStartingPitchers.home : "";
-        var tdRowHome = "<td scope='row' class='text-center'>" + Html.ActionLink(item.GetPlayerNameById(homeId), "PlayerInformation", new { id = homeId }) + "</td>";
+        <td scope="row" class="text-center">@Html.ActionLink(@item.GetPlayerNameById(homeId), "PlayerInformation", new { id = homeId })</td>
     }
-<tr>
-    <td scope="row" class="text-center"><img src="~/Content/Img/mlb_icon.png" style="width: 40px; height: 40px;" /></td>
-    <td scope="row" class="text-center">@item.gameType.Replace("_", " ")</td> +
-    @*<td scope="row" class="text-center">@Html.ActionLink(@item.GetPlayerNameById(homeId), "PlayerInformation", new { id = homeId })</td>*@
-    (tdRowHome == null) ? tdRow : tdRowHome +
     <td scope="row" class="text-center">@item.home<img src="@item.GetTeamLogoByNameAbbreviation(item.home)" style="width: 20px; height: 20px; margin: 10px;" /></td>
     <td scope="row" class="text-center">X</td>
     <td scope="row" class="text-center"><img src="@item.GetTeamLogoByNameAbbreviation(item.away)" style="width: 20px; height: 20px; margin: 10px;" /> @item.away</td>
-    @*<td scope="row" class="text-center">@Html.ActionLink(@item.GetPlayerNameById(awayId), "PlayerInformation", new { id = awayId })</td>*@
-     +
-    (tdRowAway == null) ? tdRow : tdRowAway +
+    @if (gameDateTime < DateTime.Today)
+    {
+        <td scope="row" class="text-center">@item.GetPlayerNameById(item.probableStartingPitchers.away)</td>
+    }
+    else
+    {
+        <td scope="row" class="text-center">@Html.ActionLink(@item.GetPlayerNameById(awayId), "PlayerInformation", new { id = awayId })</td>
+    }
     <td scope="row" class="text-center">@ViewData["gameDate"]</td>
     <td scope="row" class="text-center">@item.gameTime.Replace("p", "")</td>
-
+    <td>@Html.ActionLink("Game", "GameResult", new { gameId = @item.gameID })</td>
 </tr>
         { count = count + 1; }
     }

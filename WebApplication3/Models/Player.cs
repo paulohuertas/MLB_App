@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
+using System.Net;
 using System.Web;
 
 namespace MLB_App.Models
@@ -43,6 +45,23 @@ namespace MLB_App.Models
         public string mlbID { get; set; }
         public string playerID { get; set; }
         public string fantasyProsLink { get; set; }
+
+        public Bitmap GetPlayerImage(string playerId)
+        {
+            string imgUrl = $"https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/{playerId}/headshot/silo/current";
+            WebRequest request = HttpWebRequest.Create(imgUrl);
+
+            WebResponse response1 = request.GetResponse();
+            var stream = response1.GetResponseStream();
+            //var reader = new StreamReader(response1.GetResponseStream());
+
+            if (stream != null)
+            {
+                Bitmap bitmap = new Bitmap(stream);
+                return bitmap;
+            }
+            return null;
+        }
     }
 
     public class Injury

@@ -12,23 +12,22 @@
     <dl class="dl-horizontal">
     </dl>
 </div>
-<table class="table">
+<table class="table table-hover">
     <tr>
-        <th scope="col" class="text-center"></th>
-        <th scope="col" class="text-center">Name</th>
+        <th scope="col" class="text-center">Player</th>
         <th scope="col" class="text-center">Jersey Num</th>
         <th scope="col" class="text-center">Team</th>
         <th scope="col" class="text-center">Birthday</th>
         <th scope="col" class="text-center">Position</th>
-        <th scope="col" class="text-center">Bat</th>
+        <th scope="col" class="text-center">Last Game Played</th>
     </tr>
-    <tr>
-        <td scope="row" class="text-center"><img src="~/Content/Img/mlb_icon.png" style="width: 40px; height: 40px;" /></td>
-        <td scope="row" class="text-center">@Model.body.longName</td>
-        <td scope="row" class="text-center">@Model.body.jerseyNum</td>
-        <td scope="row" class="text-center">@Model.body.teamAbv</td>
-        <td scope="row" class="text-center">@Model.body.pos</td>
-        <td scope="row" class="text-center">@Model.body.bat</td>
+    <tr class="active">
+        <td scope="row" class="text-center"><figure><img src="@Model.body.mlbHeadshot" style="width: 150px; height: 100px;" /><figcaption>@Model.body.longName</figcaption></figure></td>
+        <td scope="row" class="text-center col-md-2">@Model.body.jerseyNum</td>
+        <td scope="row" class="text-center col-md-2">@Model.body.teamAbv</td>
+        <td scope="row" class="text-center col-md-2">@Model.body.bDay</td>
+        <td scope="row" class="text-center col-md-2">@Model.body.pos</td>
+        <td scope="row" class="text-center col-md-2">@Model.body.lastGamePlayed.Substring(9)</td>
     </tr>
 </table>
     <p>

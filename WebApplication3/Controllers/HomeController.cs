@@ -32,11 +32,11 @@ namespace MLB_App.Controllers
 
             string respJson = call.PrepareApiCall(url, "GET");
 
-            var root = JsonConvert.DeserializeObject<DailySchedule>(respJson);
+            var jsonObject = JsonConvert.DeserializeObject<DailySchedule>(respJson);
 
             ViewData["gameDate"] = DateParser.ParseDateToString(gameDate);
 
-            return View("Schedule", root);
+            return View("Schedule", jsonObject);
         }
 
         public ActionResult PlayerInformation(string id)
@@ -47,9 +47,23 @@ namespace MLB_App.Controllers
 
             string respJson = call.PrepareApiCall(url, "GET");
 
-            var root = JsonConvert.DeserializeObject<PlayerDetail>(respJson);
+            var jsonObject = JsonConvert.DeserializeObject<PlayerDetail>(respJson);
 
-            return View("PlayerDetail", root);
+            return View("PlayerDetail", jsonObject);
+        }
+
+        [HttpGet]
+        public ActionResult GameResult(string gameId)
+        {
+            ApiCall call = new ApiCall();
+
+            string url = $"https://tank01-mlb-live-in-game-real-time-statistics.p.rapidapi.com/getMLBBoxScore?gameID={gameId}&startingLineups=false";
+
+            string respJson = call.PrepareApiCall(url, "GET");
+
+            var jsonObject = JsonConvert.DeserializeObject<LiveResult>(respJson);
+
+            return View("LiveResult", jsonObject);
         }
     }
 }
