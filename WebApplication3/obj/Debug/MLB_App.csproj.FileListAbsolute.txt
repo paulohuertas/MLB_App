@@ -160,3 +160,10 @@ C:\01. Paulo Huertas\c#\MLB\WebApplication3\obj\Debug\MLB_App.csproj.CoreCompile
 C:\01. Paulo Huertas\c#\MLB\WebApplication3\obj\Debug\MLB_App.csproj.CopyComplete
 C:\01. Paulo Huertas\c#\MLB\WebApplication3\obj\Debug\MLB_App.dll
 C:\01. Paulo Huertas\c#\MLB\WebApplication3\obj\Debug\MLB_App.pdb
+C:\01. Paulo Huertas\c#\MLB\WebApplication3\bin\EntityFramework.dll
+C:\01. Paulo Huertas\c#\MLB\WebApplication3\bin\EntityFramework.SqlServer.dll
+C:\01. Paulo Huertas\c#\MLB\WebApplication3\bin\EntityFramework.xml
+C:\01. Paulo Huertas\c#\MLB\WebApplication3\bin\EntityFramework.SqlServer.xml
+C:\01. Paulo Huertas\c#\MLB\WebApplication3\obj\Debug\MLB_App.Migrations.initial.resources
+C:\01. Paulo Huertas\c#\MLB\WebApplication3\obj\Debug\MLB_App.csproj.GenerateResource.cache
+C:\01. Paulo Huertas\c#\MLB\WebApplication3\obj\Debug\MLB_App.Migrations.second.resources

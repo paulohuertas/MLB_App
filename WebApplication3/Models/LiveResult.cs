@@ -1,6 +1,9 @@
 ﻿using MLB_App.Utils;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
 
@@ -13,36 +16,73 @@ namespace MLB_App.Models
 
     public class RealTimeBoxScore : StaticData
     {
-        public string GameLength;
-        public string gameStatus;
-        public string Attendance;
-        public string Venue;
-        public lineScore lineScore;
-        public string gameID;
-        public string homeResult;
-        public string home;
-        public string awayResult;
-        public string away;
+        [Key]
+        public int Id { get; set; }
+        [JsonProperty]
+        public string GameLength { get; set; }
+        [JsonProperty]
+        public string gameStatus { get; set; }
+        [JsonProperty]
+        public string Attendance { get; set; }
+        [JsonProperty]
+        public string Venue { get; set; }
+        [JsonProperty]
+        [ForeignKey("lineScore_Id")]
+        public lineScore lineScore { get; set; }
+        [JsonProperty]
+        public string gameID { get; set; }
+        [JsonProperty]
+        public string homeResult { get; set; }
+        [JsonProperty]
+        public string home { get; set; }
+        [JsonProperty]
+        public string awayResult { get; set; }
+        [JsonProperty]
+        public string away { get; set; }
+        public int lineScore_Id { get; set; }
 
     }
 
     public class lineScore
     {
-        public away away;
-        public home home;
+        [Key]
+        public int Id { get; set; }
+        [JsonProperty]
+        [ForeignKey("away_Id")]
+        public away away { get; set; }
+        [JsonProperty]
+        [ForeignKey("home_Id")]
+        public home home { get; set; }
+        public int away_Id { get; set; }
+        public int home_Id { get; set; }
+        public virtual ICollection<RealTimeBoxScore> RealTimeBoxScores { get; set; }
     }
 
     public class away
     {
-        public string H;
-        public string R;
-        public string E;
+        [Key]
+        public int Id { get; set; }
+        [JsonProperty]
+        public string H { get; set; }
+        [JsonProperty]
+        public string R { get; set; }
+        [JsonProperty]
+        public string E { get; set; }
+
+        public virtual ICollection<lineScore> lineScores { get; set; }
     }
 
     public class home
     {
-        public string H;
-        public string R;
-        public string E;
+        [Key]
+        public int Id { get; set; }
+        [JsonProperty]
+        public string H { get; set; }
+        [JsonProperty]
+        public string R { get; set; }
+        [JsonProperty]
+        public string E { get; set; }
+
+        public virtual ICollection<lineScore> lineScores { get; set; }
     }
 }

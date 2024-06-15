@@ -26,22 +26,22 @@
 
     @foreach (var item in Model.body)
     {
-        @*<tr>
-                <td>
-                    @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-                    @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-                    @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
-                </td>
-            </tr>*@
-    DateTime gameDateTime = item.ConvertStringToDateTime(item.gameDate);
-    string awayId = item.probableStartingPitchers.away != null ? item.probableStartingPitchers.away : "";
-    string homeId = item.probableStartingPitchers.home != null ? item.probableStartingPitchers.home : "";
+
+        DateTime gameDateTime = item.ConvertStringToDateTime(item.gameDate);
+        string awayId = String.Empty;
+        string homeId = String.Empty;
+        if (item.probableStartingPitchers != null)
+        {
+            awayId = item.probableStartingPitchers.Away != null ? item.probableStartingPitchers.Away : "";
+            homeId= item.probableStartingPitchers.Home != null ? item.probableStartingPitchers.Home : "";
+        }
+
 <tr>
     <td scope="row" class="text-center"><img src="~/Content/Img/mlb_icon.png" style="width: 60px; height: 30px;" /></td>
     <td scope="row" class="text-center">@item.gameType.Replace("_", " ")</td>
-    @if (gameDateTime < DateTime.Today)
+    @if (String.IsNullOrEmpty(homeId))
     {
-        <td scope="row" class="text-center">@item.GetPlayerNameById(item.probableStartingPitchers.home)</td>
+        <td scope="row" class="text-center">@item.GetPlayerNameById(homeId)</td>
     }
     else
     {
@@ -50,9 +50,9 @@
     <td scope="row" class="text-center">@item.home<img src="@item.GetTeamLogoByNameAbbreviation(item.home)" style="width: 20px; height: 20px; margin: 10px;" /></td>
     <td scope="row" class="text-center">X</td>
     <td scope="row" class="text-center"><img src="@item.GetTeamLogoByNameAbbreviation(item.away)" style="width: 20px; height: 20px; margin: 10px;" /> @item.away</td>
-    @if (gameDateTime < DateTime.Today)
+    @if (String.IsNullOrEmpty(awayId))
     {
-        <td scope="row" class="text-center">@item.GetPlayerNameById(item.probableStartingPitchers.away)</td>
+        <td scope="row" class="text-center">@item.GetPlayerNameById(awayId)</td>
     }
     else
     {

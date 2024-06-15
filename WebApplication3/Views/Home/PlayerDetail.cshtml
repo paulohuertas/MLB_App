@@ -9,6 +9,7 @@
 <div>
     <h4>Player Details</h4>
     <hr />
+    <h3 class="h3 text-center">@Model.player.longName</h3> 
     <dl class="dl-horizontal">
     </dl>
 </div>
@@ -22,12 +23,12 @@
         <th scope="col" class="text-center">Last Game Played</th>
     </tr>
     <tr class="active">
-        <td scope="row" class="text-center"><figure><img src="@Model.body.mlbHeadshot" style="width: 150px; height: 100px;" /><figcaption>@Model.body.longName</figcaption></figure></td>
-        <td scope="row" class="text-center col-md-2">@Model.body.jerseyNum</td>
-        <td scope="row" class="text-center col-md-2">@Model.body.teamAbv</td>
-        <td scope="row" class="text-center col-md-2">@Model.body.bDay</td>
-        <td scope="row" class="text-center col-md-2">@Model.body.pos</td>
-        <td scope="row" class="text-center col-md-2">@Model.body.lastGamePlayed.Substring(9)</td>
+        <td scope="row" class="text-center"><figure><img src="@Model.player.mlbHeadshot" style="width: 150px; height: 100px;" /><figcaption>@Model.player.longName</figcaption></figure></td>
+        <td scope="row" class="text-center col-md-2">@Model.player.jerseyNum</td>
+        <td scope="row" class="text-center col-md-2">@Model.player.teamAbv</td>
+        <td scope="row" class="text-center col-md-2">@Model.player.bDay</td>
+        <td scope="row" class="text-center col-md-2">@Model.player.pos</td>
+        <td scope="row" class="text-center col-md-2">@Model.player.lastGamePlayed.Substring(9)</td>
     </tr>
 </table>
     <p>
