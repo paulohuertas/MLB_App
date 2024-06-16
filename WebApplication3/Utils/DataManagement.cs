@@ -49,6 +49,7 @@ namespace MLB_App.Utils
     public interface IRealTimeBoxScore<T> where T : class
     {
         void Save(T obj);
+        void Update(T obj);
     }
 
     public class RealTimeBoxScoreManagement : IRealTimeBoxScore<RealTimeBoxScore>
@@ -57,6 +58,31 @@ namespace MLB_App.Utils
         public void Save(RealTimeBoxScore obj)
         {
             if(obj != null)
+            {
+                context.RealTimeBoxScore.Add(obj);
+                context.SaveChanges();
+            }
+        }
+
+        public void Update(RealTimeBoxScore obj)
+        {
+            DataContext context = new DataContext();
+
+            var game = context.RealTimeBoxScore.Find(obj.Id);
+
+            if(game != null)
+            {
+                try
+                {
+                    context.Entry(game).CurrentValues.SetValues(obj);
+                    context.SaveChanges();
+                }
+                catch (Exception ex)
+                {
+                    throw new Exception(ex.Message);
+                }
+            }
+            else
             {
                 context.RealTimeBoxScore.Add(obj);
                 context.SaveChanges();

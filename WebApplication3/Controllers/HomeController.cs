@@ -19,31 +19,33 @@ namespace MLB_App.Controllers
         [HttpGet]
         public ActionResult Index()
         {
-            ViewBag.Title = "MLB through API";
-
+            ViewBag.Title = "Major League Baseball API";
             return View();
         }
 
         [HttpPost]
         public JsonResult GetGameList()
         {
+            //var result = context.Schedules.Take(30).OrderByDescending(t => t.gameDate).ToList();
+            var result = context.Schedules.Include("ProbableStartingPitchers").Where(t => t.gameDate == "20240614").ToList();
 
-            string today = DateTime.Today.ToString("yyyyMMdd");
-            var result = context.Schedules.Take(15).OrderByDescending(t => t.gameDate).ToList();
+            var query = from sc in context.Schedules
+                        join rt in context.RealTimeBoxScore on sc.gameID equals rt.gameID
+                        where rt.gameStatus == "Completed"
+                        select new
+                        {
+                            GameDate = sc.gameDate,
+                            GameType = sc.gameType,
+                            GameStatus = rt.gameStatus,
+                            Attendance = rt.Attendance,
+                            Away = rt.away,
+                            Venue = rt.Venue,
+                            AwayRun = rt.lineScore.away.R,
+                            Home = rt.home,
+                            HomeRun = rt.lineScore.home.R
+                        };
 
-            List<Schedule> data = result.ToList();
-
-            var myJsonData = data.Select(S => new
-            {
-                GameType = S.gameType,
-                Home = S.home,
-                Away = S.away,
-                GameDate = S.gameDate,
-                GameID = S.gameID,
-                GameTime = S.gameTime,
-                TeamHome = S.teamIDAway,
-                TeamAway = S.teamIDAway
-            });
+            var myJsonData = query.Take(15).ToList();
 
             if (myJsonData.Count() > 0 && myJsonData != null)
             {
@@ -127,25 +129,26 @@ namespace MLB_App.Controllers
         [HttpGet]
         public ActionResult GameResult(string gameId)
         {
-            //20240614_STL@CHC
-            //RealTimeBoxScore score = context.RealTimeBoxScore.Include("lineScore").Where(g => g.gameID == gameId).FirstOrDefault();
-
             RealTimeBoxScore score = context.RealTimeBoxScore.
                             Include("lineScore").
                             Include("lineScore.away").
                             Include("lineScore.home").
                             Where(g => g.gameID == gameId).FirstOrDefault();
 
-            if (score != null)
-            {
-                LiveResult liveResult = new LiveResult();
-                liveResult.body = score;
-
-                if(liveResult != null)
+            
+                if (score != null)
                 {
-                    return View("LiveResult", liveResult);
+                    if(score.gameStatus == "Completed")
+                    {
+                        LiveResult liveResult = new LiveResult();
+                        liveResult.body = score;
+
+                        if (liveResult != null)
+                        {
+                            return View("LiveResult", liveResult);
+                        }
+                    }
                 }
-            }
 
             string url = $"https://tank01-mlb-live-in-game-real-time-statistics.p.rapidapi.com/getMLBBoxScore?gameID={gameId}&startingLineups=false";
 
@@ -156,7 +159,16 @@ namespace MLB_App.Controllers
             if (jsonObject.StatusCode == "200")
             {
                 RealTimeBoxScoreManagement resultManagement = new RealTimeBoxScoreManagement();
-                resultManagement.Save(jsonObject.body);
+
+                if (jsonObject.body.gameStatus != "Completed")
+                {
+                    resultManagement.Update(jsonObject.body);
+                }
+                else
+                {
+                    resultManagement.Save(jsonObject.body);
+                }
+                
                 return View("LiveResult", jsonObject);
             }
 

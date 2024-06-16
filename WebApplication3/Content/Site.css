@@ -23,10 +23,29 @@ textarea {
     max-width: 280px;
 }
 
+h2 {
+    font-family: "Roboto Mono";
+}
+
+th {
+    font-family: "Roboto Mono";
+}
+
+td {
+    font-family: "Khand";
+    font-size: 18px;
+}
+
 #logo{
     
     align-content: center;
     text-align: center;
+}
+
+#icon-ball{
+    margin-top: 10px;
+    height: 30px;
+    width: 30px;
 }
 
 div > #logo{
@@ -35,4 +54,50 @@ div > #logo{
     margin: auto;
     margin-bottom: 20px;
     margin-top: 30px;
+}
+
+.khand-light {
+    font-family: "Khand", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.khand-regular {
+    font-family: "Khand", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.khand-medium {
+    font-family: "Khand", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.khand-semibold {
+    font-family: "Khand", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.khand-bold {
+    font-family: "Khand", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.roboto-mono {
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.myHeader {
+    padding: 80px;
+    text-align: center;
+    background: #1abc9c;
+    color: white;
+    font-size: 30px;
+    background-image: url(Img/images.jpeg)
 }
