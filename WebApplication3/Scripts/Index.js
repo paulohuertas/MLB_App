@@ -9,12 +9,15 @@
                 console.log(item);
                 let logoHome = GetTeamLogos(item.Home);
                 let logoAway = GetTeamLogos(item.Away);
+                let homeRun = parseInt(item.HomeRun);
+                let awayRun = parseInt(item.AwayRun);
+                let winnerTeam = (homeRun > awayRun ? logoHome :logoAway);
                 var rows =
                     "<tr>"
-                    + "<td scope='row' class='text-center'>" + "<img src='/Content/Img/mlb_icon.png' style='width: 60px; height: 30px;'/>" + "</td>"
                     + "<td scope='row' class='text-center'>" + convertDate(item.GameDate) + "</td>"
                     + "<td scope='row' class='text-center'>" + item.GameType.replace("_", " ") + "</td>"
                     + "<td scope='row' class='text-center'>" + item.GameStatus + "</td>"
+                    + "<td scope='row' class='text-center'>" + "<img src='" + winnerTeam + "'" + "style='width: 20px; height: 20px; margin: 10px;' /> " + "</td>"
                     + "<td scope='row' class='text-center'>" + item.Attendance + "</td>"
                     + "<td scope='row' class='text-center'>" + item.Venue + "</td>"
                     + "<td scope='row' class='text-center'>" + item.Home + "<img src='" + logoHome + "'" + "style='width: 20px; height: 20px; margin: 10px;' /> " + "</td>"
@@ -79,3 +82,60 @@ function convertDate(dateString) {
 
     return finalDate;
 }
+
+function mlbMessage() {
+    alert("MLB IS FUN", "Paulo");
+}
+
+let tbody = document.querySelector('tbody');
+console.log(tbody);
+
+tbody.addEventListener('click', function (e) {
+    debugger;
+    let currentElement = "";
+    if (e.target.nodeName == "IMG") {
+        currentElement = e.target.parentElement.parentElement;
+    }
+    else {
+        currentElement = e.target.parentElement;
+    }
+    let id = currentElement.id;
+    if (!id.includes("new_")) {
+        if (currentElement.id != null) {
+            $.ajax({
+                type: 'POST',
+                url: 'GetPlayerById',
+                data: { 'id': id },
+                dataType: 'json',
+                success: function (data) {
+                    var newlyCreatedId = "new_" + data.playerID;
+                    var findIfDataExists = document.getElementById(newlyCreatedId);
+                    if (findIfDataExists == null) {
+                        var rows =
+                            "<tr id='" + newlyCreatedId + "'>"
+                            + "<td scope='row' class='text-center'>" + data.longName + "</td>"
+                            + "<td scope='row' class='text-center'>" + data.espnLink + "</td>"
+                            + "<td scope='row' class='text-center'>" + data.fantasyProsLink + "</td>"
+                            + "</tr>";
+
+                        $(rows).show().insertAfter(currentElement);
+                    }
+                    else if (findIfDataExists.classList.contains('hidden')) {
+                        findIfDataExists.classList.remove('hidden');
+                    }
+                },
+                error: function (ex) {
+                    console.log("Deu erro " + ex.responseText);
+                }
+            });
+        }
+    }
+});
+
+tbody.addEventListener('click', (e) => {
+    let clickedElement = e.target.parentElement.id;
+    if (clickedElement.includes("new_")) {
+        let element = $('#' + clickedElement);
+        element.addClass('hidden');
+    }
+});

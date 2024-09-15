@@ -2,6 +2,7 @@
 using RestSharp.Serializers;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.IO;
 using System.Linq;
 using System.Threading;
@@ -16,10 +17,11 @@ namespace MLB_App.Utils
         {
             try
             {
+                string key = ConfigurationManager.AppSettings["apiKey"];
                 RestClient restClient = new RestClient(url);
                 RestRequest request = GetMethod(method);
                 request.Resource = url;
-                request.AddHeader("x-rapidapi-key", "90990b73cdmsh123949ba8522240p1d660cjsnc0ce1beb85e5");
+                request.AddHeader("x-rapidapi-key", key);
                 request.AddHeader("x-rapidapi-host", "tank01-mlb-live-in-game-real-time-statistics.p.rapidapi.com");
 
                 var response = restClient.Execute(request);

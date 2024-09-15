@@ -167,3 +167,7 @@ C:\01. Paulo Huertas\c#\MLB\WebApplication3\bin\EntityFramework.SqlServer.xml
 C:\01. Paulo Huertas\c#\MLB\WebApplication3\obj\Debug\MLB_App.Migrations.initial.resources
 C:\01. Paulo Huertas\c#\MLB\WebApplication3\obj\Debug\MLB_App.csproj.GenerateResource.cache
 C:\01. Paulo Huertas\c#\MLB\WebApplication3\obj\Debug\MLB_App.Migrations.second.resources
+C:\01. Paulo Huertas\c#\MLB\WebApplication3\bin\PagedList.dll
+C:\01. Paulo Huertas\c#\MLB\WebApplication3\bin\PagedList.Mvc.dll
+C:\01. Paulo Huertas\c#\MLB\WebApplication3\bin\PagedList.xml
+C:\01. Paulo Huertas\c#\MLB\WebApplication3\bin\PagedList.Mvc.xml

@@ -4,61 +4,73 @@
     ViewBag.Title = "Daily Schedule";
 }
 
-<h2 class="text-center">Game Schedule -  @ViewData["gameDate"]</h2>
+<div class="text-center">
+    <form id="mainForm" method="post" enctype="multipart/form-data" asp-controller="Home" asp-action="GetDailySchedule" class="form-group text-center">
+        @*<input class="input-lg" id="date-input" type="date" name="gameDate" value="@DateTime.Today.ToString("yyyy-MM-dd")" />*@
+        <input class="input-lg" id="date-input" type="date" name="gameDate" value="@ViewData["gameDate"]" />
+        <input id="daily-schedule" formmethod="post" formaction="GetDailySchedule" type="submit" value="Search" class="btn btn-primary btn-lg btn-default" />
+    </form>
+</div>
 
-<table class="table">
-    <tr>
-        <th scope="col" class="text-center"></th>
-        <th scope="col" class="text-center">Game Type</th>
-        <th scope="col" class="text-center">Home Starting Pitcher</th>
-        <th scope="col" class="text-center">Home</th>
-        <th scope="col" class="text-center"></th>
-        <th scope="col" class="text-center">Away</th>
-        <th scope="col" class="text-center">Away Starting Pitcher</th>
-        <th scope="col" class="text-center">Game Date</th>
-        <th scope="col" class="text-center">Game Time</th>
-        <th scope="col" class="text-center">Game Result</th>
-    </tr>
-    @{ int count = 0;}
+<h2 class="text-center">Game Schedule</h2>
+@if (Model != null)
+{
+    <table class="table">
+        <tr>
+            <th scope="col" class="text-center">Line</th>
+            <th scope="col" class="text-center">Game Type</th>
+            <th scope="col" class="text-center">Home Starting Pitcher</th>
+            <th scope="col" class="text-center">Home</th>
+            <th scope="col" class="text-center"></th>
+            <th scope="col" class="text-center">Away</th>
+            <th scope="col" class="text-center">Away Starting Pitcher</th>
+            <th scope="col" class="text-center">Game Date</th>
+            <th scope="col" class="text-center">Game Time</th>
+            <th scope="col" class="text-center">Game Result</th>
+        </tr>
+        @{ int count = 1;}
 
-    @foreach (var item in Model.body)
-    {
-
-        DateTime gameDateTime = item.ConvertStringToDateTime(item.gameDate);
-        string awayId = String.Empty;
-        string homeId = String.Empty;
-        if (item.probableStartingPitchers != null)
+        @foreach (var item in Model.body)
         {
-            awayId = item.probableStartingPitchers.Away != null ? item.probableStartingPitchers.Away : "";
-            homeId= item.probableStartingPitchers.Home != null ? item.probableStartingPitchers.Home : "";
-        }
 
-<tr>
-    <td scope="row" class="text-center"><img src="~/Content/Img/mlb_icon.png" style="width: 60px; height: 30px;" /></td>
-    <td scope="row" class="text-center">@item.gameType.Replace("_", " ")</td>
-    @if (String.IsNullOrEmpty(homeId))
-    {
-        <td scope="row" class="text-center">@item.GetPlayerNameById(homeId)</td>
-    }
-    else
-    {
-        <td scope="row" class="text-center">@Html.ActionLink(@item.GetPlayerNameById(homeId), "PlayerInformation", new { id = homeId })</td>
-    }
-    <td scope="row" class="text-center">@item.home<img src="@item.GetTeamLogoByNameAbbreviation(item.home)" style="width: 20px; height: 20px; margin: 10px;" /></td>
-    <td scope="row" class="text-center">X</td>
-    <td scope="row" class="text-center"><img src="@item.GetTeamLogoByNameAbbreviation(item.away)" style="width: 20px; height: 20px; margin: 10px;" /> @item.away</td>
-    @if (String.IsNullOrEmpty(awayId))
-    {
-        <td scope="row" class="text-center">@item.GetPlayerNameById(awayId)</td>
-    }
-    else
-    {
-        <td scope="row" class="text-center">@Html.ActionLink(@item.GetPlayerNameById(awayId), "PlayerInformation", new { id = awayId })</td>
-    }
-    <td scope="row" class="text-center">@ViewData["gameDate"]</td>
-    <td scope="row" class="text-center">@item.gameTime.Replace("p", "")</td>
-    <td>@Html.ActionLink("Game", "GameResult", new { gameId = @item.gameID })</td>
-</tr>
-        { count = count + 1; }
-    }
-</table>
+            DateTime gameDateTime = item.ConvertStringToDateTime(item.gameDate);
+            
+            string awayId = String.Empty;
+            string homeId = String.Empty;
+            if (item.probableStartingPitchers != null)
+            {
+                awayId = item.probableStartingPitchers.Away != null ? item.probableStartingPitchers.Away : "";
+                homeId = item.probableStartingPitchers.Home != null ? item.probableStartingPitchers.Home : "";
+            }
+
+    <tr id="@item.gameID">
+        <!--<td scope="row" class="text-center"><img src="~/Content/Img/mlb_icon.png" style="width: 60px; height: 30px;" /></td>-->
+        <td scope="row" class="text-center">@count</td>
+        <td scope="row" class="text-center">@item.gameType.Replace("_", " ")</td>
+        @if (String.IsNullOrEmpty(homeId))
+        {
+            <td scope="row" class="text-center">@item.GetPlayerNameById(homeId)</td>
+        }
+        else
+        {
+            <td scope="row" class="text-center">@Html.ActionLink(@item.GetPlayerNameById(homeId), "PlayerInformation", new { id = homeId })</td>
+        }
+        <td scope="row" class="text-center">@item.home<img src="@item.GetTeamLogoByNameAbbreviation(item.home)" style="width: 20px; height: 20px; margin: 10px;" /></td>
+        <td scope="row" class="text-center">X</td>
+        <td scope="row" class="text-center"><img src="@item.GetTeamLogoByNameAbbreviation(item.away)" style="width: 20px; height: 20px; margin: 10px;" /> @item.away</td>
+        @if (String.IsNullOrEmpty(awayId))
+        {
+            <td scope="row" class="text-center">@item.GetPlayerNameById(awayId)</td>
+        }
+        else
+        {
+            <td scope="row" class="text-center">@Html.ActionLink(@item.GetPlayerNameById(awayId), "PlayerInformation", new { id = awayId })</td>
+        }
+        <td scope="row" class="text-center">@ViewData["gameDate"]</td>
+        <td scope="row" class="text-center">@item.gameTime.Replace("p", "")</td>
+        <td>@Html.ActionLink("Game", "GameResult", new { gameId = @item.gameID })</td>
+    </tr>
+            { count = count + 1; }
+        }
+    </table>
+}

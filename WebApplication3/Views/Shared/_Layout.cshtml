@@ -30,7 +30,8 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("Schedule", "GetDailySchedule", "Home")</li>
+                    <li>@Html.ActionLink("Players", "GetPlayers", "Home")</li>
                     @*<li>@Html.ActionLink("About", "About", "Home")</li>
                         <li>@Html.ActionLink("Contact", "Contact", "Home")</li>*@
                 </ul>
@@ -41,7 +42,7 @@
 
     </div>
     <div>
-        <img id="logo" class="center-block img-responsive col-lg-offset-5" src="~/Content/Img/mlb_icon.png" />
+        <img id="logo" onclick="mlbMessage()" class="center-block img-responsive col-lg-offset-5" src="~/Content/Img/mlb_icon.png" />
     </div>
     <div class="container body-content">
         @RenderBody()

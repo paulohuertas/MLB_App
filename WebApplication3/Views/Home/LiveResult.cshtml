@@ -8,25 +8,63 @@
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
-<h2 class="center-block text-center"><img src="@Model.body.GetTeamLogoByNameAbbreviation(Model.body.away)" style="width: 40px; height: 40px; margin: 10px;"/> @Model.body.gameID.Substring(9) <img src="@Model.body.GetTeamLogoByNameAbbreviation(Model.body.home)" style="width: 40px; height: 40px; margin: 10px;" /></h2>
-<table class="table">
-    <tr>
-        <th scope="col" class="text-center"></th>
-        <th scope="col" class="text-center">Game Status</th>
-        <th scope="col" class="text-center">Attendance</th>
-        <th scope="col" class="text-center">Game Length</th>
-        <th scope="col" class="text-center">Venue</th>
-        <th scope="col" class="text-center"><img src="@Model.body.GetTeamLogoByNameAbbreviation(Model.body.away)" style="width: 20px; height: 20px;" /></th>
-        <th scope="col" class="text-center"><img src="@Model.body.GetTeamLogoByNameAbbreviation(Model.body.home)" style="width: 20px; height: 20px;" /></th>
-    </tr>
-    <tr>
-        <td scope="row" class="text-center"><img src="~/Content/Img/mlb_icon.png" style="width: 60px; height: 30px;" /></td>
-        <td scope="row" class="text-center">@Model.body.gameStatus</td>
-        <td scope="row" class="text-center">@Model.body.Attendance</td>
-        <td scope="row" class="text-center">@Model.body.GameLength</td>
-        <td scope="row" class="text-center">@Model.body.Venue</td>
-        <td scope="row" class="text-center">@Model.body.away # @(Model.body.lineScore.away.R == null ? "0" : Model.body.lineScore.away.R) | @(Model.body.lineScore.away.H == null ? "0" : Model.body.lineScore.away.H) | @(Model.body.lineScore.away.E == null ? "0" : Model.body.lineScore.away.E)</td>
-        <td scope="row" class="text-center">@Model.body.home # @(Model.body.lineScore.home.R == null ? "0" : Model.body.lineScore.home.R) | @(Model.body.lineScore.home.H == null ? "0" : Model.body.lineScore.home.H) | @(Model.body.lineScore.home.E == null ? "0" : Model.body.lineScore.home.E)</td>
-    </tr>
+@{
+    if (Model == null)
+    {
+        var parametros = Request.QueryString;
+        var subs = Request.QueryString.GetValues("gameId");
+        string[] newsubs = subs[0].Split('_');
+        string[] teamInit = newsubs[1].Split('@');
+        string home = teamInit[0];
+        string away = teamInit[1];
 
-</table>
+        string homeLogo = String.Empty;
+        string awayLogo = String.Empty;
+        bool homeSrc = MLB_App.Utils.StaticData.TeamLogos.TryGetValue(home, out homeLogo);
+        bool awaySrc = MLB_App.Utils.StaticData.TeamLogos.TryGetValue(away, out awayLogo);
+
+        <h2>Game hasn't started yet</h2><img src="@homeLogo" style="width: 30px; height: 30px; margin: 10px;" /> <span>X</span> <img src="@awayLogo" style="width: 30px; height: 30px; margin: 10px;" />
+    }
+    else
+    {
+        string winnerTeam = String.Empty;
+        if(Model.body.gameStatus == "Completed")
+        {
+            int homeRun = int.Parse(Model.body.lineScore.home.R);
+            int awayRun = int.Parse(Model.body.lineScore.away.R);
+            winnerTeam = (homeRun > awayRun ? Model.body.GetTeamLogoByNameAbbreviation(Model.body.home) : Model.body.GetTeamLogoByNameAbbreviation(Model.body.away));
+        }
+
+        <h2 class="center-block text-center"><img src="@Model.body.GetTeamLogoByNameAbbreviation(Model.body.away)" style="width: 40px; height: 40px; margin: 10px;" /> @Model.body.gameID.Substring(9) <img src="@Model.body.GetTeamLogoByNameAbbreviation(Model.body.home)" style="width: 40px; height: 40px; margin: 10px;" /></h2>
+        <table class="table">
+            <tr>
+                <th scope="col" class="text-center">Winner</th>
+                <th scope="col" class="text-center">Game Status</th>
+                <th scope="col" class="text-center">Attendance</th>
+                <th scope="col" class="text-center">Game Length</th>
+                <th scope="col" class="text-center">Venue</th>
+                <th scope="col" class="text-center"><img src="@Model.body.GetTeamLogoByNameAbbreviation(Model.body.away)" style="width: 20px; height: 20px;" /></th>
+                <th scope="col" class="text-center"><img src="@Model.body.GetTeamLogoByNameAbbreviation(Model.body.home)" style="width: 20px; height: 20px;" /></th>
+            </tr>
+            <tr>
+                @if (String.IsNullOrEmpty(winnerTeam))
+                {
+                    <td scope="row" class="text-center"><img src="~/Content/Img/GIP.png" style="width: 40px; height: 25px;" /></td>
+                }
+                else
+                {
+                    <td scope="row" class="text-center"><img src=@winnerTeam style="width: 40px; height: 25px;" /></td>
+                }
+
+                <td scope="row" class="text-center">@Model.body.gameStatus</td>
+                <td scope="row" class="text-center">@Model.body.Attendance</td>
+                <td scope="row" class="text-center">@Model.body.GameLength</td>
+                <td scope="row" class="text-center">@Model.body.Venue</td>
+                <td scope="row" class="text-center">@Model.body.away # @(Model.body.lineScore.away.R == null ? "0" : Model.body.lineScore.away.R) | @(Model.body.lineScore.away.H == null ? "0" : Model.body.lineScore.away.H) | @(Model.body.lineScore.away.E == null ? "0" : Model.body.lineScore.away.E)</td>
+                <td scope="row" class="text-center">@Model.body.home # @(Model.body.lineScore.home.R == null ? "0" : Model.body.lineScore.home.R) | @(Model.body.lineScore.home.H == null ? "0" : Model.body.lineScore.home.H) | @(Model.body.lineScore.home.E == null ? "0" : Model.body.lineScore.home.E)</td>
+            </tr>
+
+        </table>
+    }
+}
+

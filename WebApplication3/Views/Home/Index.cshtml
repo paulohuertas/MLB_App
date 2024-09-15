@@ -1,19 +1,19 @@
-﻿<div>
+﻿@using PagedList.Mvc;
+<div>
     <div class="text-center">
-        @*<h1 class="text-info text-uppercase">MLB Blog</h1>*@
-        <form id="mainForm" method="post" enctype="multipart/form-data" asp-controller="Home" asp-action="GetDailySchedule" class="form-group text-center">
-            <input class="input-lg" id="date-input" type="date" name="gameDate" value="@DateTime.Today.ToString("yyyy-MM-dd")" />
-            <input id="daily-schedule" formmethod="post" formaction="Home/GetDailySchedule" type="submit" value="Schedule" class="btn btn-primary btn-lg btn-default" />
-        </form>
+        @*<form id="mainForm" method="post" enctype="multipart/form-data" asp-controller="Home" asp-action="GetDailySchedule" class="form-group text-center">
+                <input class="input-lg" id="date-input" type="date" name="gameDate" value="@DateTime.Today.ToString("yyyy-MM-dd")" />
+                <input id="daily-schedule" formmethod="post" formaction="Home/GetDailySchedule" type="submit" value="Schedule" class="btn btn-primary btn-lg btn-default" />
+            </form>*@
     </div>
-    <h2 class="text-uppercase text-center">Results</h2>
+    <h2 class="text-uppercase text-center">Latest Results</h2>
     <table class="table">
         <thead>
             <tr>
-                <th scope="col" class="text-center"></th>
                 <th scope="col" class="text-center">Date</th>
                 <th scope="col" class="text-center">Game Type</th>
                 <th scope="col" class="text-center">Status</th>
+                <th scope="col" class="text-center">Winner</th>
                 <th scope="col" class="text-center">Attendance</th>
                 <th scope="col" class="text-center">Venue</th>
                 <th scope="col" class="text-center">Home</th>
@@ -22,7 +22,6 @@
             </tr>
         </thead>
         <tbody id="main-body">
-
         </tbody>
     </table>
 </div>

@@ -3,6 +3,7 @@ using MLB_App.Models.Data;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Web;
 
 namespace MLB_App.Utils
@@ -55,6 +56,7 @@ namespace MLB_App.Utils
     public class RealTimeBoxScoreManagement : IRealTimeBoxScore<RealTimeBoxScore>
     {
         DataContext context = new DataContext();
+
         public void Save(RealTimeBoxScore obj)
         {
             if(obj != null)
@@ -68,13 +70,22 @@ namespace MLB_App.Utils
         {
             DataContext context = new DataContext();
 
-            var game = context.RealTimeBoxScore.Find(obj.Id);
+            var game = context.RealTimeBoxScore.Where(f => f.gameID == obj.gameID).FirstOrDefault();
 
             if(game != null)
             {
                 try
                 {
-                    context.Entry(game).CurrentValues.SetValues(obj);
+                    game.away = obj.away;
+                    game.Attendance = obj.Attendance;
+                    game.awayResult = obj.awayResult;
+                    game.gameID = obj.gameID;
+                    game.GameLength = obj.GameLength;
+                    game.gameStatus = obj.gameStatus;
+                    game.home = obj.home;
+                    game.homeResult = obj.homeResult;
+                    game.lineScore = obj.lineScore;
+                    game.Venue = obj.Venue;
                     context.SaveChanges();
                 }
                 catch (Exception ex)

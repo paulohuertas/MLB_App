@@ -1,0 +1,100 @@
+﻿@model PagedList.IPagedList<MLB_App.Models.Player>
+@using PagedList.Mvc;
+
+@{
+    ViewBag.Title = "MLB Players";
+}
+
+<h2>MLB Players</h2>
+
+@using (Html.BeginForm())
+{
+    <p>
+        <span class="input-group text-left">Find by name:</span> @Html.TextBox("SearchString", ViewBag.CurrentFilter as string)
+        <input type="submit" value="Search" class="input-group-lg" />
+    </p>
+}
+<table class="table">
+    <tr>
+        <th scope="col" class="text-center"><img src="~/Content/Img/player-icon.png" style="height: 70px; width: 70px; border-radius: 50%;" /></th>
+        <th scope="col" class="text-center">
+            Name
+        </th>
+        <th scope="col" class="text-center">
+            Height
+        </th>
+        <th scope="col" class="text-center">
+            Weight
+        </th>
+        <th scope="col" class="text-center">
+            Jersey
+        </th>
+        <th scope="col" class="text-center">
+            Team
+        </th>
+        <th scope="col" class="text-center">
+            DOB
+        </th>
+        <th scope="col" class="text-center">
+            Position
+        </th>
+        <th scope="col" class="text-center">
+            Bat
+        </th>
+        <th scope="col" class="text-center">
+            Last Game Played
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        string altura = item.ConvertHeightFromFootToCm(item.height);
+        string kgs = item.ConvertPoundsToKgs(item.weight);
+
+        <tr id="@item.playerID">
+            <td scope="row" class="text-center">
+                <img class="img-rounded" src="@item.mlbHeadshot" style="height: 70px; width: 70px; border-radius: 50%;" />
+            </td>
+            <td scope="row" class="text-center">
+                @Html.DisplayFor(modelItem => item.longName)
+            </td>
+            <td scope="row" class="text-center">
+                @altura
+            </td>
+            <td scope="row" class="text-center">
+                @kgs
+            </td>
+            <td scope="row" class="text-center">
+                #@Html.DisplayFor(modelItem => item.jerseyNum)
+            </td>
+            <td scope="row" class="text-center">
+                @Html.DisplayFor(modelItem => item.team)
+            </td>
+            <td scope="row" class="text-center">
+                @Html.DisplayFor(modelItem => item.bDay)
+            </td>
+            <td scope="row" class="text-center">
+                @Html.DisplayFor(modelItem => item.pos)
+            </td>
+            <td scope="row" class="text-center">
+                @Html.DisplayFor(modelItem => item.bat)
+            </td>
+            <td scope="row" class="text-center">
+                @(!String.IsNullOrEmpty(@item.lastGamePlayed) ? item.lastGamePlayed.Substring(9) : "")
+            </td>
+            @*<td scope="row" class="text-center">
+                @Html.ActionLink("Edit", "Edit", new { id = item.playerID }) |
+                @Html.ActionLink("Details", "Details", new { id = item.playerID }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.playerID })
+            </td>*@
+        </tr>
+    }
+
+</table>
+<br />
+
+Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) of @Model.PageCount
+@Html.PagedListPager(Model, page => Url.Action("GetPlayers", new { page, currentFilter = ViewBag.CurrentFilter }))
+
+<script src="~/Scripts/Index.js"></script>
+

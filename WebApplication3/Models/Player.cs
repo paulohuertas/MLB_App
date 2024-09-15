@@ -47,6 +47,35 @@ namespace MLB_App.Models
         public string mlbID { get; set; }
         public string playerID { get; set; }
         public string fantasyProsLink { get; set; }
+
+        public string ConvertHeightFromFootToCm(string height)
+        {
+            string altura = String.Empty;
+            double alturaConv = 0;
+            if (!String.IsNullOrEmpty(height))
+            {
+                string currentItem = height.Replace("-", ".");
+                double.TryParse(currentItem, out alturaConv);
+                double conversion = alturaConv * 30.48;
+                altura = conversion.ToString().Substring(0, conversion.ToString().IndexOf(".")) + "cm";
+            }
+
+            return altura;
+        }
+
+        public string ConvertPoundsToKgs(string pounds)
+        {
+            string kgs = String.Empty;
+            double weightKg = 0;
+            if (!String.IsNullOrEmpty(pounds))
+            {
+                double.TryParse(pounds, out weightKg);
+                weightKg = Math.Round((weightKg / 2.205), 0);
+                kgs = weightKg.ToString() + "kg";
+            }
+
+            return kgs;
+        }
     }
 
     public class Injury

@@ -8,6 +8,7 @@ using MLB_App.Utils;
 using MLB_App.Models.Data;
 using System.Linq;
 using System.Collections.Generic;
+using PagedList;
 
 namespace MLB_App.Controllers
 {
@@ -20,15 +21,52 @@ namespace MLB_App.Controllers
         public ActionResult Index()
         {
             ViewBag.Title = "Major League Baseball API";
+            //string url = @"https://tank01-mlb-live-in-game-real-time-statistics.p.rapidapi.com/getMLBTeams?teamStats=true&topPerformers=true";
+            //string respJson = call.PrepareApiCall(url, "GET");
             return View();
+        }
+
+
+        public ActionResult GetPlayers(string currentFilter, string searchString, int? page)
+        {
+            if (searchString != null)
+            {
+                page = 1;
+            }
+            else
+            {
+                searchString = currentFilter;
+            }
+
+            ViewBag.CurrentFilter = searchString;
+
+            int pageSize = 10;
+            int pageNumber = (page ?? 1);
+
+            IEnumerable<Player> players = new List<Player>();
+
+            if (String.IsNullOrEmpty(searchString))
+            {
+                players = context.Players.OrderBy(p => p.longName).ToList();
+            }
+            else
+            {
+                players = context.Players.Where(p => p.longName.Contains(searchString)).OrderBy(p => p.longName);
+                //players = context.Players.Where(p => p.team.Contains(searchString)).OrderBy(p => p.team);
+            }
+
+            if (players.Count() > 0 && players != null)
+            {
+
+                return View(players.ToPagedList(pageNumber, pageSize));
+            }
+
+            return View("GetPlayers", players.ToPagedList(pageNumber, pageSize));
         }
 
         [HttpPost]
         public JsonResult GetGameList()
         {
-            //var result = context.Schedules.Take(30).OrderByDescending(t => t.gameDate).ToList();
-            var result = context.Schedules.Include("ProbableStartingPitchers").Where(t => t.gameDate == "20240614").ToList();
-
             var query = from sc in context.Schedules
                         join rt in context.RealTimeBoxScore on sc.gameID equals rt.gameID
                         where rt.gameStatus == "Completed"
@@ -45,7 +83,7 @@ namespace MLB_App.Controllers
                             HomeRun = rt.lineScore.home.R
                         };
 
-            var myJsonData = query.Take(15).ToList();
+            var myJsonData = query.Take(15).OrderByDescending(t => t.GameDate).ToList();
 
             if (myJsonData.Count() > 0 && myJsonData != null)
             {
@@ -55,13 +93,12 @@ namespace MLB_App.Controllers
             return null;
         }
 
-        [HttpPost]
+        [HttpGet]
         //[OutputCache(Duration = 60, VaryByParam = "none")]
-        public ActionResult GetDailySchedule(string gameDate)
+        public ActionResult GetDailySchedule()
         {
-            string[] gameDateSplit = gameDate.Split('-');
-            DateTime dateTime = new DateTime(int.Parse(gameDateSplit[0]), int.Parse(gameDateSplit[1]), int.Parse(gameDateSplit[2]));
-            gameDate = gameDate.Replace("-", "");
+            DateTime today = DateTime.Today;
+            string gameDate = today.ToString("yyyy-MM-dd").Replace("-", "");
 
             using (var context = new DataContext())
             {
@@ -80,10 +117,71 @@ namespace MLB_App.Controllers
             }
 
             if (String.IsNullOrEmpty(gameDate)) gameDate = DateTime.Now.ToString("yyyyMMdd", CultureInfo.InvariantCulture);
-           
+
             string url = $"https://tank01-mlb-live-in-game-real-time-statistics.p.rapidapi.com/getMLBGamesForDate?gameDate={gameDate}";
 
             string respJson = call.PrepareApiCall(url, "GET");
+
+            if(respJson.Contains("No games on this date"))
+            {
+                return View("Schedule");
+            }
+
+            var jsonObject = JsonConvert.DeserializeObject<DailySchedule>(respJson);
+
+            DataManagement dataManagement = new DataManagement();
+            dataManagement.Save(jsonObject.body);
+
+            DateTime dateTime = DateTime.ParseExact(gameDate, "yyyyMMdd", CultureInfo.InvariantCulture);
+            string dt = dateTime.ToString("yyyy-MM-dd");
+            ViewData["gameDate"] = dt;
+
+            return View("Schedule", jsonObject);
+        }
+
+        [HttpPost]
+        //[OutputCache(Duration = 60, VaryByParam = "none")]
+        public ActionResult GetDailySchedule(string gameDate)
+        {
+            if (String.IsNullOrEmpty(gameDate))
+            {
+                gameDate = DateTime.Today.ToString("yyyyMMdd");
+            }
+            else
+            {
+                gameDate = gameDate.Replace("-", "");
+            }
+
+            using (var context = new DataContext())
+            {
+
+                var result = context.Schedules.Include("ProbableStartingPitchers").Where(s => s.gameDate == gameDate).OrderBy(t => t.gameTime).ToList();
+
+                var data = result.ToList();
+
+                if (data.Count() > 0 && data != null)
+                {
+                    DailySchedule dailySchedule = new DailySchedule();
+                    dailySchedule.body = data;
+
+                    DateTime dateTime = DateTime.ParseExact(gameDate, "yyyyMMdd", CultureInfo.InvariantCulture);
+                    string dt = dateTime.ToString("yyyy-MM-dd");
+                    ViewData["gameDate"] = dt;
+
+                    return View("Schedule", dailySchedule);
+                }
+            }
+
+            if (String.IsNullOrEmpty(gameDate)) gameDate = DateTime.Now.ToString("yyyyMMdd", CultureInfo.InvariantCulture);
+
+            string url = $"https://tank01-mlb-live-in-game-real-time-statistics.p.rapidapi.com/getMLBGamesForDate?gameDate={gameDate}";
+
+            string respJson = call.PrepareApiCall(url, "GET");
+
+            if (respJson.Contains("No games on this date"))
+            {
+                return View("Schedule");
+            }
 
             var jsonObject = JsonConvert.DeserializeObject<DailySchedule>(respJson);
 
@@ -99,12 +197,12 @@ namespace MLB_App.Controllers
         {
             Player data = context.Players.Where(p => p.playerID == id).FirstOrDefault();
 
-            if(data != null)
+            if (data != null)
             {
                 PlayerDetail playerDetail = new PlayerDetail();
                 playerDetail.player = data;
 
-                if(playerDetail.player != null)
+                if (playerDetail.player != null)
                 {
                     return View("PlayerDetail", playerDetail);
                 }
@@ -116,7 +214,7 @@ namespace MLB_App.Controllers
 
             var jsonObject = JsonConvert.DeserializeObject<PlayerDetail>(respJson);
 
-            if(jsonObject.StatusCode == "200")
+            if (jsonObject.StatusCode == "200")
             {
                 PlayerManagement playerManagement = new PlayerManagement();
                 playerManagement.Save(jsonObject.player);
@@ -135,20 +233,20 @@ namespace MLB_App.Controllers
                             Include("lineScore.home").
                             Where(g => g.gameID == gameId).FirstOrDefault();
 
-            
-                if (score != null)
-                {
-                    if(score.gameStatus == "Completed")
-                    {
-                        LiveResult liveResult = new LiveResult();
-                        liveResult.body = score;
 
-                        if (liveResult != null)
-                        {
-                            return View("LiveResult", liveResult);
-                        }
+            if (score != null)
+            {
+                if (score.gameStatus == "Completed")
+                {
+                    LiveResult liveResult = new LiveResult();
+                    liveResult.body = score;
+
+                    if (liveResult != null)
+                    {
+                        return View("LiveResult", liveResult);
                     }
                 }
+            }
 
             string url = $"https://tank01-mlb-live-in-game-real-time-statistics.p.rapidapi.com/getMLBBoxScore?gameID={gameId}&startingLineups=false";
 
@@ -158,21 +256,39 @@ namespace MLB_App.Controllers
 
             if (jsonObject.StatusCode == "200")
             {
-                RealTimeBoxScoreManagement resultManagement = new RealTimeBoxScoreManagement();
+                //api call is good however no data is returned;
+                if (jsonObject.body.gameID == null)
+                {
+                    return View("LiveResult");
 
-                if (jsonObject.body.gameStatus != "Completed")
-                {
-                    resultManagement.Update(jsonObject.body);
                 }
-                else
-                {
-                    resultManagement.Save(jsonObject.body);
-                }
-                
+
+                RealTimeBoxScoreManagement resultManagement = new RealTimeBoxScoreManagement();
+                resultManagement.Update(jsonObject.body);
+
                 return View("LiveResult", jsonObject);
             }
 
             return View("LiveResult");
+        }
+
+        [HttpPost]
+        public JsonResult GetPlayerById(string id)
+        {
+            Player data = context.Players.Where(p => p.playerID == id).FirstOrDefault();
+
+            if (data != null)
+            {
+                PlayerDetail playerDetail = new PlayerDetail();
+                playerDetail.player = data;
+
+                if (playerDetail.player != null)
+                {
+                    return Json(playerDetail.player);
+                }
+            }
+
+            return null;
         }
     }
 }
