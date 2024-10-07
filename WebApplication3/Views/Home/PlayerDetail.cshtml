@@ -1,17 +1,19 @@
-﻿@model MLB_App.Models.PlayerDetail
+﻿@model MLB_App.Models.Player
+@using MLB_App.Utils;
 
 @{
-    ViewBag.Title = "PlayerDetail";
+    ViewBag.Title = "Player Detail";
+    var player = Model;
 }
 
 @{
     string teamLogo = String.Empty;
-    bool teamSrc = MLB_App.Utils.StaticData.TeamLogos.TryGetValue(Model.player.team, out teamLogo);
+    bool teamSrc = StaticData.TeamLogos.TryGetValue(player.team, out teamLogo);
 }
 
 <div>
     <h2>Player Detail</h2>
-    <h4 class="h4">@Model.player.longName #@Model.player.jerseyNum</h4>
+    <h4 class="h4">@player.longName #@player.jerseyNum</h4>
 </div>
 
 @if(teamSrc)
@@ -34,17 +36,17 @@
         <th scope="col" class="text-center">Last Game Played</th>
     </tr>
     <tr class="active">
-        <td scope="row" class="text-center"><figure><img id="player-img" class="img-rounded" src="@Model.player.mlbHeadshot" /><figcaption>@Model.player.longName</figcaption></figure></td>
-        <td scope="row" class="text-center col-md-2">#@Model.player.jerseyNum</td>
-        <td scope="row" class="text-center col-md-2">@Model.player.teamAbv</td>
-        <td scope="row" class="text-center col-md-2">@Model.player.bDay</td>
-        <td scope="row" class="text-center col-md-2">@Model.player.pos</td>
-        <td scope="row" class="text-center col-md-2">@Model.player.lastGamePlayed.Substring(9)</td>
+        <td scope="row" class="text-center"><figure><img id="player-img" class="img-rounded" src="@player.mlbHeadshot" /><figcaption>@player.longName</figcaption></figure></td>
+        <td scope="row" class="text-center col-md-2">#@player.jerseyNum</td>
+        <td scope="row" class="text-center col-md-2">@player.teamAbv</td>
+        <td scope="row" class="text-center col-md-2">@player.bDay</td>
+        <td scope="row" class="text-center col-md-2">@player.pos</td>
+        <td scope="row" class="text-center col-md-2">@player.lastGamePlayed.Substring(9)</td>
     </tr>
 </table>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Edit", "Edit", new { /* id = PrimaryKey */ }) |
     @Html.ActionLink("Back to List", "Index")
 </p>
 
-<script src="~/Scripts/PlayerDetail.js"></script>
+@*<script src="~/Scripts/PlayerDetail.js"></script>*@

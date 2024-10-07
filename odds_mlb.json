@@ -1,0 +1,6656 @@
+{
+  "statusCode": 200,
+  "body": [
+    {
+      "gameID": "20230703_ATL@CLE",
+      "last_updated_e_time": "1688434690.05963",
+      "gameDate": "20230703",
+      "teamIDHome": "8",
+      "teamIDAway": "2",
+      "homeTeam": "CLE",
+      "awayTeam": "ATL",
+      "playerProps": [
+        {
+          "propBets": {
+            "hits": {
+              "two": "+440",
+              "one": "-130"
+            },
+            "bases": {
+              "under": "+100",
+              "over": "-130",
+              "total": "0.5"
+            },
+            "homeruns": {
+              "one": "+550"
+            },
+            "runs": {
+              "under": "-215",
+              "over": "+160",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+215"
+            }
+          },
+          "playerID": "666310"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+320",
+              "one": "-195"
+            },
+            "bases": {
+              "under": "-180",
+              "over": "+135",
+              "total": "1.5"
+            },
+            "homeruns": {
+              "one": "+450"
+            },
+            "sbs": {
+              "one": "+880"
+            },
+            "runs": {
+              "under": "-165",
+              "over": "+125",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+180"
+            }
+          },
+          "playerID": "592696"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+320",
+              "one": "-215"
+            },
+            "bases": {
+              "under": "-180",
+              "over": "+135",
+              "total": "1.5"
+            },
+            "homeruns": {
+              "one": "+550"
+            },
+            "runs": {
+              "under": "-175",
+              "over": "+130",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+170"
+            }
+          },
+          "playerID": "605137"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+310",
+              "one": "-185"
+            },
+            "bases": {
+              "under": "+135",
+              "over": "-185",
+              "total": "0.5"
+            },
+            "homeruns": {
+              "one": "+1350"
+            },
+            "sbs": {
+              "one": "+470"
+            },
+            "runs": {
+              "under": "-255",
+              "over": "+185",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+230"
+            }
+          },
+          "playerID": "664702"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+290",
+              "one": "-200"
+            },
+            "bases": {
+              "under": "+155",
+              "over": "-210",
+              "total": "0.5"
+            },
+            "homeruns": {
+              "one": "+750"
+            },
+            "sbs": {
+              "one": "+980"
+            },
+            "runs": {
+              "under": "-170",
+              "over": "+130",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+210"
+            }
+          },
+          "playerID": "606115"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+290",
+              "one": "-220"
+            },
+            "bases": {
+              "under": "-145",
+              "over": "+110",
+              "total": "1.5"
+            },
+            "homeruns": {
+              "one": "+310"
+            },
+            "runs": {
+              "under": "-140",
+              "over": "+105",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+145"
+            }
+          },
+          "playerID": "542303"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+270",
+              "one": "-240"
+            },
+            "bases": {
+              "under": "-175",
+              "over": "+130",
+              "total": "1.5"
+            },
+            "homeruns": {
+              "one": "+1000"
+            },
+            "sbs": {
+              "one": "+710"
+            },
+            "runs": {
+              "under": "-220",
+              "over": "+165",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+175"
+            }
+          },
+          "playerID": "686823"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+270",
+              "one": "-230"
+            },
+            "bases": {
+              "under": "-170",
+              "over": "+130",
+              "total": "1.5"
+            },
+            "homeruns": {
+              "one": "+550"
+            },
+            "sbs": {
+              "one": "+260"
+            },
+            "runs": {
+              "under": "-140",
+              "over": "+105",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+185"
+            }
+          },
+          "playerID": "671739"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+250",
+              "one": "-230"
+            },
+            "bases": {
+              "under": "-195",
+              "over": "+145",
+              "total": "1.5"
+            },
+            "homeruns": {
+              "one": "+850"
+            },
+            "sbs": {
+              "one": "+450"
+            },
+            "runs": {
+              "under": "-160",
+              "over": "+120",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+195"
+            }
+          },
+          "playerID": "665926"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+250",
+              "one": "-235"
+            },
+            "bases": {
+              "under": "-155",
+              "over": "+115",
+              "total": "1.5"
+            },
+            "homeruns": {
+              "one": "+400"
+            },
+            "runs": {
+              "under": "-145",
+              "over": "+110",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+155"
+            }
+          },
+          "playerID": "669221"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+195",
+              "one": "-230"
+            },
+            "bases": {
+              "under": "-135",
+              "over": "+100",
+              "total": "1.5"
+            },
+            "homeruns": {
+              "one": "+370"
+            },
+            "sbs": {
+              "one": "+1250"
+            },
+            "runs": {
+              "under": "-120",
+              "over": "-110",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+125"
+            }
+          },
+          "playerID": "663586"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+230",
+              "one": "-245"
+            },
+            "bases": {
+              "under": "-115",
+              "over": "-115",
+              "total": "1.5"
+            },
+            "homeruns": {
+              "one": "+220"
+            },
+            "runs": {
+              "under": "-105",
+              "over": "-130",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+105"
+            }
+          },
+          "playerID": "621566"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+240",
+              "one": "-270"
+            },
+            "bases": {
+              "under": "-140",
+              "over": "+105",
+              "total": "1.5"
+            },
+            "homeruns": {
+              "one": "+425"
+            },
+            "sbs": {
+              "one": "+470"
+            },
+            "runs": {
+              "under": "-135",
+              "over": "+100",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+155"
+            }
+          },
+          "playerID": "608070"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+185",
+              "one": "-250"
+            },
+            "bases": {
+              "under": "-125",
+              "over": "-105",
+              "total": "1.5"
+            },
+            "homeruns": {
+              "one": "+450"
+            },
+            "sbs": {
+              "one": "+415"
+            },
+            "runs": {
+              "under": "-115",
+              "over": "-115",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+130"
+            }
+          },
+          "playerID": "645277"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+185",
+              "one": "-250"
+            },
+            "bases": {
+              "under": "-125",
+              "over": "-105",
+              "total": "1.5"
+            },
+            "homeruns": {
+              "one": "+450"
+            },
+            "sbs": {
+              "one": "+980"
+            },
+            "runs": {
+              "under": "-145",
+              "over": "+110",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+125"
+            }
+          },
+          "playerID": "647304"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+205",
+              "one": "-270"
+            },
+            "bases": {
+              "under": "-165",
+              "over": "+125",
+              "total": "1.5"
+            },
+            "homeruns": {
+              "one": "+800"
+            },
+            "sbs": {
+              "one": "+600"
+            },
+            "runs": {
+              "under": "-160",
+              "over": "+120",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+175"
+            }
+          },
+          "playerID": "642708"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+185",
+              "one": "-280"
+            },
+            "bases": {
+              "under": "-155",
+              "over": "+120",
+              "total": "1.5"
+            },
+            "homeruns": {
+              "one": "+1100"
+            },
+            "sbs": {
+              "one": "+675"
+            },
+            "runs": {
+              "under": "-145",
+              "over": "+110",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+230"
+            }
+          },
+          "playerID": "680757"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+150",
+              "one": "-300"
+            },
+            "bases": {
+              "under": "-105",
+              "over": "-130",
+              "total": "1.5"
+            },
+            "homeruns": {
+              "one": "+310"
+            },
+            "sbs": {
+              "one": "+116"
+            },
+            "runs": {
+              "under": "+130",
+              "over": "-170",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+130"
+            }
+          },
+          "playerID": "660670"
+        },
+        {
+          "propBets": {
+            "hitsAllowed": {
+              "under": "+600",
+              "total": "6.5"
+            },
+            "strikeouts": {
+              "under": "-105",
+              "over": "-120",
+              "total": "3.5"
+            },
+            "er": {
+              "under": "-110",
+              "over": "-125",
+              "total": "2.5"
+            }
+          },
+          "playerID": "693821"
+        },
+        {
+          "propBets": {
+            "hitsAllowed": {
+              "under": "+1000",
+              "total": "5.5"
+            },
+            "strikeouts": {
+              "under": "+100",
+              "over": "-130",
+              "total": "4.5"
+            },
+            "er": {
+              "under": "-165",
+              "over": "+115",
+              "total": "3.5"
+            }
+          },
+          "playerID": "668909"
+        },
+        {
+          "propBets": {
+            "bases": {
+              "total": "0.5"
+            },
+            "runs": {
+              "total": "0.5"
+            }
+          },
+          "playerID": "595956"
+        }
+      ],
+      "sportsBooks": [
+        {
+          "sportsBook": "betmgm",
+          "odds": {
+            "awayTeamRunLineOdds": "-1.5",
+            "homeTeamRunLine": "N/A",
+            "homeTeamRunLineOdds": "+1.5",
+            "awayTeamRunLine": "N/A"
+          }
+        },
+        {
+          "sportsBook": "bet365",
+          "odds": {
+            "totalUnder": "8.5",
+            "totalUnderOdds": "-105",
+            "awayTeamMLOdds": "-150",
+            "homeTeamMLOdds": "+130",
+            "totalOver": "8.5",
+            "totalOverOdds": "-115"
+          }
+        },
+        {
+          "sportsBook": "wynnbet",
+          "odds": {
+            "totalUnder": "9",
+            "totalOverOdds": "-105",
+            "awayTeamRunLine": "-1.5",
+            "totalUnderOdds": "-115",
+            "awayTeamRunLineOdds": "-105",
+            "awayTeamMLOdds": "-149",
+            "homeTeamRunLine": "+1.5",
+            "homeTeamRunLineOdds": "-115",
+            "homeTeamMLOdds": "+137",
+            "totalOver": "9"
+          }
+        },
+        {
+          "sportsBook": "unibet",
+          "odds": {
+            "totalUnder": "9",
+            "totalOverOdds": "-103",
+            "awayTeamRunLine": "-1.5",
+            "totalUnderOdds": "-118",
+            "awayTeamRunLineOdds": "+107",
+            "awayTeamMLOdds": "-150",
+            "homeTeamRunLine": "+1.5",
+            "homeTeamRunLineOdds": "-129",
+            "homeTeamMLOdds": "+128",
+            "totalOver": "9"
+          }
+        },
+        {
+          "sportsBook": "pointsbet",
+          "odds": {
+            "totalUnder": "9",
+            "totalOverOdds": "-110",
+            "awayTeamRunLine": "-1.5",
+            "totalUnderOdds": "-110",
+            "awayTeamRunLineOdds": "+110",
+            "awayTeamMLOdds": "-160",
+            "homeTeamRunLine": "+1.5",
+            "homeTeamRunLineOdds": "-130",
+            "homeTeamMLOdds": "+130",
+            "totalOver": "9"
+          }
+        },
+        {
+          "sportsBook": "betrivers",
+          "odds": {
+            "totalUnder": "9",
+            "totalOverOdds": "-103",
+            "awayTeamRunLine": "-1.5",
+            "totalUnderOdds": "-118",
+            "awayTeamRunLineOdds": "+107",
+            "awayTeamMLOdds": "-150",
+            "homeTeamRunLine": "+1.5",
+            "homeTeamRunLineOdds": "-129",
+            "homeTeamMLOdds": "+128",
+            "totalOver": "9"
+          }
+        },
+        {
+          "sportsBook": "caesars_sportsbook",
+          "odds": {
+            "totalUnder": "9",
+            "totalOverOdds": "-105",
+            "awayTeamRunLine": "-1.5",
+            "totalUnderOdds": "-115",
+            "awayTeamRunLineOdds": "-105",
+            "awayTeamMLOdds": "-165",
+            "homeTeamRunLine": "+1.5",
+            "homeTeamRunLineOdds": "-115",
+            "homeTeamMLOdds": "+140",
+            "totalOver": "9"
+          }
+        },
+        {
+          "sportsBook": "draftkings",
+          "odds": {
+            "totalUnder": "9",
+            "totalOverOdds": "-105",
+            "awayTeamRunLine": "-1.5",
+            "totalUnderOdds": "-115",
+            "awayTeamRunLineOdds": "even",
+            "awayTeamMLOdds": "-165",
+            "homeTeamRunLine": "+1.5",
+            "homeTeamRunLineOdds": "-120",
+            "homeTeamMLOdds": "+140",
+            "totalOver": "9"
+          }
+        }
+      ]
+    },
+    {
+      "gameID": "20230703_BAL@NYY",
+      "last_updated_e_time": "1688435881.6013556",
+      "gameDate": "20230703",
+      "teamIDHome": "19",
+      "teamIDAway": "3",
+      "homeTeam": "NYY",
+      "awayTeam": "BAL",
+      "playerProps": [
+        {
+          "propBets": {
+            "hits": {
+              "two": "+320",
+              "one": "-135"
+            },
+            "bases": {
+              "under": "+100",
+              "over": "-135",
+              "total": "0.5"
+            },
+            "homeruns": {
+              "one": "+600"
+            },
+            "sbs": {
+              "one": "+775"
+            },
+            "runs": {
+              "under": "-225",
+              "over": "+165",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+225"
+            }
+          },
+          "playerID": "543305"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+390",
+              "one": "-145"
+            },
+            "bases": {
+              "under": "+110",
+              "over": "-145",
+              "total": "0.5"
+            },
+            "homeruns": {
+              "one": "+450"
+            },
+            "runs": {
+              "under": "-225",
+              "over": "+165",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+195"
+            }
+          },
+          "playerID": "543309"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+370",
+              "one": "-145"
+            },
+            "bases": {
+              "under": "+110",
+              "over": "-145",
+              "total": "0.5"
+            },
+            "homeruns": {
+              "one": "+425"
+            },
+            "runs": {
+              "under": "-185",
+              "over": "+135",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+180"
+            }
+          },
+          "playerID": "519203"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+350",
+              "one": "-155"
+            },
+            "bases": {
+              "under": "+115",
+              "over": "-155",
+              "total": "0.5"
+            },
+            "homeruns": {
+              "one": "+650"
+            },
+            "sbs": {
+              "one": "+260"
+            },
+            "runs": {
+              "under": "-225",
+              "over": "+165",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+230"
+            }
+          },
+          "playerID": "622761"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+360",
+              "one": "-170"
+            },
+            "bases": {
+              "under": "+125",
+              "over": "-170",
+              "total": "0.5"
+            },
+            "homeruns": {
+              "one": "+330"
+            },
+            "runs": {
+              "under": "-165",
+              "over": "+125",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+175"
+            }
+          },
+          "playerID": "518626"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+360",
+              "one": "-170"
+            },
+            "bases": {
+              "under": "+130",
+              "over": "-170",
+              "total": "0.5"
+            },
+            "homeruns": {
+              "one": "+475"
+            },
+            "sbs": {
+              "one": "+470"
+            },
+            "runs": {
+              "under": "-190",
+              "over": "+140",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+200"
+            }
+          },
+          "playerID": "683011"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+270",
+              "one": "-185"
+            },
+            "bases": {
+              "under": "+125",
+              "over": "-170",
+              "total": "0.5"
+            },
+            "homeruns": {
+              "one": "+950"
+            },
+            "sbs": {
+              "one": "+550"
+            },
+            "runs": {
+              "under": "-255",
+              "over": "+185",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+215"
+            }
+          },
+          "playerID": "624428"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+300",
+              "one": "-190"
+            },
+            "bases": {
+              "under": "-180",
+              "over": "+135",
+              "total": "1.5"
+            },
+            "homeruns": {
+              "one": "+475"
+            },
+            "sbs": {
+              "one": "+350"
+            },
+            "runs": {
+              "under": "-185",
+              "over": "+140",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+185"
+            }
+          },
+          "playerID": "656775"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+290",
+              "one": "-210"
+            },
+            "bases": {
+              "under": "-150",
+              "over": "+115",
+              "total": "1.5"
+            },
+            "homeruns": {
+              "one": "+250"
+            },
+            "runs": {
+              "under": "-140",
+              "over": "+105",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+135"
+            }
+          },
+          "playerID": "519317"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+300",
+              "one": "-235"
+            },
+            "bases": {
+              "under": "-205",
+              "over": "+150",
+              "total": "1.5"
+            },
+            "homeruns": {
+              "one": "+800"
+            },
+            "sbs": {
+              "one": "+360"
+            },
+            "runs": {
+              "under": "-215",
+              "over": "+160",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+230"
+            }
+          },
+          "playerID": "643396"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+250",
+              "one": "-215"
+            },
+            "bases": {
+              "under": "-175",
+              "over": "+130",
+              "total": "1.5"
+            },
+            "homeruns": {
+              "one": "+450"
+            },
+            "sbs": {
+              "one": "+500"
+            },
+            "runs": {
+              "under": "-165",
+              "over": "+125",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+185"
+            }
+          },
+          "playerID": "664056"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+210",
+              "one": "-210"
+            },
+            "bases": {
+              "under": "-165",
+              "over": "+125",
+              "total": "1.5"
+            },
+            "homeruns": {
+              "one": "+370"
+            },
+            "sbs": {
+              "one": "+680"
+            },
+            "runs": {
+              "under": "-135",
+              "over": "+105",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+180"
+            }
+          },
+          "playerID": "683002"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+250",
+              "one": "-240"
+            },
+            "bases": {
+              "under": "-130",
+              "over": "+100",
+              "total": "1.5"
+            },
+            "homeruns": {
+              "one": "+245"
+            },
+            "runs": {
+              "under": "-125",
+              "over": "-110",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+120"
+            }
+          },
+          "playerID": "623993"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+230",
+              "one": "-210"
+            },
+            "bases": {
+              "under": "-205",
+              "over": "+150",
+              "total": "1.5"
+            },
+            "homeruns": {
+              "one": "+600"
+            },
+            "sbs": {
+              "one": "+1300"
+            },
+            "runs": {
+              "under": "-185",
+              "over": "+135",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+235"
+            }
+          },
+          "playerID": "602104"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+260",
+              "one": "-220"
+            },
+            "bases": {
+              "under": "-155",
+              "over": "+115",
+              "total": "1.5"
+            },
+            "homeruns": {
+              "one": "+310"
+            },
+            "runs": {
+              "under": "-150",
+              "over": "+115",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+160"
+            }
+          },
+          "playerID": "656811"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+240",
+              "one": "-235"
+            },
+            "bases": {
+              "under": "-165",
+              "over": "+125",
+              "total": "1.5"
+            },
+            "homeruns": {
+              "one": "+500"
+            },
+            "sbs": {
+              "one": "+1350"
+            },
+            "runs": {
+              "under": "-145",
+              "over": "+110",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+195"
+            }
+          },
+          "playerID": "668939"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+240",
+              "one": "-240"
+            },
+            "bases": {
+              "under": "-165",
+              "over": "+125",
+              "total": "1.5"
+            },
+            "homeruns": {
+              "one": "+390"
+            },
+            "sbs": {
+              "one": "+790"
+            },
+            "runs": {
+              "under": "-130",
+              "over": "-105",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+190"
+            }
+          },
+          "playerID": "650402"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+210",
+              "one": "-270"
+            },
+            "bases": {
+              "under": "-180",
+              "over": "+135",
+              "total": "1.5"
+            },
+            "homeruns": {
+              "one": "+600"
+            },
+            "sbs": {
+              "one": "+1200"
+            },
+            "runs": {
+              "under": "-135",
+              "over": "+100",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+230"
+            }
+          },
+          "playerID": "518934"
+        },
+        {
+          "propBets": {
+            "strikeouts": {
+              "under": "-160",
+              "over": "+120",
+              "total": "5.5"
+            },
+            "er": {
+              "under": "-125",
+              "over": "-115",
+              "total": "2.5"
+            }
+          },
+          "playerID": "593334"
+        },
+        {
+          "propBets": {
+            "strikeouts": {
+              "under": "-130",
+              "over": "+100",
+              "total": "5.5"
+            },
+            "er": {
+              "under": "-105",
+              "over": "-135",
+              "total": "2.5"
+            }
+          },
+          "playerID": "669330"
+        },
+        {
+          "propBets": {
+            "bases": {
+              "total": "1.5"
+            },
+            "runs": {
+              "total": "0.5"
+            }
+          },
+          "playerID": "669720"
+        },
+        {
+          "propBets": {
+            "bases": {
+              "total": "0.5"
+            },
+            "runs": {
+              "total": "0.5"
+            }
+          },
+          "playerID": "641343"
+        },
+        {
+          "propBets": {
+            "bases": {
+              "total": "0.5"
+            },
+            "runs": {
+              "total": "0.5"
+            }
+          },
+          "playerID": "641856"
+        },
+        {
+          "propBets": {
+            "bases": {
+              "total": "0.5"
+            },
+            "runs": {
+              "total": "0.5"
+            }
+          },
+          "playerID": "624431"
+        }
+      ],
+      "sportsBooks": [
+        {
+          "sportsBook": "bet365",
+          "odds": {
+            "totalUnder": "8.5",
+            "totalOverOdds": "-115",
+            "awayTeamRunLine": "-1.5",
+            "totalUnderOdds": "-105",
+            "awayTeamRunLineOdds": "+145",
+            "awayTeamMLOdds": "-115",
+            "homeTeamRunLine": "+1.5",
+            "homeTeamRunLineOdds": "-165",
+            "homeTeamMLOdds": "-105",
+            "totalOver": "8.5"
+          }
+        },
+        {
+          "sportsBook": "wynnbet",
+          "odds": {
+            "totalUnder": "8.5",
+            "totalOverOdds": "-120",
+            "awayTeamRunLine": "-1.5",
+            "totalUnderOdds": "-110",
+            "awayTeamRunLineOdds": "+135",
+            "awayTeamMLOdds": "-120",
+            "homeTeamRunLine": "+1.5",
+            "homeTeamRunLineOdds": "-179",
+            "homeTeamMLOdds": "-110",
+            "totalOver": "8.5"
+          }
+        },
+        {
+          "sportsBook": "unibet",
+          "odds": {
+            "totalUnder": "8.5",
+            "totalOverOdds": "-117",
+            "awayTeamRunLine": "-1.5",
+            "totalUnderOdds": "-104",
+            "awayTeamRunLineOdds": "+150",
+            "awayTeamMLOdds": "-109",
+            "homeTeamRunLine": "+1.5",
+            "homeTeamRunLineOdds": "-186",
+            "homeTeamMLOdds": "-107",
+            "totalOver": "8.5"
+          }
+        },
+        {
+          "sportsBook": "pointsbet",
+          "odds": {
+            "totalUnder": "8.5",
+            "totalOverOdds": "-110",
+            "awayTeamRunLine": "-1.5",
+            "totalUnderOdds": "-110",
+            "awayTeamRunLineOdds": "+150",
+            "awayTeamMLOdds": "-115",
+            "homeTeamRunLine": "+1.5",
+            "homeTeamRunLineOdds": "-180",
+            "homeTeamMLOdds": "-105",
+            "totalOver": "8.5"
+          }
+        },
+        {
+          "sportsBook": "betrivers",
+          "odds": {
+            "totalUnder": "8.5",
+            "totalOverOdds": "-117",
+            "awayTeamRunLine": "-1.5",
+            "totalUnderOdds": "-104",
+            "awayTeamRunLineOdds": "+150",
+            "awayTeamMLOdds": "-109",
+            "homeTeamRunLine": "+1.5",
+            "homeTeamRunLineOdds": "-186",
+            "homeTeamMLOdds": "-107",
+            "totalOver": "8.5"
+          }
+        },
+        {
+          "sportsBook": "caesars_sportsbook",
+          "odds": {
+            "totalUnder": "8.5",
+            "totalOverOdds": "-120",
+            "awayTeamRunLine": "-1.5",
+            "totalUnderOdds": "even",
+            "awayTeamRunLineOdds": "+143",
+            "awayTeamMLOdds": "-115",
+            "homeTeamRunLine": "+1.5",
+            "homeTeamRunLineOdds": "-170",
+            "homeTeamMLOdds": "-105",
+            "totalOver": "8.5"
+          }
+        },
+        {
+          "sportsBook": "draftkings",
+          "odds": {
+            "totalUnder": "8.5",
+            "totalOverOdds": "-110",
+            "awayTeamRunLine": "-1.5",
+            "totalUnderOdds": "-110",
+            "awayTeamRunLineOdds": "+155",
+            "awayTeamMLOdds": "-115",
+            "homeTeamRunLine": "+1.5",
+            "homeTeamRunLineOdds": "-180",
+            "homeTeamMLOdds": "-105",
+            "totalOver": "8.5"
+          }
+        }
+      ]
+    },
+    {
+      "gameID": "20230703_CHC@MIL",
+      "last_updated_e_time": "1688418486.4598048",
+      "gameDate": "20230703",
+      "teamIDHome": "16",
+      "teamIDAway": "5",
+      "homeTeam": "MIL",
+      "awayTeam": "CHC",
+      "playerProps": [
+        {
+          "propBets": {
+            "hits": {
+              "two": "+340",
+              "one": "-115"
+            },
+            "bases": {
+              "under": "-115",
+              "over": "-115",
+              "total": "0.5"
+            },
+            "homeruns": {
+              "one": "+950"
+            },
+            "runs": {
+              "under": "-320",
+              "over": "+225",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+275"
+            }
+          },
+          "playerID": "571466"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "one": "-145"
+            },
+            "bases": {
+              "under": "+110",
+              "over": "-145",
+              "total": "0.5"
+            },
+            "homeruns": {
+              "one": "+550"
+            },
+            "runs": {
+              "under": "-200",
+              "over": "+150",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+220"
+            }
+          },
+          "playerID": "605119"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+400",
+              "one": "-140"
+            },
+            "bases": {
+              "under": "+105",
+              "over": "-140",
+              "total": "0.5"
+            },
+            "homeruns": {
+              "one": "+425"
+            },
+            "sbs": {
+              "one": "+500"
+            },
+            "runs": {
+              "under": "-180",
+              "over": "+135",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+195"
+            }
+          },
+          "playerID": "686894"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+330",
+              "one": "-155"
+            },
+            "bases": {
+              "under": "+120",
+              "over": "-155",
+              "total": "0.5"
+            },
+            "homeruns": {
+              "one": "+650"
+            },
+            "runs": {
+              "under": "-225",
+              "over": "+165",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+225"
+            }
+          },
+          "playerID": "605170"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+390",
+              "one": "-165"
+            },
+            "bases": {
+              "under": "+120",
+              "over": "-165",
+              "total": "0.5"
+            },
+            "homeruns": {
+              "one": "+850"
+            },
+            "sbs": {
+              "one": "+290"
+            },
+            "runs": {
+              "under": "-195",
+              "over": "+145",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+250"
+            }
+          },
+          "playerID": "668930"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+220",
+              "one": "-160"
+            },
+            "bases": {
+              "under": "+120",
+              "over": "-160",
+              "total": "0.5"
+            },
+            "homeruns": {
+              "one": "+650"
+            },
+            "sbs": {
+              "one": "+670"
+            },
+            "runs": {
+              "under": "-225",
+              "over": "+160",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+245"
+            }
+          },
+          "playerID": "655316"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+160",
+              "one": "-180"
+            },
+            "bases": {
+              "under": "+125",
+              "over": "-165",
+              "total": "0.5"
+            },
+            "homeruns": {
+              "one": "+600"
+            },
+            "sbs": {
+              "one": "+670"
+            },
+            "runs": {
+              "under": "-210",
+              "over": "+155",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+210"
+            }
+          },
+          "playerID": "663368"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+290",
+              "one": "-165"
+            },
+            "bases": {
+              "under": "+125",
+              "over": "-165",
+              "total": "0.5"
+            },
+            "homeruns": {
+              "one": "+350"
+            },
+            "sbs": {
+              "one": "+980"
+            },
+            "runs": {
+              "under": "-170",
+              "over": "+125",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+160"
+            }
+          },
+          "playerID": "642715"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+350",
+              "one": "-165"
+            },
+            "bases": {
+              "under": "+120",
+              "over": "-165",
+              "total": "0.5"
+            },
+            "homeruns": {
+              "one": "+475"
+            },
+            "sbs": {
+              "one": "+375"
+            },
+            "runs": {
+              "under": "-180",
+              "over": "+135",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+180"
+            }
+          },
+          "playerID": "641355"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+200",
+              "one": "-175"
+            },
+            "bases": {
+              "under": "+130",
+              "over": "-175",
+              "total": "0.5"
+            },
+            "homeruns": {
+              "one": "+390"
+            },
+            "sbs": {
+              "one": "+1020"
+            },
+            "runs": {
+              "under": "-160",
+              "over": "+120",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+145"
+            }
+          },
+          "playerID": "676724"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+270",
+              "one": "-190"
+            },
+            "bases": {
+              "under": "+140",
+              "over": "-190",
+              "total": "0.5"
+            },
+            "homeruns": {
+              "one": "+450"
+            },
+            "sbs": {
+              "one": "+550"
+            },
+            "runs": {
+              "under": "-185",
+              "over": "+135",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+185"
+            }
+          },
+          "playerID": "666624"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+270",
+              "one": "-210"
+            },
+            "bases": {
+              "under": "-200",
+              "over": "+150",
+              "total": "1.5"
+            },
+            "homeruns": {
+              "one": "+600"
+            },
+            "sbs": {
+              "one": "+500"
+            },
+            "runs": {
+              "under": "-140",
+              "over": "+105",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+220"
+            }
+          },
+          "playerID": "643565"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+240",
+              "one": "-200"
+            },
+            "bases": {
+              "under": "-175",
+              "over": "+135",
+              "total": "1.5"
+            },
+            "homeruns": {
+              "one": "+390"
+            },
+            "sbs": {
+              "one": "+575"
+            },
+            "runs": {
+              "under": "-145",
+              "over": "+110",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+145"
+            }
+          },
+          "playerID": "664023"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+210",
+              "one": "-210"
+            },
+            "bases": {
+              "under": "-205",
+              "over": "+155",
+              "total": "1.5"
+            },
+            "homeruns": {
+              "one": "+650"
+            },
+            "sbs": {
+              "one": "+670"
+            },
+            "runs": {
+              "under": "-205",
+              "over": "+155",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+170"
+            }
+          },
+          "playerID": "680911"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+230",
+              "one": "-240"
+            },
+            "bases": {
+              "under": "-230",
+              "over": "+170",
+              "total": "1.5"
+            },
+            "homeruns": {
+              "one": "+1300"
+            },
+            "sbs": {
+              "one": "+250"
+            },
+            "runs": {
+              "under": "-215",
+              "over": "+160",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+255"
+            }
+          },
+          "playerID": "663611"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+220",
+              "one": "-240"
+            },
+            "bases": {
+              "under": "-170",
+              "over": "+125",
+              "total": "1.5"
+            },
+            "homeruns": {
+              "one": "+475"
+            },
+            "sbs": {
+              "one": "+710"
+            },
+            "runs": {
+              "under": "-160",
+              "over": "+120",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+175"
+            }
+          },
+          "playerID": "621020"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+200",
+              "one": "-255"
+            },
+            "bases": {
+              "under": "-155",
+              "over": "+115",
+              "total": "1.5"
+            },
+            "homeruns": {
+              "one": "+330"
+            },
+            "sbs": {
+              "one": "+1400"
+            },
+            "runs": {
+              "under": "-115",
+              "over": "-115",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+165"
+            }
+          },
+          "playerID": "661388"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+170",
+              "one": "-310"
+            },
+            "bases": {
+              "under": "-145",
+              "over": "+110",
+              "total": "1.5"
+            },
+            "homeruns": {
+              "one": "+900"
+            },
+            "sbs": {
+              "one": "+188"
+            },
+            "runs": {
+              "under": "-135",
+              "over": "+105",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+200"
+            }
+          },
+          "playerID": "663538"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+205",
+              "one": "-320"
+            },
+            "bases": {
+              "under": "-155",
+              "over": "+115",
+              "total": "1.5"
+            },
+            "homeruns": {
+              "one": "+475"
+            },
+            "sbs": {
+              "one": "+270"
+            },
+            "runs": {
+              "under": "-145",
+              "over": "+105",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+185"
+            }
+          },
+          "playerID": "592885"
+        },
+        {
+          "propBets": {
+            "strikeouts": {
+              "under": "+120",
+              "over": "-160",
+              "total": "4.5"
+            }
+          },
+          "playerID": "592767"
+        },
+        {
+          "propBets": {
+            "bases": {
+              "total": "1.5"
+            },
+            "sbs": {
+              "one": "+710"
+            },
+            "runs": {
+              "total": "0.5"
+            }
+          },
+          "playerID": "673548"
+        },
+        {
+          "propBets": {
+            "strikeouts": {
+              "under": "-160",
+              "over": "+120",
+              "total": "4.5"
+            },
+            "er": {
+              "under": "-130",
+              "over": "-110",
+              "total": "2.5"
+            }
+          },
+          "playerID": "527054"
+        },
+        {
+          "propBets": {
+            "bases": {
+              "total": "0.5"
+            },
+            "runs": {
+              "total": "0.5"
+            }
+          },
+          "playerID": "543228"
+        }
+      ],
+      "sportsBooks": [
+        {
+          "sportsBook": "bet365",
+          "odds": {
+            "totalUnder": "9",
+            "totalOverOdds": "-105",
+            "awayTeamRunLine": "-1.5",
+            "totalUnderOdds": "-115",
+            "awayTeamRunLineOdds": "+155",
+            "awayTeamMLOdds": "-105",
+            "homeTeamRunLine": "+1.5",
+            "homeTeamRunLineOdds": "-175",
+            "homeTeamMLOdds": "-115",
+            "totalOver": "9"
+          }
+        },
+        {
+          "sportsBook": "wynnbet",
+          "odds": {
+            "totalUnder": "8.5",
+            "totalOverOdds": "-135",
+            "awayTeamRunLine": "+1.5",
+            "totalUnderOdds": "+105",
+            "awayTeamRunLineOdds": "-233",
+            "awayTeamMLOdds": "-106",
+            "homeTeamRunLine": "-1.5",
+            "homeTeamRunLineOdds": "+175",
+            "homeTeamMLOdds": "-104",
+            "totalOver": "8.5"
+          }
+        },
+        {
+          "sportsBook": "unibet",
+          "odds": {
+            "totalUnder": "8.5",
+            "totalOverOdds": "-122",
+            "awayTeamRunLine": "-1.5",
+            "totalUnderOdds": "even",
+            "awayTeamRunLineOdds": "+150",
+            "awayTeamMLOdds": "-108",
+            "homeTeamRunLine": "+1.5",
+            "homeTeamRunLineOdds": "-182",
+            "homeTeamMLOdds": "-109",
+            "totalOver": "8.5"
+          }
+        },
+        {
+          "sportsBook": "pointsbet",
+          "odds": {
+            "totalUnder": "9",
+            "totalOverOdds": "-105",
+            "awayTeamRunLine": "-1.5",
+            "totalUnderOdds": "-115",
+            "awayTeamRunLineOdds": "+140",
+            "awayTeamMLOdds": "-110",
+            "homeTeamRunLine": "+1.5",
+            "homeTeamRunLineOdds": "-170",
+            "homeTeamMLOdds": "-110",
+            "totalOver": "9"
+          }
+        },
+        {
+          "sportsBook": "betrivers",
+          "odds": {
+            "totalUnder": "8.5",
+            "totalOverOdds": "-121",
+            "awayTeamRunLine": "-1.5",
+            "totalUnderOdds": "+102",
+            "awayTeamRunLineOdds": "+150",
+            "awayTeamMLOdds": "-108",
+            "homeTeamRunLine": "+1.5",
+            "homeTeamRunLineOdds": "-182",
+            "homeTeamMLOdds": "-109",
+            "totalOver": "8.5"
+          }
+        },
+        {
+          "sportsBook": "caesars_sportsbook",
+          "odds": {
+            "totalUnder": "9",
+            "totalOverOdds": "-110",
+            "awayTeamRunLine": "-1.5",
+            "totalUnderOdds": "-110",
+            "awayTeamRunLineOdds": "+143",
+            "awayTeamMLOdds": "-110",
+            "homeTeamRunLine": "+1.5",
+            "homeTeamRunLineOdds": "-170",
+            "homeTeamMLOdds": "-110",
+            "totalOver": "9"
+          }
+        },
+        {
+          "sportsBook": "draftkings",
+          "odds": {
+            "totalUnder": "9",
+            "totalOverOdds": "-105",
+            "awayTeamRunLine": "-1.5",
+            "totalUnderOdds": "-115",
+            "awayTeamRunLineOdds": "+145",
+            "awayTeamMLOdds": "-115",
+            "homeTeamRunLine": "+1.5",
+            "homeTeamRunLineOdds": "-170",
+            "homeTeamMLOdds": "-105",
+            "totalOver": "9"
+          }
+        }
+      ]
+    },
+    {
+      "gameID": "20230703_CIN@WAS",
+      "last_updated_e_time": "1688432884.7557857",
+      "gameDate": "20230703",
+      "teamIDHome": "30",
+      "teamIDAway": "7",
+      "homeTeam": "WAS",
+      "awayTeam": "CIN",
+      "playerProps": [
+        {
+          "propBets": {
+            "hits": {
+              "two": "+400",
+              "one": "-150"
+            },
+            "bases": {
+              "under": "+115",
+              "over": "-150",
+              "total": "0.5"
+            },
+            "homeruns": {
+              "one": "+550"
+            },
+            "sbs": {
+              "one": "+470"
+            },
+            "runs": {
+              "under": "-160",
+              "over": "+120",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+180"
+            }
+          },
+          "playerID": "666181"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+310",
+              "one": "-165"
+            },
+            "bases": {
+              "under": "+125",
+              "over": "-165",
+              "total": "0.5"
+            },
+            "homeruns": {
+              "one": "+700"
+            },
+            "sbs": {
+              "one": "+680"
+            },
+            "runs": {
+              "under": "-185",
+              "over": "+135",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+215"
+            }
+          },
+          "playerID": "656537"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+300",
+              "one": "-235"
+            },
+            "bases": {
+              "under": "-165",
+              "over": "+125",
+              "total": "1.5"
+            },
+            "homeruns": {
+              "one": "+500"
+            },
+            "sbs": {
+              "one": "+580"
+            },
+            "runs": {
+              "under": "-130",
+              "over": "+100",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+155"
+            }
+          },
+          "playerID": "668715"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+280",
+              "one": "-230"
+            },
+            "bases": {
+              "under": "-130",
+              "over": "+100",
+              "total": "1.5"
+            },
+            "homeruns": {
+              "one": "+360"
+            },
+            "sbs": {
+              "one": "+1450"
+            },
+            "runs": {
+              "under": "-110",
+              "over": "-125",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+105"
+            }
+          },
+          "playerID": "458015"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+250",
+              "one": "-225"
+            },
+            "bases": {
+              "under": "-200",
+              "over": "+150",
+              "total": "1.5"
+            },
+            "homeruns": {
+              "one": "+650"
+            },
+            "runs": {
+              "under": "-165",
+              "over": "+125",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+175"
+            }
+          },
+          "playerID": "663886"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+260",
+              "one": "-260"
+            },
+            "bases": {
+              "under": "-150",
+              "over": "+115",
+              "total": "1.5"
+            },
+            "homeruns": {
+              "one": "+400"
+            },
+            "sbs": {
+              "one": "+1400"
+            },
+            "runs": {
+              "under": "-130",
+              "over": "+100",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+150"
+            }
+          },
+          "playerID": "600869"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+240",
+              "one": "-220"
+            },
+            "bases": {
+              "under": "-190",
+              "over": "+140",
+              "total": "1.5"
+            },
+            "homeruns": {
+              "one": "+700"
+            },
+            "runs": {
+              "under": "-190",
+              "over": "+140",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+185"
+            }
+          },
+          "playerID": "572816"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+260",
+              "one": "-265"
+            },
+            "bases": {
+              "under": "-155",
+              "over": "+115",
+              "total": "1.5"
+            },
+            "homeruns": {
+              "one": "+500"
+            },
+            "sbs": {
+              "one": "+350"
+            },
+            "runs": {
+              "under": "-110",
+              "over": "-120",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+125"
+            }
+          },
+          "playerID": "641584"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+240",
+              "one": "-280"
+            },
+            "bases": {
+              "under": "-150",
+              "over": "+115",
+              "total": "1.5"
+            },
+            "homeruns": {
+              "one": "+500"
+            },
+            "sbs": {
+              "one": "+550"
+            },
+            "runs": {
+              "under": "-105",
+              "over": "-125",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+145"
+            }
+          },
+          "playerID": "663697"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+240",
+              "one": "-270"
+            },
+            "bases": {
+              "under": "-165",
+              "over": "+125",
+              "total": "1.5"
+            },
+            "homeruns": {
+              "one": "+600"
+            },
+            "sbs": {
+              "one": "+580"
+            },
+            "runs": {
+              "under": "-175",
+              "over": "+130",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+190"
+            }
+          },
+          "playerID": "682928"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+170",
+              "one": "-265"
+            },
+            "bases": {
+              "under": "-155",
+              "over": "+115",
+              "total": "1.5"
+            },
+            "homeruns": {
+              "one": "+600"
+            },
+            "sbs": {
+              "one": "+285"
+            },
+            "runs": {
+              "under": "-120",
+              "over": "-110",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+190"
+            }
+          },
+          "playerID": "670770"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+185",
+              "one": "-250"
+            },
+            "bases": {
+              "under": "-135",
+              "over": "+105",
+              "total": "1.5"
+            },
+            "homeruns": {
+              "one": "+500"
+            },
+            "runs": {
+              "under": "-140",
+              "over": "+105",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+125"
+            }
+          },
+          "playerID": "642086"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+185",
+              "one": "-265"
+            },
+            "bases": {
+              "under": "-160",
+              "over": "+120",
+              "total": "1.5"
+            },
+            "homeruns": {
+              "one": "+500"
+            },
+            "runs": {
+              "under": "-155",
+              "over": "+115",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+155"
+            }
+          },
+          "playerID": "660688"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+145",
+              "one": "-300"
+            },
+            "bases": {
+              "under": "-130",
+              "over": "-105",
+              "total": "1.5"
+            },
+            "homeruns": {
+              "one": "+425"
+            },
+            "sbs": {
+              "one": "+450"
+            },
+            "runs": {
+              "under": "-105",
+              "over": "-125",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+145"
+            }
+          },
+          "playerID": "680574"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+170",
+              "one": "-280"
+            },
+            "bases": {
+              "under": "-120",
+              "over": "-115",
+              "total": "1.5"
+            },
+            "homeruns": {
+              "one": "+370"
+            },
+            "sbs": {
+              "one": "+126"
+            },
+            "runs": {
+              "under": "-105",
+              "over": "-130",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+100"
+            }
+          },
+          "playerID": "682829"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+160",
+              "one": "-280"
+            },
+            "bases": {
+              "under": "-135",
+              "over": "+100",
+              "total": "1.5"
+            },
+            "homeruns": {
+              "one": "+500"
+            },
+            "runs": {
+              "under": "-140",
+              "over": "+105",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+135"
+            }
+          },
+          "playerID": "608841"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+155",
+              "one": "-290"
+            },
+            "bases": {
+              "under": "-110",
+              "over": "-125",
+              "total": "1.5"
+            },
+            "homeruns": {
+              "one": "+360"
+            },
+            "sbs": {
+              "one": "+750"
+            },
+            "runs": {
+              "under": "+100",
+              "over": "-130",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+150"
+            }
+          },
+          "playerID": "657041"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+125",
+              "one": "-350"
+            },
+            "bases": {
+              "under": "-105",
+              "over": "-125",
+              "total": "1.5"
+            },
+            "homeruns": {
+              "one": "+600"
+            },
+            "sbs": {
+              "one": "+900"
+            },
+            "runs": {
+              "under": "-110",
+              "over": "-120",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+160"
+            }
+          },
+          "playerID": "671277"
+        },
+        {
+          "propBets": {
+            "strikeouts": {
+              "under": "-165",
+              "over": "+120",
+              "total": "4.5"
+            },
+            "er": {
+              "under": "+115",
+              "over": "-160",
+              "total": "2.5"
+            }
+          },
+          "playerID": "663623"
+        },
+        {
+          "propBets": {
+            "strikeouts": {
+              "under": "-145",
+              "over": "+110",
+              "total": "3.5"
+            },
+            "er": {
+              "under": "-160",
+              "over": "+115",
+              "total": "3.5"
+            }
+          },
+          "playerID": "596133"
+        }
+      ],
+      "sportsBooks": [
+        {
+          "sportsBook": "bet365",
+          "odds": {
+            "totalUnder": "10.5",
+            "totalOverOdds": "-115",
+            "awayTeamRunLine": "-1.5",
+            "totalUnderOdds": "-105",
+            "awayTeamRunLineOdds": "+140",
+            "awayTeamMLOdds": "-115",
+            "homeTeamRunLine": "+1.5",
+            "homeTeamRunLineOdds": "-160",
+            "homeTeamMLOdds": "-105",
+            "totalOver": "10.5"
+          }
+        },
+        {
+          "sportsBook": "wynnbet",
+          "odds": {
+            "totalUnder": "10.5",
+            "totalOverOdds": "-115",
+            "awayTeamRunLine": "-1.5",
+            "totalUnderOdds": "-115",
+            "awayTeamRunLineOdds": "+135",
+            "awayTeamMLOdds": "-115",
+            "homeTeamRunLine": "+1.5",
+            "homeTeamRunLineOdds": "-179",
+            "homeTeamMLOdds": "+105",
+            "totalOver": "10.5"
+          }
+        },
+        {
+          "sportsBook": "unibet",
+          "odds": {
+            "totalUnder": "10.5",
+            "totalOverOdds": "-110",
+            "awayTeamRunLine": "-1.5",
+            "totalUnderOdds": "-109",
+            "awayTeamRunLineOdds": "+130",
+            "awayTeamMLOdds": "-117",
+            "homeTeamRunLine": "+1.5",
+            "homeTeamRunLineOdds": "-157",
+            "homeTeamMLOdds": "even",
+            "totalOver": "10.5"
+          }
+        },
+        {
+          "sportsBook": "pointsbet",
+          "odds": {
+            "totalUnder": "10.5",
+            "totalOverOdds": "-110",
+            "awayTeamRunLine": "-1.5",
+            "totalUnderOdds": "-110",
+            "awayTeamRunLineOdds": "+130",
+            "awayTeamMLOdds": "-115",
+            "homeTeamRunLine": "+1.5",
+            "homeTeamRunLineOdds": "-160",
+            "homeTeamMLOdds": "-105",
+            "totalOver": "10.5"
+          }
+        },
+        {
+          "sportsBook": "betrivers",
+          "odds": {
+            "totalUnder": "10.5",
+            "totalOverOdds": "-110",
+            "awayTeamRunLine": "-1.5",
+            "totalUnderOdds": "-109",
+            "awayTeamRunLineOdds": "+130",
+            "awayTeamMLOdds": "-117",
+            "homeTeamRunLine": "+1.5",
+            "homeTeamRunLineOdds": "-157",
+            "homeTeamMLOdds": "even",
+            "totalOver": "10.5"
+          }
+        },
+        {
+          "sportsBook": "caesars_sportsbook",
+          "odds": {
+            "totalUnder": "10.5",
+            "totalOverOdds": "-115",
+            "awayTeamRunLine": "-1.5",
+            "totalUnderOdds": "-105",
+            "awayTeamRunLineOdds": "+135",
+            "awayTeamMLOdds": "-115",
+            "homeTeamRunLine": "+1.5",
+            "homeTeamRunLineOdds": "-160",
+            "homeTeamMLOdds": "-105",
+            "totalOver": "10.5"
+          }
+        },
+        {
+          "sportsBook": "draftkings",
+          "odds": {
+            "totalUnder": "10.5",
+            "totalOverOdds": "-110",
+            "awayTeamRunLine": "-1.5",
+            "totalUnderOdds": "-110",
+            "awayTeamRunLineOdds": "+135",
+            "awayTeamMLOdds": "-125",
+            "homeTeamRunLine": "+1.5",
+            "homeTeamRunLineOdds": "-155",
+            "homeTeamMLOdds": "+105",
+            "totalOver": "10.5"
+          }
+        }
+      ]
+    },
+    {
+      "gameID": "20230703_HOU@TEX",
+      "last_updated_e_time": "1688418842.6414769",
+      "gameDate": "20230703",
+      "teamIDHome": "28",
+      "teamIDAway": "11",
+      "homeTeam": "TEX",
+      "awayTeam": "HOU",
+      "playerProps": [
+        {
+          "propBets": {
+            "hits": {
+              "two": "+500",
+              "one": "-120"
+            },
+            "bases": {
+              "under": "-110",
+              "over": "-120",
+              "total": "0.5"
+            },
+            "homeruns": {
+              "one": "+650"
+            },
+            "runs": {
+              "under": "-245",
+              "over": "+180",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+250"
+            }
+          },
+          "playerID": "455117"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+460",
+              "one": "-135"
+            },
+            "bases": {
+              "under": "-105",
+              "over": "-125",
+              "total": "0.5"
+            },
+            "homeruns": {
+              "one": "+750"
+            },
+            "sbs": {
+              "one": "+670"
+            },
+            "runs": {
+              "under": "-190",
+              "over": "+140",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+215"
+            }
+          },
+          "playerID": ""
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+360",
+              "one": "-185"
+            },
+            "bases": {
+              "under": "-175",
+              "over": "+130",
+              "total": "1.5"
+            },
+            "homeruns": {
+              "one": "+350"
+            },
+            "sbs": {
+              "one": "+1200"
+            },
+            "runs": {
+              "under": "-155",
+              "over": "+115",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+155"
+            }
+          },
+          "playerID": "673962"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+330",
+              "one": "-190"
+            },
+            "bases": {
+              "under": "+140",
+              "over": "-190",
+              "total": "0.5"
+            },
+            "homeruns": {
+              "one": "+1250"
+            },
+            "sbs": {
+              "one": "+210"
+            },
+            "runs": {
+              "under": "-170",
+              "over": "+130",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+280"
+            }
+          },
+          "playerID": "608671"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+260",
+              "one": "-180"
+            },
+            "bases": {
+              "under": "+135",
+              "over": "-180",
+              "total": "0.5"
+            },
+            "homeruns": {
+              "one": "+380"
+            },
+            "sbs": {
+              "one": "+1250"
+            },
+            "runs": {
+              "under": "-155",
+              "over": "+115",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+170"
+            }
+          },
+          "playerID": "641680"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+300",
+              "one": "-215"
+            },
+            "bases": {
+              "under": "-150",
+              "over": "+115",
+              "total": "1.5"
+            },
+            "homeruns": {
+              "one": "+285"
+            },
+            "sbs": {
+              "one": "+550"
+            },
+            "runs": {
+              "under": "-115",
+              "over": "-115",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+110"
+            }
+          },
+          "playerID": "666969"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+270",
+              "one": "-210"
+            },
+            "bases": {
+              "under": "-195",
+              "over": "+145",
+              "total": "1.5"
+            },
+            "homeruns": {
+              "one": "+500"
+            },
+            "sbs": {
+              "one": "+550"
+            },
+            "runs": {
+              "under": "-185",
+              "over": "+140",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+180"
+            }
+          },
+          "playerID": "667452"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+270",
+              "one": "-215"
+            },
+            "bases": {
+              "under": "-185",
+              "over": "+140",
+              "total": "1.5"
+            },
+            "homeruns": {
+              "one": "+475"
+            },
+            "sbs": {
+              "one": "+710"
+            },
+            "runs": {
+              "under": "-160",
+              "over": "+120",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+180"
+            }
+          },
+          "playerID": "676801"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+280",
+              "one": "-215"
+            },
+            "bases": {
+              "under": "-200",
+              "over": "+150",
+              "total": "1.5"
+            },
+            "homeruns": {
+              "one": "+650"
+            },
+            "sbs": {
+              "one": "+240"
+            },
+            "runs": {
+              "under": "-165",
+              "over": "+125",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+175"
+            }
+          },
+          "playerID": "665750"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+240",
+              "one": "-230"
+            },
+            "bases": {
+              "under": "-165",
+              "over": "+125",
+              "total": "1.5"
+            },
+            "homeruns": {
+              "one": "+475"
+            },
+            "sbs": {
+              "one": "+1350"
+            },
+            "runs": {
+              "under": "-140",
+              "over": "+105",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+140"
+            }
+          },
+          "playerID": "608324"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+240",
+              "one": "-235"
+            },
+            "bases": {
+              "under": "-170",
+              "over": "+125",
+              "total": "1.5"
+            },
+            "homeruns": {
+              "one": "+500"
+            },
+            "sbs": {
+              "one": "+1100"
+            },
+            "runs": {
+              "under": "-135",
+              "over": "+100",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+170"
+            }
+          },
+          "playerID": "663993"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+205",
+              "one": "-240"
+            },
+            "bases": {
+              "under": "-160",
+              "over": "+120",
+              "total": "1.5"
+            },
+            "homeruns": {
+              "one": "+450"
+            },
+            "runs": {
+              "under": "-155",
+              "over": "+115",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+145"
+            }
+          },
+          "playerID": "547989"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+230",
+              "one": "-250"
+            },
+            "bases": {
+              "under": "-170",
+              "over": "+130",
+              "total": "1.5"
+            },
+            "homeruns": {
+              "one": "+550"
+            },
+            "runs": {
+              "under": "-200",
+              "over": "+145",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+170"
+            }
+          },
+          "playerID": "673237"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+230",
+              "one": "-255"
+            },
+            "bases": {
+              "under": "-130",
+              "over": "+100",
+              "total": "1.5"
+            },
+            "homeruns": {
+              "one": "+350"
+            },
+            "sbs": {
+              "one": "+550"
+            },
+            "runs": {
+              "under": "+100",
+              "over": "-135",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+130"
+            }
+          },
+          "playerID": "543760"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+185",
+              "one": "-280"
+            },
+            "bases": {
+              "under": "-135",
+              "over": "+100",
+              "total": "1.5"
+            },
+            "homeruns": {
+              "one": "+400"
+            },
+            "sbs": {
+              "one": "+670"
+            },
+            "runs": {
+              "under": "-110",
+              "over": "-120",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+175"
+            }
+          },
+          "playerID": "514888"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+175",
+              "one": "-280"
+            },
+            "bases": {
+              "under": "-130",
+              "over": "-105",
+              "total": "1.5"
+            },
+            "homeruns": {
+              "one": "+400"
+            },
+            "sbs": {
+              "one": "+500"
+            },
+            "runs": {
+              "under": "-130",
+              "over": "-105",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+130"
+            }
+          },
+          "playerID": "663656"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+170",
+              "one": "-290"
+            },
+            "bases": {
+              "under": "-110",
+              "over": "-120",
+              "total": "1.5"
+            },
+            "homeruns": {
+              "one": "+310"
+            },
+            "sbs": {
+              "one": "+1250"
+            },
+            "runs": {
+              "under": "-105",
+              "over": "-130",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+130"
+            }
+          },
+          "playerID": "608369"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+150",
+              "one": "-320"
+            },
+            "bases": {
+              "under": "-130",
+              "over": "-105",
+              "total": "1.5"
+            },
+            "homeruns": {
+              "one": "+700"
+            },
+            "sbs": {
+              "one": "+900"
+            },
+            "runs": {
+              "under": "-130",
+              "over": "+100",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+200"
+            }
+          },
+          "playerID": "643289"
+        },
+        {
+          "propBets": {
+            "bases": {
+              "total": "0.5"
+            },
+            "sbs": {
+              "one": "+580"
+            },
+            "runs": {
+              "total": "0.5"
+            }
+          },
+          "playerID": "677649"
+        },
+        {
+          "propBets": {
+            "strikeouts": {
+              "under": "-115",
+              "over": "-115",
+              "total": "4.5"
+            },
+            "er": {
+              "under": "+115",
+              "over": "-160",
+              "total": "2.5"
+            }
+          },
+          "playerID": "664299"
+        },
+        {
+          "propBets": {
+            "strikeouts": {
+              "under": "-140",
+              "over": "+105",
+              "total": "3.5"
+            },
+            "er": {
+              "under": "+105",
+              "over": "-150",
+              "total": "2.5"
+            }
+          },
+          "playerID": "527048"
+        }
+      ],
+      "sportsBooks": [
+        {
+          "sportsBook": "bet365",
+          "odds": {
+            "totalUnder": "9",
+            "totalOverOdds": "-125",
+            "awayTeamRunLine": "+1.5",
+            "totalUnderOdds": "+105",
+            "awayTeamRunLineOdds": "-160",
+            "awayTeamMLOdds": "+120",
+            "homeTeamRunLine": "-1.5",
+            "homeTeamRunLineOdds": "+140",
+            "homeTeamMLOdds": "-140",
+            "totalOver": "9"
+          }
+        },
+        {
+          "sportsBook": "wynnbet",
+          "odds": {
+            "totalUnder": "9.5",
+            "totalOverOdds": "-105",
+            "awayTeamRunLine": "+1.5",
+            "totalUnderOdds": "-125",
+            "awayTeamRunLineOdds": "-196",
+            "awayTeamMLOdds": "+122",
+            "homeTeamRunLine": "-1.5",
+            "homeTeamRunLineOdds": "+145",
+            "homeTeamMLOdds": "-133",
+            "totalOver": "9.5"
+          }
+        },
+        {
+          "sportsBook": "unibet",
+          "odds": {
+            "totalUnder": "9.5",
+            "totalOverOdds": "even",
+            "awayTeamRunLine": "+1.5",
+            "totalUnderOdds": "-121",
+            "awayTeamRunLineOdds": "-155",
+            "awayTeamMLOdds": "+125",
+            "homeTeamRunLine": "-1.5",
+            "homeTeamRunLineOdds": "+125",
+            "homeTeamMLOdds": "-150",
+            "totalOver": "9.5"
+          }
+        },
+        {
+          "sportsBook": "pointsbet",
+          "odds": {
+            "totalUnder": "9",
+            "totalOverOdds": "-120",
+            "awayTeamRunLine": "+1.5",
+            "totalUnderOdds": "-100",
+            "awayTeamRunLineOdds": "-160",
+            "awayTeamMLOdds": "+125",
+            "homeTeamRunLine": "-1.5",
+            "homeTeamRunLineOdds": "+130",
+            "homeTeamMLOdds": "-150",
+            "totalOver": "9"
+          }
+        },
+        {
+          "sportsBook": "betrivers",
+          "odds": {
+            "totalUnder": "9.5",
+            "totalOverOdds": "even",
+            "awayTeamRunLine": "+1.5",
+            "totalUnderOdds": "-121",
+            "awayTeamRunLineOdds": "-155",
+            "awayTeamMLOdds": "+125",
+            "homeTeamRunLine": "-1.5",
+            "homeTeamRunLineOdds": "+125",
+            "homeTeamMLOdds": "-150",
+            "totalOver": "9.5"
+          }
+        },
+        {
+          "sportsBook": "caesars_sportsbook",
+          "odds": {
+            "totalUnder": "9",
+            "totalOverOdds": "-130",
+            "awayTeamRunLine": "+1.5",
+            "totalUnderOdds": "+110",
+            "awayTeamRunLineOdds": "-178",
+            "awayTeamMLOdds": "+122",
+            "homeTeamRunLine": "-1.5",
+            "homeTeamRunLineOdds": "+150",
+            "homeTeamMLOdds": "-145",
+            "totalOver": "9"
+          }
+        },
+        {
+          "sportsBook": "draftkings",
+          "odds": {
+            "totalUnder": "9",
+            "totalOverOdds": "-120",
+            "awayTeamRunLine": "+1.5",
+            "totalUnderOdds": "even",
+            "awayTeamRunLineOdds": "-155",
+            "awayTeamMLOdds": "+125",
+            "homeTeamRunLine": "-1.5",
+            "homeTeamRunLineOdds": "+135",
+            "homeTeamMLOdds": "-145",
+            "totalOver": "9"
+          }
+        }
+      ]
+    },
+    {
+      "gameID": "20230703_KC@MIN",
+      "last_updated_e_time": "1688437683.1977317",
+      "gameDate": "20230703",
+      "teamIDHome": "17",
+      "teamIDAway": "12",
+      "homeTeam": "MIN",
+      "awayTeam": "KC",
+      "playerProps": [
+        {
+          "propBets": {
+            "hits": {
+              "two": "+420",
+              "one": "-155"
+            },
+            "bases": {
+              "under": "+115",
+              "over": "-155",
+              "total": "0.5"
+            },
+            "homeruns": {
+              "one": "+550"
+            },
+            "runs": {
+              "under": "-215",
+              "over": "+160",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+175"
+            }
+          },
+          "playerID": "668472"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+420",
+              "one": "-180"
+            },
+            "bases": {
+              "under": "-205",
+              "over": "+150",
+              "total": "1.5"
+            },
+            "homeruns": {
+              "one": "+550"
+            },
+            "sbs": {
+              "one": "+510"
+            },
+            "runs": {
+              "under": "-195",
+              "over": "+145",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+200"
+            }
+          },
+          "playerID": "664728"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+410",
+              "one": "-165"
+            },
+            "bases": {
+              "under": "+125",
+              "over": "-165",
+              "total": "0.5"
+            },
+            "homeruns": {
+              "one": "+1250"
+            },
+            "sbs": {
+              "one": "+670"
+            },
+            "runs": {
+              "under": "-270",
+              "over": "+195",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+300"
+            }
+          },
+          "playerID": "670032"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+390",
+              "one": "-175"
+            },
+            "bases": {
+              "under": "-170",
+              "over": "+125",
+              "total": "1.5"
+            },
+            "homeruns": {
+              "one": "+340"
+            },
+            "sbs": {
+              "one": "+940"
+            },
+            "runs": {
+              "under": "-160",
+              "over": "+120",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+175"
+            }
+          },
+          "playerID": "669004"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+400",
+              "one": "-185"
+            },
+            "bases": {
+              "under": "+140",
+              "over": "-185",
+              "total": "0.5"
+            },
+            "homeruns": {
+              "one": "+550"
+            },
+            "sbs": {
+              "one": "+710"
+            },
+            "runs": {
+              "under": "-195",
+              "over": "+145",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+220"
+            }
+          },
+          "playerID": "671221"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+380",
+              "one": "-180"
+            },
+            "bases": {
+              "under": "+135",
+              "over": "-180",
+              "total": "0.5"
+            },
+            "homeruns": {
+              "one": "+500"
+            },
+            "sbs": {
+              "one": "+680"
+            },
+            "runs": {
+              "under": "-160",
+              "over": "+120",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+195"
+            }
+          },
+          "playerID": ""
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+290",
+              "one": "-175"
+            },
+            "bases": {
+              "under": "+130",
+              "over": "-175",
+              "total": "0.5"
+            },
+            "homeruns": {
+              "one": "+600"
+            },
+            "sbs": {
+              "one": "+1350"
+            },
+            "runs": {
+              "under": "-160",
+              "over": "+120",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+190"
+            }
+          },
+          "playerID": "596146"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+270",
+              "one": "-220"
+            },
+            "bases": {
+              "under": "-200",
+              "over": "+145",
+              "total": "1.5"
+            },
+            "homeruns": {
+              "one": "+700"
+            },
+            "runs": {
+              "under": "-180",
+              "over": "+135",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+165"
+            }
+          },
+          "playerID": "543877"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+270",
+              "one": "-235"
+            },
+            "bases": {
+              "under": "-140",
+              "over": "+105",
+              "total": "1.5"
+            },
+            "homeruns": {
+              "one": "+275"
+            },
+            "sbs": {
+              "one": "+710"
+            },
+            "runs": {
+              "under": "-110",
+              "over": "-125",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+125"
+            }
+          },
+          "playerID": "621439"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+260",
+              "one": "-225"
+            },
+            "bases": {
+              "under": "-170",
+              "over": "+130",
+              "total": "1.5"
+            },
+            "homeruns": {
+              "one": "+475"
+            },
+            "runs": {
+              "under": "-180",
+              "over": "+135",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+185"
+            }
+          },
+          "playerID": "666023"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+230",
+              "one": "-230"
+            },
+            "bases": {
+              "under": "-175",
+              "over": "+130",
+              "total": "1.5"
+            },
+            "homeruns": {
+              "one": "+700"
+            },
+            "sbs": {
+              "one": "+470"
+            },
+            "runs": {
+              "under": "-145",
+              "over": "+110",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+175"
+            }
+          },
+          "playerID": "650489"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+230",
+              "one": "-240"
+            },
+            "bases": {
+              "under": "-175",
+              "over": "+130",
+              "total": "1.5"
+            },
+            "homeruns": {
+              "one": "+600"
+            },
+            "sbs": {
+              "one": "+1350"
+            },
+            "runs": {
+              "under": "-150",
+              "over": "+115",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+160"
+            }
+          },
+          "playerID": "571657"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+250",
+              "one": "-260"
+            },
+            "bases": {
+              "under": "-140",
+              "over": "+105",
+              "total": "1.5"
+            },
+            "homeruns": {
+              "one": "+390"
+            },
+            "runs": {
+              "under": "-140",
+              "over": "+105",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+130"
+            }
+          },
+          "playerID": "669304"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+200",
+              "one": "-240"
+            },
+            "bases": {
+              "under": "-150",
+              "over": "+110",
+              "total": "1.5"
+            },
+            "homeruns": {
+              "one": "+600"
+            },
+            "runs": {
+              "under": "-140",
+              "over": "+105",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+185"
+            }
+          },
+          "playerID": "456781"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+200",
+              "one": "-240"
+            },
+            "bases": {
+              "under": "-145",
+              "over": "+110",
+              "total": "1.5"
+            },
+            "homeruns": {
+              "one": "+425"
+            },
+            "sbs": {
+              "one": "+260"
+            },
+            "runs": {
+              "under": "-140",
+              "over": "+105",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+150"
+            }
+          },
+          "playerID": "677951"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+220",
+              "one": "-250"
+            },
+            "bases": {
+              "under": "-160",
+              "over": "+120",
+              "total": "1.5"
+            },
+            "homeruns": {
+              "one": "+475"
+            },
+            "sbs": {
+              "one": "+575"
+            },
+            "runs": {
+              "under": "-160",
+              "over": "+120",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+155"
+            }
+          },
+          "playerID": "658668"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+175",
+              "one": "-260"
+            },
+            "bases": {
+              "under": "-140",
+              "over": "+105",
+              "total": "1.5"
+            },
+            "homeruns": {
+              "one": "+650"
+            },
+            "sbs": {
+              "one": "+310"
+            },
+            "runs": {
+              "under": "-160",
+              "over": "+120",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+195"
+            }
+          },
+          "playerID": "672580"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+170",
+              "one": "-270"
+            },
+            "bases": {
+              "under": "-115",
+              "over": "-115",
+              "total": "1.5"
+            },
+            "homeruns": {
+              "one": "+350"
+            },
+            "runs": {
+              "under": "+105",
+              "over": "-140",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+150"
+            }
+          },
+          "playerID": "621043"
+        },
+        {
+          "propBets": {
+            "strikeouts": {
+              "under": "-115",
+              "over": "-110",
+              "total": "6.5"
+            },
+            "er": {
+              "under": "-125",
+              "over": "-105",
+              "total": "2.5"
+            }
+          },
+          "playerID": "657746"
+        },
+        {
+          "propBets": {
+            "strikeouts": {
+              "under": "-145",
+              "over": "+110",
+              "total": "3.5"
+            },
+            "er": {
+              "under": "+100",
+              "over": "-145",
+              "total": "2.5"
+            }
+          },
+          "playerID": "680735"
+        },
+        {
+          "propBets": {
+            "bases": {
+              "total": "1.5"
+            },
+            "runs": {
+              "total": "0.5"
+            }
+          },
+          "playerID": "666135"
+        },
+        {
+          "propBets": {
+            "bases": {
+              "total": "1.5"
+            },
+            "runs": {
+              "total": "0.5"
+            }
+          },
+          "playerID": "521692"
+        }
+      ],
+      "sportsBooks": [
+        {
+          "sportsBook": "bet365",
+          "odds": {
+            "totalUnder": "8.5",
+            "totalOverOdds": "-115",
+            "awayTeamRunLine": "+1.5",
+            "totalUnderOdds": "-105",
+            "awayTeamRunLineOdds": "-105",
+            "awayTeamMLOdds": "+185",
+            "homeTeamRunLine": "-1.5",
+            "homeTeamRunLineOdds": "-115",
+            "homeTeamMLOdds": "-225",
+            "totalOver": "8.5"
+          }
+        },
+        {
+          "sportsBook": "wynnbet",
+          "odds": {
+            "totalUnder": "8.5",
+            "totalOverOdds": "-130",
+            "awayTeamRunLine": "+1.5",
+            "totalUnderOdds": "-100",
+            "awayTeamRunLineOdds": "-115",
+            "awayTeamMLOdds": "+200",
+            "homeTeamRunLine": "-1.5",
+            "homeTeamRunLineOdds": "-115",
+            "homeTeamMLOdds": "-222",
+            "totalOver": "8.5"
+          }
+        },
+        {
+          "sportsBook": "unibet",
+          "odds": {
+            "totalUnder": "8.5",
+            "totalOverOdds": "-115",
+            "awayTeamRunLine": "+1.5",
+            "totalUnderOdds": "-105",
+            "awayTeamRunLineOdds": "-114",
+            "awayTeamMLOdds": "+200",
+            "homeTeamRunLine": "-1.5",
+            "homeTeamRunLineOdds": "-107",
+            "homeTeamMLOdds": "-240",
+            "totalOver": "8.5"
+          }
+        },
+        {
+          "sportsBook": "pointsbet",
+          "odds": {
+            "totalUnder": "8.5",
+            "totalOverOdds": "-120",
+            "awayTeamRunLine": "+1.5",
+            "totalUnderOdds": "-100",
+            "awayTeamRunLineOdds": "-110",
+            "awayTeamMLOdds": "+190",
+            "homeTeamRunLine": "-1.5",
+            "homeTeamRunLineOdds": "-110",
+            "homeTeamMLOdds": "-240",
+            "totalOver": "8.5"
+          }
+        },
+        {
+          "sportsBook": "betrivers",
+          "odds": {
+            "totalUnder": "8.5",
+            "totalOverOdds": "-115",
+            "awayTeamRunLine": "+1.5",
+            "totalUnderOdds": "-105",
+            "awayTeamRunLineOdds": "-114",
+            "awayTeamMLOdds": "+200",
+            "homeTeamRunLine": "-1.5",
+            "homeTeamRunLineOdds": "-107",
+            "homeTeamMLOdds": "-240",
+            "totalOver": "8.5"
+          }
+        },
+        {
+          "sportsBook": "caesars_sportsbook",
+          "odds": {
+            "totalUnder": "8.5",
+            "totalOverOdds": "-115",
+            "awayTeamRunLine": "+1.5",
+            "totalUnderOdds": "-105",
+            "awayTeamRunLineOdds": "-105",
+            "awayTeamMLOdds": "+192",
+            "homeTeamRunLine": "-1.5",
+            "homeTeamRunLineOdds": "-115",
+            "homeTeamMLOdds": "-235",
+            "totalOver": "8.5"
+          }
+        },
+        {
+          "sportsBook": "draftkings",
+          "odds": {
+            "totalUnder": "8.5",
+            "totalOverOdds": "-115",
+            "awayTeamRunLine": "+1.5",
+            "totalUnderOdds": "-105",
+            "awayTeamRunLineOdds": "-110",
+            "awayTeamMLOdds": "+190",
+            "homeTeamRunLine": "-1.5",
+            "homeTeamRunLineOdds": "-110",
+            "homeTeamMLOdds": "-225",
+            "totalOver": "8.5"
+          }
+        }
+      ]
+    },
+    {
+      "gameID": "20230703_LAA@SD",
+      "last_updated_e_time": "1688437683.1977324",
+      "gameDate": "20230703",
+      "teamIDHome": "23",
+      "teamIDAway": "13",
+      "homeTeam": "SD",
+      "awayTeam": "LAA",
+      "playerProps": [
+        {
+          "propBets": {
+            "hits": {
+              "two": "+700",
+              "one": "+110"
+            },
+            "bases": {
+              "under": "-145",
+              "over": "+110",
+              "total": "0.5"
+            },
+            "homeruns": {
+              "one": "+850"
+            },
+            "runs": {
+              "under": "-390",
+              "over": "+270",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+330"
+            }
+          },
+          "playerID": "595453"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+500",
+              "one": "-125"
+            },
+            "bases": {
+              "under": "-105",
+              "over": "-125",
+              "total": "0.5"
+            },
+            "homeruns": {
+              "one": "+425"
+            },
+            "runs": {
+              "under": "-180",
+              "over": "+135",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+200"
+            }
+          },
+          "playerID": "572761"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+460",
+              "one": "-120"
+            },
+            "bases": {
+              "under": "+105",
+              "over": "-140",
+              "total": "0.5"
+            },
+            "homeruns": {
+              "one": "+550"
+            },
+            "sbs": {
+              "one": "+670"
+            },
+            "runs": {
+              "under": "-195",
+              "over": "+145",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+230"
+            }
+          },
+          "playerID": "663757"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+490",
+              "one": "-140"
+            },
+            "bases": {
+              "under": "+105",
+              "over": "-140",
+              "total": "0.5"
+            },
+            "homeruns": {
+              "one": "+650"
+            },
+            "sbs": {
+              "one": "+1050"
+            },
+            "runs": {
+              "under": "-270",
+              "over": "+195",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+235"
+            }
+          },
+          "playerID": "500871"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+460",
+              "one": "-145"
+            },
+            "bases": {
+              "under": "+110",
+              "over": "-145",
+              "total": "0.5"
+            },
+            "homeruns": {
+              "one": "+1450"
+            },
+            "sbs": {
+              "one": "+790"
+            },
+            "runs": {
+              "under": "-350",
+              "over": "+240",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+340"
+            }
+          },
+          "playerID": "664058"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+380",
+              "one": "-140"
+            },
+            "bases": {
+              "under": "+105",
+              "over": "-140",
+              "total": "0.5"
+            },
+            "homeruns": {
+              "one": "+600"
+            },
+            "sbs": {
+              "one": "+980"
+            },
+            "runs": {
+              "under": "-195",
+              "over": "+145",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+195"
+            }
+          },
+          "playerID": "543685"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+370",
+              "one": "-140"
+            },
+            "bases": {
+              "under": "+110",
+              "over": "-150",
+              "total": "0.5"
+            },
+            "homeruns": {
+              "one": "+800"
+            },
+            "sbs": {
+              "one": "+525"
+            },
+            "runs": {
+              "under": "-285",
+              "over": "+205",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+260"
+            }
+          },
+          "playerID": "650859"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+370",
+              "one": "-150"
+            },
+            "bases": {
+              "under": "+115",
+              "over": "-150",
+              "total": "0.5"
+            },
+            "homeruns": {
+              "one": "+450"
+            },
+            "sbs": {
+              "one": "+1500"
+            },
+            "runs": {
+              "under": "-210",
+              "over": "+155",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+175"
+            }
+          },
+          "playerID": "592669"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+420",
+              "one": "-150"
+            },
+            "bases": {
+              "under": "+115",
+              "over": "-150",
+              "total": "0.5"
+            },
+            "homeruns": {
+              "one": "+450"
+            },
+            "runs": {
+              "under": "-185",
+              "over": "+140",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+190"
+            }
+          },
+          "playerID": "596142"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+370",
+              "one": "-150"
+            },
+            "bases": {
+              "under": "+115",
+              "over": "-150",
+              "total": "0.5"
+            },
+            "homeruns": {
+              "one": "+475"
+            },
+            "sbs": {
+              "one": "+880"
+            },
+            "runs": {
+              "under": "-140",
+              "over": "+105",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+210"
+            }
+          },
+          "playerID": "545361"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+320",
+              "one": "-190"
+            },
+            "bases": {
+              "under": "+135",
+              "over": "-180",
+              "total": "0.5"
+            },
+            "homeruns": {
+              "one": "+390"
+            },
+            "sbs": {
+              "one": "+365"
+            },
+            "runs": {
+              "under": "-165",
+              "over": "+125",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+175"
+            }
+          },
+          "playerID": "660271"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+310",
+              "one": "-180"
+            },
+            "bases": {
+              "under": "+135",
+              "over": "-180",
+              "total": "0.5"
+            },
+            "homeruns": {
+              "one": "+750"
+            },
+            "sbs": {
+              "one": "+1050"
+            },
+            "runs": {
+              "under": "-180",
+              "over": "+135",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+210"
+            }
+          },
+          "playerID": "630105"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+250",
+              "one": "-190"
+            },
+            "bases": {
+              "under": "+140",
+              "over": "-190",
+              "total": "0.5"
+            },
+            "homeruns": {
+              "one": "+650"
+            },
+            "sbs": {
+              "one": "+790"
+            },
+            "runs": {
+              "under": "-150",
+              "over": "+110",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+265"
+            }
+          },
+          "playerID": "621493"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+200",
+              "one": "-210"
+            },
+            "bases": {
+              "under": "-195",
+              "over": "+145",
+              "total": "1.5"
+            },
+            "homeruns": {
+              "one": "+750"
+            },
+            "sbs": {
+              "one": "+525"
+            },
+            "runs": {
+              "under": "-130",
+              "over": "-105",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+220"
+            }
+          },
+          "playerID": "673490"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+220",
+              "one": "-220"
+            },
+            "bases": {
+              "under": "-160",
+              "over": "+120",
+              "total": "1.5"
+            },
+            "homeruns": {
+              "one": "+310"
+            },
+            "sbs": {
+              "one": "+880"
+            },
+            "runs": {
+              "under": "+115",
+              "over": "-155",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+160"
+            }
+          },
+          "playerID": "665742"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+230",
+              "one": "-220"
+            },
+            "bases": {
+              "under": "-200",
+              "over": "+150",
+              "total": "1.5"
+            },
+            "homeruns": {
+              "one": "+800"
+            },
+            "sbs": {
+              "one": "+830"
+            },
+            "runs": {
+              "under": "-195",
+              "over": "+145",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+185"
+            }
+          },
+          "playerID": "593428"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+210",
+              "one": "-270"
+            },
+            "bases": {
+              "under": "-145",
+              "over": "+110",
+              "total": "1.5"
+            },
+            "homeruns": {
+              "one": "+370"
+            },
+            "sbs": {
+              "one": "+940"
+            },
+            "runs": {
+              "under": "-150",
+              "over": "+115",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+110"
+            }
+          },
+          "playerID": "592518"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+210",
+              "one": "-290"
+            },
+            "bases": {
+              "under": "-115",
+              "over": "-115",
+              "total": "1.5"
+            },
+            "homeruns": {
+              "one": "+275"
+            },
+            "sbs": {
+              "one": "+390"
+            },
+            "runs": {
+              "under": "-115",
+              "over": "-115",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+115"
+            }
+          },
+          "playerID": "665487"
+        },
+        {
+          "propBets": {
+            "strikeouts": {
+              "under": "-135",
+              "over": "+100",
+              "total": "3.5"
+            },
+            "er": {
+              "under": "-110",
+              "over": "-130",
+              "total": "2.5"
+            }
+          },
+          "playerID": "642545"
+        },
+        {
+          "propBets": {
+            "bases": {
+              "total": "0.5"
+            },
+            "sbs": {
+              "one": "+980"
+            },
+            "runs": {
+              "total": "0.5"
+            }
+          },
+          "playerID": "596059"
+        },
+        {
+          "propBets": {
+            "strikeouts": {
+              "under": "-145",
+              "over": "+110",
+              "total": "7.5"
+            },
+            "er": {
+              "under": "+105",
+              "over": "-150",
+              "total": "1.5"
+            }
+          },
+          "playerID": "605483"
+        },
+        {
+          "propBets": {
+            "bases": {
+              "total": "0.5"
+            },
+            "runs": {
+              "total": "0.5"
+            }
+          },
+          "playerID": "666160"
+        },
+        {
+          "propBets": {
+            "bases": {
+              "total": "0.5"
+            },
+            "runs": {
+              "total": "0.5"
+            }
+          },
+          "playerID": "642136"
+        }
+      ],
+      "sportsBooks": [
+        {
+          "sportsBook": "bet365",
+          "odds": {
+            "totalUnder": "8.5",
+            "totalOverOdds": "even",
+            "awayTeamRunLine": "+1.5",
+            "totalUnderOdds": "-120",
+            "awayTeamRunLineOdds": "-125",
+            "awayTeamMLOdds": "+165",
+            "homeTeamRunLine": "-1.5",
+            "homeTeamRunLineOdds": "+105",
+            "homeTeamMLOdds": "-185",
+            "totalOver": "8.5"
+          }
+        },
+        {
+          "sportsBook": "wynnbet",
+          "odds": {
+            "totalUnder": "8.5",
+            "totalOverOdds": "-110",
+            "awayTeamRunLine": "+1.5",
+            "totalUnderOdds": "-120",
+            "awayTeamRunLineOdds": "-130",
+            "awayTeamMLOdds": "+175",
+            "homeTeamRunLine": "-1.5",
+            "homeTeamRunLineOdds": "-100",
+            "homeTeamMLOdds": "-192",
+            "totalOver": "8.5"
+          }
+        },
+        {
+          "sportsBook": "unibet",
+          "odds": {
+            "totalUnder": "8.5",
+            "totalOverOdds": "-108",
+            "awayTeamRunLine": "+1.5",
+            "totalUnderOdds": "-112",
+            "awayTeamRunLineOdds": "-127",
+            "awayTeamMLOdds": "+165",
+            "homeTeamRunLine": "-1.5",
+            "homeTeamRunLineOdds": "+104",
+            "homeTeamMLOdds": "-200",
+            "totalOver": "8.5"
+          }
+        },
+        {
+          "sportsBook": "pointsbet",
+          "odds": {
+            "totalUnder": "8",
+            "totalOverOdds": "-115",
+            "awayTeamRunLine": "+1.5",
+            "totalUnderOdds": "-105",
+            "awayTeamRunLineOdds": "-125",
+            "awayTeamMLOdds": "+165",
+            "homeTeamRunLine": "-1.5",
+            "homeTeamRunLineOdds": "+105",
+            "homeTeamMLOdds": "-200",
+            "totalOver": "8"
+          }
+        },
+        {
+          "sportsBook": "betrivers",
+          "odds": {
+            "totalUnder": "8.5",
+            "totalOverOdds": "-108",
+            "awayTeamRunLine": "+1.5",
+            "totalUnderOdds": "-112",
+            "awayTeamRunLineOdds": "-127",
+            "awayTeamMLOdds": "+165",
+            "homeTeamRunLine": "-1.5",
+            "homeTeamRunLineOdds": "+104",
+            "homeTeamMLOdds": "-200",
+            "totalOver": "8.5"
+          }
+        },
+        {
+          "sportsBook": "caesars_sportsbook",
+          "odds": {
+            "totalUnder": "8",
+            "totalOverOdds": "-125",
+            "awayTeamRunLine": "+1.5",
+            "totalUnderOdds": "+105",
+            "awayTeamRunLineOdds": "-125",
+            "awayTeamMLOdds": "+162",
+            "homeTeamRunLine": "-1.5",
+            "homeTeamRunLineOdds": "+105",
+            "homeTeamMLOdds": "-195",
+            "totalOver": "8"
+          }
+        },
+        {
+          "sportsBook": "draftkings",
+          "odds": {
+            "totalUnder": "8",
+            "totalOverOdds": "-120",
+            "awayTeamRunLine": "+1.5",
+            "totalUnderOdds": "even",
+            "awayTeamRunLineOdds": "-125",
+            "awayTeamMLOdds": "+160",
+            "homeTeamRunLine": "-1.5",
+            "homeTeamRunLineOdds": "+105",
+            "homeTeamMLOdds": "-190",
+            "totalOver": "8"
+          }
+        }
+      ]
+    },
+    {
+      "gameID": "20230703_PIT@LAD",
+      "last_updated_e_time": "1688437683.1977327",
+      "gameDate": "20230703",
+      "teamIDHome": "14",
+      "teamIDAway": "22",
+      "homeTeam": "LAD",
+      "awayTeam": "PIT",
+      "playerProps": [
+        {
+          "propBets": {
+            "hits": {
+              "two": "+600",
+              "one": "+105"
+            },
+            "bases": {
+              "under": "-140",
+              "over": "+105",
+              "total": "0.5"
+            },
+            "homeruns": {
+              "one": "+1100"
+            },
+            "runs": {
+              "under": "-425",
+              "over": "+280",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+400"
+            }
+          },
+          "playerID": "595978"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+310",
+              "one": "-120"
+            },
+            "bases": {
+              "under": "-110",
+              "over": "-120",
+              "total": "0.5"
+            },
+            "homeruns": {
+              "one": "+600"
+            },
+            "sbs": {
+              "one": "+940"
+            },
+            "runs": {
+              "under": "-295",
+              "over": "+210",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+275"
+            }
+          },
+          "playerID": "666801"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+390",
+              "one": "-130"
+            },
+            "bases": {
+              "under": "+100",
+              "over": "-130",
+              "total": "0.5"
+            },
+            "homeruns": {
+              "one": "+360"
+            },
+            "runs": {
+              "under": "-165",
+              "over": "+125",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+160"
+            }
+          },
+          "playerID": "571970"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+290",
+              "one": "-140"
+            },
+            "bases": {
+              "under": "+105",
+              "over": "-140",
+              "total": "0.5"
+            },
+            "homeruns": {
+              "one": "+650"
+            },
+            "sbs": {
+              "one": "+1200"
+            },
+            "runs": {
+              "under": "-240",
+              "over": "+175",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+245"
+            }
+          },
+          "playerID": "518792"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+320",
+              "one": "-160"
+            },
+            "bases": {
+              "under": "+120",
+              "over": "-160",
+              "total": "0.5"
+            },
+            "homeruns": {
+              "one": "+950"
+            },
+            "sbs": {
+              "one": "+790"
+            },
+            "runs": {
+              "under": "-230",
+              "over": "+170",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+290"
+            }
+          },
+          "playerID": "678246"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+370",
+              "one": "-160"
+            },
+            "bases": {
+              "under": "+120",
+              "over": "-160",
+              "total": "0.5"
+            },
+            "homeruns": {
+              "one": "+800"
+            },
+            "runs": {
+              "under": "-295",
+              "over": "+210",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+240"
+            }
+          },
+          "playerID": "693304"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+370",
+              "one": "-170"
+            },
+            "bases": {
+              "under": "+130",
+              "over": "-170",
+              "total": "0.5"
+            },
+            "homeruns": {
+              "one": "+850"
+            },
+            "sbs": {
+              "one": "+790"
+            },
+            "runs": {
+              "under": "-280",
+              "over": "+200",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+290"
+            }
+          },
+          "playerID": "669707"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+340",
+              "one": "-175"
+            },
+            "bases": {
+              "under": "-170",
+              "over": "+125",
+              "total": "1.5"
+            },
+            "homeruns": {
+              "one": "+310"
+            },
+            "sbs": {
+              "one": "+710"
+            },
+            "runs": {
+              "under": "-125",
+              "over": "-105",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+150"
+            }
+          },
+          "playerID": "669261"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+260",
+              "one": "-200"
+            },
+            "bases": {
+              "under": "+150",
+              "over": "-200",
+              "total": "0.5"
+            },
+            "homeruns": {
+              "one": "+650"
+            },
+            "sbs": {
+              "one": "+560"
+            },
+            "runs": {
+              "under": "-235",
+              "over": "+170",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+195"
+            }
+          },
+          "playerID": "680779"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+290",
+              "one": "-200"
+            },
+            "bases": {
+              "under": "+150",
+              "over": "-200",
+              "total": "0.5"
+            },
+            "homeruns": {
+              "one": "+700"
+            },
+            "runs": {
+              "under": "-250",
+              "over": "+180",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+215"
+            }
+          },
+          "playerID": "444482"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+300",
+              "one": "-195"
+            },
+            "bases": {
+              "under": "+145",
+              "over": "-195",
+              "total": "0.5"
+            },
+            "homeruns": {
+              "one": "+450"
+            },
+            "sbs": {
+              "one": "+1000"
+            },
+            "runs": {
+              "under": "-190",
+              "over": "+140",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+150"
+            }
+          },
+          "playerID": "467793"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+270",
+              "one": "-200"
+            },
+            "bases": {
+              "under": "+150",
+              "over": "-200",
+              "total": "0.5"
+            },
+            "homeruns": {
+              "one": "+475"
+            },
+            "runs": {
+              "under": "-195",
+              "over": "+145",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+170"
+            }
+          },
+          "playerID": "502110"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+280",
+              "one": "-200"
+            },
+            "bases": {
+              "under": "+150",
+              "over": "-200",
+              "total": "0.5"
+            },
+            "homeruns": {
+              "one": "+1150"
+            },
+            "sbs": {
+              "one": "+775"
+            },
+            "runs": {
+              "under": "-240",
+              "over": "+175",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+255"
+            }
+          },
+          "playerID": "500743"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+190",
+              "one": "-240"
+            },
+            "bases": {
+              "under": "-150",
+              "over": "+110",
+              "total": "1.5"
+            },
+            "homeruns": {
+              "one": "+360"
+            },
+            "sbs": {
+              "one": "+500"
+            },
+            "runs": {
+              "under": "-115",
+              "over": "-115",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+170"
+            }
+          },
+          "playerID": "668804"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+200",
+              "one": "-265"
+            },
+            "bases": {
+              "under": "-160",
+              "over": "+120",
+              "total": "1.5"
+            },
+            "homeruns": {
+              "one": "+500"
+            },
+            "sbs": {
+              "one": "+600"
+            },
+            "runs": {
+              "under": "-135",
+              "over": "+100",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+175"
+            }
+          },
+          "playerID": "518692"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+200",
+              "one": "-250"
+            },
+            "bases": {
+              "under": "-170",
+              "over": "+125",
+              "total": "1.5"
+            },
+            "homeruns": {
+              "one": "+650"
+            },
+            "sbs": {
+              "one": "+1350"
+            },
+            "runs": {
+              "under": "-165",
+              "over": "+125",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+155"
+            }
+          },
+          "playerID": "669257"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+185",
+              "one": "-260"
+            },
+            "bases": {
+              "under": "-175",
+              "over": "+130",
+              "total": "1.5"
+            },
+            "homeruns": {
+              "one": "+650"
+            },
+            "runs": {
+              "under": "-145",
+              "over": "+110",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+250"
+            }
+          },
+          "playerID": "641943"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+200",
+              "one": "-280"
+            },
+            "bases": {
+              "under": "-140",
+              "over": "+105",
+              "total": "1.5"
+            },
+            "homeruns": {
+              "one": "+400"
+            },
+            "sbs": {
+              "one": "+510"
+            },
+            "runs": {
+              "under": "-110",
+              "over": "-120",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+185"
+            }
+          },
+          "playerID": "605141"
+        },
+        {
+          "propBets": {
+            "bases": {
+              "total": "0.5"
+            },
+            "sbs": {
+              "one": "+490"
+            },
+            "runs": {
+              "total": "0.5"
+            }
+          },
+          "playerID": "681546"
+        },
+        {
+          "propBets": {
+            "strikeouts": {
+              "under": "-110",
+              "over": "-120",
+              "total": "5.5"
+            }
+          },
+          "playerID": "656605"
+        },
+        {
+          "propBets": {
+            "bases": {
+              "total": "0.5"
+            },
+            "sbs": {
+              "one": "+670"
+            }
+          },
+          "playerID": "457705"
+        },
+        {
+          "propBets": {
+            "strikeouts": {
+              "under": "+120",
+              "over": "-165",
+              "total": "4.5"
+            },
+            "er": {
+              "under": "-150",
+              "over": "+105",
+              "total": "2.5"
+            }
+          },
+          "playerID": "675627"
+        }
+      ],
+      "sportsBooks": [
+        {
+          "sportsBook": "bet365",
+          "odds": {
+            "totalUnder": "8.5",
+            "totalOverOdds": "+105",
+            "awayTeamRunLine": "+1.5",
+            "totalUnderOdds": "-125",
+            "awayTeamRunLineOdds": "-135",
+            "awayTeamMLOdds": "+150",
+            "homeTeamRunLine": "-1.5",
+            "homeTeamRunLineOdds": "+115",
+            "homeTeamMLOdds": "-170",
+            "totalOver": "8.5"
+          }
+        },
+        {
+          "sportsBook": "wynnbet",
+          "odds": {
+            "totalUnder": "8.5",
+            "totalOverOdds": "-100",
+            "awayTeamRunLine": "+1.5",
+            "totalUnderOdds": "-120",
+            "awayTeamRunLineOdds": "-135",
+            "awayTeamMLOdds": "+150",
+            "homeTeamRunLine": "-1.5",
+            "homeTeamRunLineOdds": "+115",
+            "homeTeamMLOdds": "-164",
+            "totalOver": "8.5"
+          }
+        },
+        {
+          "sportsBook": "unibet",
+          "odds": {
+            "totalUnder": "8.5",
+            "totalOverOdds": "-107",
+            "awayTeamRunLine": "+1.5",
+            "totalUnderOdds": "-113",
+            "awayTeamRunLineOdds": "-141",
+            "awayTeamMLOdds": "+150",
+            "homeTeamRunLine": "-1.5",
+            "homeTeamRunLineOdds": "+117",
+            "homeTeamMLOdds": "-180",
+            "totalOver": "8.5"
+          }
+        },
+        {
+          "sportsBook": "pointsbet",
+          "odds": {
+            "totalUnder": "8.5",
+            "totalOverOdds": "-110",
+            "awayTeamRunLine": "+1.5",
+            "totalUnderOdds": "-110",
+            "awayTeamRunLineOdds": "-140",
+            "awayTeamMLOdds": "+145",
+            "homeTeamRunLine": "-1.5",
+            "homeTeamRunLineOdds": "+115",
+            "homeTeamMLOdds": "-175",
+            "totalOver": "8.5"
+          }
+        },
+        {
+          "sportsBook": "betrivers",
+          "odds": {
+            "totalUnder": "8.5",
+            "totalOverOdds": "-107",
+            "awayTeamRunLine": "+1.5",
+            "totalUnderOdds": "-113",
+            "awayTeamRunLineOdds": "-141",
+            "awayTeamMLOdds": "+150",
+            "homeTeamRunLine": "-1.5",
+            "homeTeamRunLineOdds": "+117",
+            "homeTeamMLOdds": "-180",
+            "totalOver": "8.5"
+          }
+        },
+        {
+          "sportsBook": "caesars_sportsbook",
+          "odds": {
+            "totalUnder": "8.5",
+            "totalOverOdds": "even",
+            "awayTeamRunLine": "+1.5",
+            "totalUnderOdds": "-120",
+            "awayTeamRunLineOdds": "-140",
+            "awayTeamMLOdds": "+150",
+            "homeTeamRunLine": "-1.5",
+            "homeTeamRunLineOdds": "+118",
+            "homeTeamMLOdds": "-178",
+            "totalOver": "8.5"
+          }
+        },
+        {
+          "sportsBook": "draftkings",
+          "odds": {
+            "totalUnder": "8.5",
+            "totalOverOdds": "-105",
+            "awayTeamRunLine": "+1.5",
+            "totalUnderOdds": "-115",
+            "awayTeamRunLineOdds": "-140",
+            "awayTeamMLOdds": "+150",
+            "homeTeamRunLine": "-1.5",
+            "homeTeamRunLineOdds": "+120",
+            "homeTeamMLOdds": "-175",
+            "totalOver": "8.5"
+          }
+        }
+      ]
+    },
+    {
+      "gameID": "20230703_SEA@SF",
+      "last_updated_e_time": "1688437683.1977327",
+      "gameDate": "20230703",
+      "teamIDHome": "24",
+      "teamIDAway": "25",
+      "homeTeam": "SF",
+      "awayTeam": "SEA",
+      "playerProps": [
+        {
+          "propBets": {
+            "hits": {
+              "two": "+470",
+              "one": "-120"
+            },
+            "bases": {
+              "under": "-110",
+              "over": "-120",
+              "total": "0.5"
+            },
+            "homeruns": {
+              "one": "+1100"
+            },
+            "sbs": {
+              "one": "+333"
+            },
+            "runs": {
+              "under": "-260",
+              "over": "+190",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+310"
+            }
+          },
+          "playerID": "664238"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+490",
+              "one": "-145"
+            },
+            "bases": {
+              "under": "+110",
+              "over": "-145",
+              "total": "0.5"
+            },
+            "homeruns": {
+              "one": "+750"
+            },
+            "runs": {
+              "under": "-265",
+              "over": "+190",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+230"
+            }
+          },
+          "playerID": "645801"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+340",
+              "one": "-150"
+            },
+            "bases": {
+              "under": "+110",
+              "over": "-150",
+              "total": "0.5"
+            },
+            "homeruns": {
+              "one": "+1150"
+            },
+            "sbs": {
+              "one": "+800"
+            },
+            "runs": {
+              "under": "-270",
+              "over": "+195",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+250"
+            }
+          },
+          "playerID": "543939"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+420",
+              "one": "-175"
+            },
+            "bases": {
+              "under": "+130",
+              "over": "-175",
+              "total": "0.5"
+            },
+            "homeruns": {
+              "one": "+750"
+            },
+            "sbs": {
+              "one": "+1250"
+            },
+            "runs": {
+              "under": "-215",
+              "over": "+160",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+195"
+            }
+          },
+          "playerID": "543063"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+410",
+              "one": "-165"
+            },
+            "bases": {
+              "under": "+125",
+              "over": "-165",
+              "total": "0.5"
+            },
+            "homeruns": {
+              "one": "+1000"
+            },
+            "sbs": {
+              "one": "+415"
+            },
+            "runs": {
+              "under": "-230",
+              "over": "+170",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+245"
+            }
+          },
+          "playerID": "596103"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+380",
+              "one": "-180"
+            },
+            "bases": {
+              "under": "-200",
+              "over": "+150",
+              "total": "1.5"
+            },
+            "homeruns": {
+              "one": "+600"
+            },
+            "sbs": {
+              "one": "+1000"
+            },
+            "runs": {
+              "under": "-185",
+              "over": "+140",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+180"
+            }
+          },
+          "playerID": "666165"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+350",
+              "one": "-185"
+            },
+            "bases": {
+              "under": "+135",
+              "over": "-185",
+              "total": "0.5"
+            },
+            "homeruns": {
+              "one": "+1000"
+            },
+            "sbs": {
+              "one": "+710"
+            },
+            "runs": {
+              "under": "-215",
+              "over": "+160",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+230"
+            }
+          },
+          "playerID": "682641"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+320",
+              "one": "-175"
+            },
+            "bases": {
+              "under": "+145",
+              "over": "-195",
+              "total": "0.5"
+            },
+            "homeruns": {
+              "one": "+750"
+            },
+            "runs": {
+              "under": "-230",
+              "over": "+170",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+230"
+            }
+          },
+          "playerID": "553993"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+320",
+              "one": "-200"
+            },
+            "bases": {
+              "under": "+150",
+              "over": "-205",
+              "total": "0.5"
+            },
+            "homeruns": {
+              "one": "+650"
+            },
+            "runs": {
+              "under": "-195",
+              "over": "+145",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+210"
+            }
+          },
+          "playerID": "605204"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+310",
+              "one": "-195"
+            },
+            "bases": {
+              "under": "-185",
+              "over": "+140",
+              "total": "1.5"
+            },
+            "homeruns": {
+              "one": "+550"
+            },
+            "runs": {
+              "under": "-195",
+              "over": "+145",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+180"
+            }
+          },
+          "playerID": "663728"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+300",
+              "one": "-215"
+            },
+            "bases": {
+              "under": "-165",
+              "over": "+125",
+              "total": "1.5"
+            },
+            "homeruns": {
+              "one": "+650"
+            },
+            "runs": {
+              "under": "-175",
+              "over": "+130",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+175"
+            }
+          },
+          "playerID": "672275"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+300",
+              "one": "-205"
+            },
+            "bases": {
+              "under": "-195",
+              "over": "+145",
+              "total": "1.5"
+            },
+            "homeruns": {
+              "one": "+700"
+            },
+            "runs": {
+              "under": "-180",
+              "over": "+135",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+215"
+            }
+          },
+          "playerID": "527038"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+300",
+              "one": "-190"
+            },
+            "bases": {
+              "under": "+140",
+              "over": "-190",
+              "total": "0.5"
+            },
+            "homeruns": {
+              "one": "+700"
+            },
+            "sbs": {
+              "one": "+470"
+            },
+            "runs": {
+              "under": "-195",
+              "over": "+145",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+190"
+            }
+          },
+          "playerID": "672284"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+290",
+              "one": "-210"
+            },
+            "bases": {
+              "under": "-205",
+              "over": "+150",
+              "total": "1.5"
+            },
+            "homeruns": {
+              "one": "+850"
+            },
+            "sbs": {
+              "one": "+350"
+            },
+            "runs": {
+              "under": "-185",
+              "over": "+135",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+205"
+            }
+          },
+          "playerID": "642731"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+270",
+              "one": "-255"
+            },
+            "bases": {
+              "under": "-140",
+              "over": "+105",
+              "total": "1.5"
+            },
+            "homeruns": {
+              "one": "+360"
+            },
+            "sbs": {
+              "one": "+1300"
+            },
+            "runs": {
+              "under": "-125",
+              "over": "-105",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+155"
+            }
+          },
+          "playerID": "592626"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+270",
+              "one": "-235"
+            },
+            "bases": {
+              "under": "-180",
+              "over": "+135",
+              "total": "1.5"
+            },
+            "homeruns": {
+              "one": "+700"
+            },
+            "sbs": {
+              "one": "+790"
+            },
+            "runs": {
+              "under": "-190",
+              "over": "+140",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+165"
+            }
+          },
+          "playerID": "606192"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+210",
+              "one": "-230"
+            },
+            "bases": {
+              "under": "-195",
+              "over": "+145",
+              "total": "1.5"
+            },
+            "homeruns": {
+              "one": "+1200"
+            },
+            "sbs": {
+              "one": "+980"
+            },
+            "runs": {
+              "under": "-155",
+              "over": "+120",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+245"
+            }
+          },
+          "playerID": "641487"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+175",
+              "one": "-260"
+            },
+            "bases": {
+              "under": "-140",
+              "over": "+105",
+              "total": "1.5"
+            },
+            "homeruns": {
+              "one": "+700"
+            },
+            "sbs": {
+              "one": "+320"
+            },
+            "runs": {
+              "under": "-150",
+              "over": "+110",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+190"
+            }
+          },
+          "playerID": "677594"
+        },
+        {
+          "propBets": {
+            "bases": {
+              "total": "0.5"
+            },
+            "sbs": {
+              "one": "+390"
+            },
+            "runs": {
+              "total": "0.5"
+            }
+          },
+          "playerID": "676609"
+        },
+        {
+          "propBets": {
+            "strikeouts": {
+              "under": "-110",
+              "over": "-120",
+              "total": "5.5"
+            },
+            "er": {
+              "under": "-150",
+              "over": "+105",
+              "total": "2.5"
+            },
+            "outsRecorded": {
+              "under": "",
+              "total": "16.5"
+            }
+          },
+          "playerID": "693433"
+        },
+        {
+          "propBets": {
+            "hitsAllowed": {
+              "under": "-190",
+              "total": "5.5"
+            },
+            "strikeouts": {
+              "under": "-170",
+              "over": "+130",
+              "total": "6.5"
+            },
+            "er": {
+              "under": "-155",
+              "over": "+110",
+              "total": "2.5"
+            }
+          },
+          "playerID": "657277"
+        },
+        {
+          "propBets": {
+            "bases": {
+              "total": "1.5"
+            },
+            "runs": {
+              "total": "0.5"
+            }
+          },
+          "playerID": "664034"
+        }
+      ],
+      "sportsBooks": [
+        {
+          "sportsBook": "bet365",
+          "odds": {
+            "totalUnder": "6.5",
+            "totalOverOdds": "-120",
+            "awayTeamRunLine": "+1.5",
+            "totalUnderOdds": "even",
+            "awayTeamRunLineOdds": "-180",
+            "awayTeamMLOdds": "+110",
+            "homeTeamRunLine": "-1.5",
+            "homeTeamRunLineOdds": "+160",
+            "homeTeamMLOdds": "-130",
+            "totalOver": "6.5"
+          }
+        },
+        {
+          "sportsBook": "wynnbet",
+          "odds": {
+            "totalUnder": "7.5",
+            "totalOverOdds": "+110",
+            "awayTeamRunLine": "+1.5",
+            "totalUnderOdds": "-145",
+            "awayTeamRunLineOdds": "-204",
+            "awayTeamMLOdds": "+118",
+            "homeTeamRunLine": "-1.5",
+            "homeTeamRunLineOdds": "+155",
+            "homeTeamMLOdds": "-130",
+            "totalOver": "7.5"
+          }
+        },
+        {
+          "sportsBook": "unibet",
+          "odds": {
+            "totalUnder": "7",
+            "totalOverOdds": "-107",
+            "awayTeamRunLine": "+1.5",
+            "totalUnderOdds": "-114",
+            "awayTeamRunLineOdds": "-215",
+            "awayTeamMLOdds": "+114",
+            "homeTeamRunLine": "-1.5",
+            "homeTeamRunLineOdds": "+170",
+            "homeTeamMLOdds": "-134",
+            "totalOver": "7"
+          }
+        },
+        {
+          "sportsBook": "pointsbet",
+          "odds": {
+            "totalUnder": "7",
+            "totalOverOdds": "-105",
+            "awayTeamRunLine": "+1.5",
+            "totalUnderOdds": "-115",
+            "awayTeamRunLineOdds": "-190",
+            "awayTeamMLOdds": "+115",
+            "homeTeamRunLine": "-1.5",
+            "homeTeamRunLineOdds": "+160",
+            "homeTeamMLOdds": "-140",
+            "totalOver": "7"
+          }
+        },
+        {
+          "sportsBook": "betrivers",
+          "odds": {
+            "totalUnder": "7",
+            "totalOverOdds": "-106",
+            "awayTeamRunLine": "+1.5",
+            "totalUnderOdds": "-113",
+            "awayTeamRunLineOdds": "-215",
+            "awayTeamMLOdds": "+114",
+            "homeTeamRunLine": "-1.5",
+            "homeTeamRunLineOdds": "+170",
+            "homeTeamMLOdds": "-134",
+            "totalOver": "7"
+          }
+        },
+        {
+          "sportsBook": "caesars_sportsbook",
+          "odds": {
+            "totalUnder": "7",
+            "totalOverOdds": "even",
+            "awayTeamRunLine": "+1.5",
+            "totalUnderOdds": "-120",
+            "awayTeamRunLineOdds": "-190",
+            "awayTeamMLOdds": "+110",
+            "homeTeamRunLine": "-1.5",
+            "homeTeamRunLineOdds": "+158",
+            "homeTeamMLOdds": "-130",
+            "totalOver": "7"
+          }
+        },
+        {
+          "sportsBook": "draftkings",
+          "odds": {
+            "totalUnder": "7",
+            "totalOverOdds": "even",
+            "awayTeamRunLine": "+1.5",
+            "totalUnderOdds": "-120",
+            "awayTeamRunLineOdds": "-180",
+            "awayTeamMLOdds": "+115",
+            "homeTeamRunLine": "-1.5",
+            "homeTeamRunLineOdds": "+155",
+            "homeTeamMLOdds": "-135",
+            "totalOver": "7"
+          }
+        }
+      ]
+    },
+    {
+      "gameID": "20230703_STL@MIA",
+      "last_updated_e_time": "1688433489.6625116",
+      "gameDate": "20230703",
+      "teamIDHome": "15",
+      "teamIDAway": "26",
+      "homeTeam": "MIA",
+      "awayTeam": "STL",
+      "playerProps": [
+        {
+          "propBets": {
+            "hits": {
+              "two": "+500",
+              "one": "-125"
+            },
+            "bases": {
+              "under": "-115",
+              "over": "-115",
+              "total": "0.5"
+            },
+            "homeruns": {
+              "one": "+600"
+            },
+            "sbs": {
+              "one": "+940"
+            },
+            "runs": {
+              "under": "-270",
+              "over": "+195",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+265"
+            }
+          },
+          "playerID": "657557"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+370",
+              "one": "-140"
+            },
+            "bases": {
+              "under": "+110",
+              "over": "-145",
+              "total": "0.5"
+            },
+            "homeruns": {
+              "one": "+1100"
+            },
+            "sbs": {
+              "one": "+775"
+            },
+            "runs": {
+              "under": "-245",
+              "over": "+180",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+310"
+            }
+          },
+          "playerID": "663457"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+300",
+              "one": "-125"
+            },
+            "bases": {
+              "under": "-105",
+              "over": "-125",
+              "total": "0.5"
+            },
+            "homeruns": {
+              "one": "+650"
+            },
+            "sbs": {
+              "one": "+1500"
+            },
+            "runs": {
+              "under": "-285",
+              "over": "+205",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+255"
+            }
+          },
+          "playerID": "663609"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+480",
+              "one": "-135"
+            },
+            "bases": {
+              "under": "+100",
+              "over": "-135",
+              "total": "0.5"
+            },
+            "homeruns": {
+              "one": "+1100"
+            },
+            "sbs": {
+              "one": "+830"
+            },
+            "runs": {
+              "under": "-235",
+              "over": "+175",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+290"
+            }
+          },
+          "playerID": "641505"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+350",
+              "one": "-165"
+            },
+            "bases": {
+              "under": "+125",
+              "over": "-165",
+              "total": "0.5"
+            },
+            "homeruns": {
+              "one": "+900"
+            },
+            "sbs": {
+              "one": "+850"
+            },
+            "runs": {
+              "under": "-235",
+              "over": "+175",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+280"
+            }
+          },
+          "playerID": "666185"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+340",
+              "one": "-175"
+            },
+            "bases": {
+              "under": "+130",
+              "over": "-175",
+              "total": "0.5"
+            },
+            "homeruns": {
+              "one": "+850"
+            },
+            "sbs": {
+              "one": "+900"
+            },
+            "runs": {
+              "under": "-220",
+              "over": "+160",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+200"
+            }
+          },
+          "playerID": "663743"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+300",
+              "one": "-200"
+            },
+            "bases": {
+              "under": "-180",
+              "over": "+135",
+              "total": "1.5"
+            },
+            "homeruns": {
+              "one": "+475"
+            },
+            "sbs": {
+              "one": "+790"
+            },
+            "runs": {
+              "under": "-180",
+              "over": "+135",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+170"
+            }
+          },
+          "playerID": "575929"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+310",
+              "one": "-205"
+            },
+            "bases": {
+              "under": "-195",
+              "over": "+145",
+              "total": "1.5"
+            },
+            "homeruns": {
+              "one": "+600"
+            },
+            "sbs": {
+              "one": "+630"
+            },
+            "runs": {
+              "under": "-205",
+              "over": "+150",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+200"
+            }
+          },
+          "playerID": "691023"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+240",
+              "one": "-205"
+            },
+            "bases": {
+              "under": "-185",
+              "over": "+135",
+              "total": "1.5"
+            },
+            "homeruns": {
+              "one": "+550"
+            },
+            "sbs": {
+              "one": "+1350"
+            },
+            "runs": {
+              "under": "-170",
+              "over": "+125",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+175"
+            }
+          },
+          "playerID": "660821"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+290",
+              "one": "-240"
+            },
+            "bases": {
+              "under": "-200",
+              "over": "+150",
+              "total": "1.5"
+            },
+            "homeruns": {
+              "one": "+1200"
+            },
+            "sbs": {
+              "one": "+710"
+            },
+            "runs": {
+              "under": "-220",
+              "over": "+160",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+210"
+            }
+          },
+          "playerID": "621563"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+240",
+              "one": "-220"
+            },
+            "bases": {
+              "under": "-175",
+              "over": "+130",
+              "total": "1.5"
+            },
+            "homeruns": {
+              "one": "+380"
+            },
+            "runs": {
+              "under": "-130",
+              "over": "+100",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+165"
+            }
+          },
+          "playerID": "624585"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+230",
+              "one": "-230"
+            },
+            "bases": {
+              "under": "-150",
+              "over": "+115",
+              "total": "1.5"
+            },
+            "homeruns": {
+              "one": "+650"
+            },
+            "sbs": {
+              "one": "+270"
+            },
+            "runs": {
+              "under": "-145",
+              "over": "+110",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+215"
+            }
+          },
+          "playerID": "669242"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+200",
+              "one": "-240"
+            },
+            "bases": {
+              "under": "-160",
+              "over": "+120",
+              "total": "1.5"
+            },
+            "homeruns": {
+              "one": "+340"
+            },
+            "sbs": {
+              "one": "+1150"
+            },
+            "runs": {
+              "under": "-150",
+              "over": "+115",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+135"
+            }
+          },
+          "playerID": "571448"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+230",
+              "one": "-250"
+            },
+            "bases": {
+              "under": "-140",
+              "over": "+105",
+              "total": "1.5"
+            },
+            "homeruns": {
+              "one": "+425"
+            },
+            "sbs": {
+              "one": "+880"
+            },
+            "runs": {
+              "under": "-140",
+              "over": "+105",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+170"
+            }
+          },
+          "playerID": "502671"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+220",
+              "one": "-250"
+            },
+            "bases": {
+              "under": "-185",
+              "over": "+135",
+              "total": "1.5"
+            },
+            "homeruns": {
+              "one": "+650"
+            },
+            "runs": {
+              "under": "-175",
+              "over": "+130",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+175"
+            }
+          },
+          "playerID": "643265"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+220",
+              "one": "-265"
+            },
+            "bases": {
+              "under": "-195",
+              "over": "+145",
+              "total": "1.5"
+            },
+            "homeruns": {
+              "one": "+1100"
+            },
+            "sbs": {
+              "one": "+790"
+            },
+            "runs": {
+              "under": "-205",
+              "over": "+150",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+210"
+            }
+          },
+          "playerID": "516416"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+180",
+              "one": "-330"
+            },
+            "bases": {
+              "under": "-145",
+              "over": "+110",
+              "total": "1.5"
+            },
+            "homeruns": {
+              "one": "+600"
+            },
+            "sbs": {
+              "one": "+1050"
+            },
+            "runs": {
+              "under": "-150",
+              "over": "+115",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+160"
+            }
+          },
+          "playerID": "650559"
+        },
+        {
+          "propBets": {
+            "hits": {
+              "two": "+135",
+              "one": "-410"
+            },
+            "bases": {
+              "under": "-125",
+              "over": "-105",
+              "total": "1.5"
+            },
+            "homeruns": {
+              "one": "+1100"
+            },
+            "sbs": {
+              "one": "+1500"
+            },
+            "runs": {
+              "under": "-150",
+              "over": "+110",
+              "total": "0.5"
+            },
+            "rbis": {
+              "one": "+195"
+            }
+          },
+          "playerID": "650333"
+        },
+        {
+          "propBets": {
+            "hitsAllowed": {
+              "under": "-185",
+              "total": "4.5"
+            },
+            "strikeouts": {
+              "under": "-110",
+              "over": "-120",
+              "total": "5.5"
+            },
+            "er": {
+              "under": "-185",
+              "over": "+130",
+              "total": "2.5"
+            }
+          },
+          "playerID": "666129"
+        },
+        {
+          "propBets": {
+            "strikeouts": {
+              "under": "-170",
+              "over": "+125",
+              "total": "4.5"
+            },
+            "er": {
+              "under": "-110",
+              "over": "-130",
+              "total": "2.5"
+            }
+          },
+          "playerID": "571945"
+        },
+        {
+          "propBets": {
+            "bases": {
+              "total": "0.5"
+            },
+            "runs": {
+              "total": "0.5"
+            }
+          },
+          "playerID": "680977"
+        },
+        {
+          "propBets": {
+            "bases": {
+              "total": "0.5"
+            },
+            "runs": {
+              "total": "0.5"
+            }
+          },
+          "playerID": "669357"
+        }
+      ],
+      "sportsBooks": [
+        {
+          "sportsBook": "bet365",
+          "odds": {
+            "totalUnder": "8",
+            "totalOverOdds": "-105",
+            "awayTeamRunLine": "+1.5",
+            "totalUnderOdds": "-115",
+            "awayTeamRunLineOdds": "-175",
+            "awayTeamMLOdds": "+120",
+            "homeTeamRunLine": "-1.5",
+            "homeTeamRunLineOdds": "+155",
+            "homeTeamMLOdds": "-140",
+            "totalOver": "8"
+          }
+        },
+        {
+          "sportsBook": "wynnbet",
+          "odds": {
+            "totalUnder": "8",
+            "totalOverOdds": "-105",
+            "awayTeamRunLine": "+1.5",
+            "totalUnderOdds": "-115",
+            "awayTeamRunLineOdds": "-179",
+            "awayTeamMLOdds": "+127",
+            "homeTeamRunLine": "-1.5",
+            "homeTeamRunLineOdds": "+150",
+            "homeTeamMLOdds": "-139",
+            "totalOver": "8"
+          }
+        },
+        {
+          "sportsBook": "unibet",
+          "odds": {
+            "totalUnder": "8",
+            "totalOverOdds": "-103",
+            "awayTeamRunLine": "+1.5",
+            "totalUnderOdds": "-118",
+            "awayTeamRunLineOdds": "-195",
+            "awayTeamMLOdds": "+123",
+            "homeTeamRunLine": "-1.5",
+            "homeTeamRunLineOdds": "+155",
+            "homeTeamMLOdds": "-143",
+            "totalOver": "8"
+          }
+        },
+        {
+          "sportsBook": "pointsbet",
+          "odds": {
+            "totalUnder": "8",
+            "totalOverOdds": "-105",
+            "awayTeamRunLine": "+1.5",
+            "totalUnderOdds": "-115",
+            "awayTeamRunLineOdds": "-175",
+            "awayTeamMLOdds": "+120",
+            "homeTeamRunLine": "-1.5",
+            "homeTeamRunLineOdds": "+145",
+            "homeTeamMLOdds": "-145",
+            "totalOver": "8"
+          }
+        },
+        {
+          "sportsBook": "betrivers",
+          "odds": {
+            "totalUnder": "8",
+            "totalOverOdds": "-103",
+            "awayTeamRunLine": "+1.5",
+            "totalUnderOdds": "-118",
+            "awayTeamRunLineOdds": "-186",
+            "awayTeamMLOdds": "+123",
+            "homeTeamRunLine": "-1.5",
+            "homeTeamRunLineOdds": "+155",
+            "homeTeamMLOdds": "-143",
+            "totalOver": "8"
+          }
+        },
+        {
+          "sportsBook": "caesars_sportsbook",
+          "odds": {
+            "totalUnder": "8",
+            "totalOverOdds": "-105",
+            "awayTeamRunLine": "+1.5",
+            "totalUnderOdds": "-115",
+            "awayTeamRunLineOdds": "-178",
+            "awayTeamMLOdds": "+122",
+            "homeTeamRunLine": "-1.5",
+            "homeTeamRunLineOdds": "+150",
+            "homeTeamMLOdds": "-145",
+            "totalOver": "8"
+          }
+        },
+        {
+          "sportsBook": "draftkings",
+          "odds": {
+            "totalUnder": "8",
+            "totalOverOdds": "-105",
+            "awayTeamRunLine": "+1.5",
+            "totalUnderOdds": "-115",
+            "awayTeamRunLineOdds": "-175",
+            "awayTeamMLOdds": "+125",
+            "homeTeamRunLine": "-1.5",
+            "homeTeamRunLineOdds": "+150",
+            "homeTeamMLOdds": "-145",
+            "totalOver": "8"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -14,7 +14,7 @@ namespace MLB_App.Models
         public RealTimeBoxScore body;
     }
 
-    public class RealTimeBoxScore : StaticData
+    public class RealTimeBoxScore
     {
         [Key]
         public int Id { get; set; }
@@ -56,6 +56,7 @@ namespace MLB_App.Models
         public int away_Id { get; set; }
         public int home_Id { get; set; }
         public virtual ICollection<RealTimeBoxScore> RealTimeBoxScores { get; set; }
+        public virtual ICollection<GameDetails> GameDetails { get; set; }
     }
 
     public class away

@@ -13,7 +13,8 @@
                 let awayRun = parseInt(item.AwayRun);
                 let winnerTeam = (homeRun > awayRun ? logoHome :logoAway);
                 var rows =
-                    "<tr>"
+                    "<tr id='" + item.GameId + "'>"
+                    + "<td scope='row' class='text-center'>&#x26BE;</td>"
                     + "<td scope='row' class='text-center'>" + convertDate(item.GameDate) + "</td>"
                     + "<td scope='row' class='text-center'>" + item.GameType.replace("_", " ") + "</td>"
                     + "<td scope='row' class='text-center'>" + item.GameStatus + "</td>"
@@ -33,7 +34,26 @@
     });
 }
 
-function GetTeamLogos(key) {
+function GetTeamLogos(teamLogo) {
+    var xhr = $.ajax({
+        type: 'POST',
+        url: 'Data/GetTeamLogo',
+        data: { logo: teamLogo },
+        dataType: 'json',
+        async: false,
+        success: function (myData) {
+            console.log("Printing my data " + myData);
+
+        },
+        error: function (ex) {
+            console.log("Deu erro " + ex.responseText);
+        }
+    });
+
+    return JSON.parse(xhr.responseText);
+}
+
+function GetTeamLogos1(key) {
     let logoObject = {};
     logoObject["ARI"] = "https://www.mlbstatic.com/team-logos/team-cap-on-light/109.svg";
     logoObject["ATL"] = "https://www.mlbstatic.com/team-logos/team-cap-on-light/144.svg";
@@ -83,59 +103,3 @@ function convertDate(dateString) {
     return finalDate;
 }
 
-function mlbMessage() {
-    alert("MLB IS FUN", "Paulo");
-}
-
-let tbody = document.querySelector('tbody');
-console.log(tbody);
-
-tbody.addEventListener('click', function (e) {
-    debugger;
-    let currentElement = "";
-    if (e.target.nodeName == "IMG") {
-        currentElement = e.target.parentElement.parentElement;
-    }
-    else {
-        currentElement = e.target.parentElement;
-    }
-    let id = currentElement.id;
-    if (!id.includes("new_")) {
-        if (currentElement.id != null) {
-            $.ajax({
-                type: 'POST',
-                url: 'GetPlayerById',
-                data: { 'id': id },
-                dataType: 'json',
-                success: function (data) {
-                    var newlyCreatedId = "new_" + data.playerID;
-                    var findIfDataExists = document.getElementById(newlyCreatedId);
-                    if (findIfDataExists == null) {
-                        var rows =
-                            "<tr id='" + newlyCreatedId + "'>"
-                            + "<td scope='row' class='text-center'>" + data.longName + "</td>"
-                            + "<td scope='row' class='text-center'>" + data.espnLink + "</td>"
-                            + "<td scope='row' class='text-center'>" + data.fantasyProsLink + "</td>"
-                            + "</tr>";
-
-                        $(rows).show().insertAfter(currentElement);
-                    }
-                    else if (findIfDataExists.classList.contains('hidden')) {
-                        findIfDataExists.classList.remove('hidden');
-                    }
-                },
-                error: function (ex) {
-                    console.log("Deu erro " + ex.responseText);
-                }
-            });
-        }
-    }
-});
-
-tbody.addEventListener('click', (e) => {
-    let clickedElement = e.target.parentElement.id;
-    if (clickedElement.includes("new_")) {
-        let element = $('#' + clickedElement);
-        element.addClass('hidden');
-    }
-});

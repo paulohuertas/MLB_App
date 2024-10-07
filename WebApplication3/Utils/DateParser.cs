@@ -25,5 +25,23 @@ namespace MLB_App.Utils
 
             return dt;
         }
+
+        public static string ConvertTimeEpochToLocalTime(string epoch)
+        {
+            long longEpoch = long.Parse(epoch);
+            DateTimeOffset dateTimeOffset = DateTimeOffset.FromUnixTimeSeconds(longEpoch);
+
+            string completeDate = dateTimeOffset.LocalDateTime.ToString("hh:mm tt");
+            return completeDate;
+        }
+
+        public static string ConvertTimeEpochToDate(string epoch)
+        {
+            long longEpoch = long.Parse(epoch);
+            DateTimeOffset dateTimeOffset = DateTimeOffset.FromUnixTimeSeconds(longEpoch);
+
+            string completeDate = dateTimeOffset.LocalDateTime.Date.ToString("dd/MM/yyyy");
+            return completeDate;
+        }
     }
 }

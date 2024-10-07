@@ -1,13 +1,12 @@
 ﻿@model MLB_App.Models.LiveResult
+@using MLB_App.Utils;
+
 @{
     ViewBag.Title = "Live Result";
 }
 
 <h2>Game Result</h2>
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
 @{
     if (Model == null)
     {
@@ -20,8 +19,8 @@
 
         string homeLogo = String.Empty;
         string awayLogo = String.Empty;
-        bool homeSrc = MLB_App.Utils.StaticData.TeamLogos.TryGetValue(home, out homeLogo);
-        bool awaySrc = MLB_App.Utils.StaticData.TeamLogos.TryGetValue(away, out awayLogo);
+        bool homeSrc = StaticData.TeamLogos.TryGetValue(home, out homeLogo);
+        bool awaySrc = StaticData.TeamLogos.TryGetValue(away, out awayLogo);
 
         <h2>Game hasn't started yet</h2><img src="@homeLogo" style="width: 30px; height: 30px; margin: 10px;" /> <span>X</span> <img src="@awayLogo" style="width: 30px; height: 30px; margin: 10px;" />
     }
@@ -30,12 +29,18 @@
         string winnerTeam = String.Empty;
         if(Model.body.gameStatus == "Completed")
         {
-            int homeRun = int.Parse(Model.body.lineScore.home.R);
-            int awayRun = int.Parse(Model.body.lineScore.away.R);
-            winnerTeam = (homeRun > awayRun ? Model.body.GetTeamLogoByNameAbbreviation(Model.body.home) : Model.body.GetTeamLogoByNameAbbreviation(Model.body.away));
+            if (Model.body.homeResult == "W")
+            {
+                winnerTeam = StaticData.GetTeamLogoByNameAbbreviation(Model.body.home);
+            }
+
+            if (Model.body.awayResult == "W")
+            {
+                winnerTeam = StaticData.GetTeamLogoByNameAbbreviation(Model.body.away);
+            }
         }
 
-        <h2 class="center-block text-center"><img src="@Model.body.GetTeamLogoByNameAbbreviation(Model.body.away)" style="width: 40px; height: 40px; margin: 10px;" /> @Model.body.gameID.Substring(9) <img src="@Model.body.GetTeamLogoByNameAbbreviation(Model.body.home)" style="width: 40px; height: 40px; margin: 10px;" /></h2>
+        <h2 class="center-block text-center"><img src="@StaticData.GetTeamLogoByNameAbbreviation(Model.body.away)" style="width: 40px; height: 40px; margin: 10px;" /> @Model.body.gameID.Substring(9) <img src="@StaticData.GetTeamLogoByNameAbbreviation(Model.body.home)" style="width: 40px; height: 40px; margin: 10px;" /></h2>
         <table class="table">
             <tr>
                 <th scope="col" class="text-center">Winner</th>
@@ -43,8 +48,8 @@
                 <th scope="col" class="text-center">Attendance</th>
                 <th scope="col" class="text-center">Game Length</th>
                 <th scope="col" class="text-center">Venue</th>
-                <th scope="col" class="text-center"><img src="@Model.body.GetTeamLogoByNameAbbreviation(Model.body.away)" style="width: 20px; height: 20px;" /></th>
-                <th scope="col" class="text-center"><img src="@Model.body.GetTeamLogoByNameAbbreviation(Model.body.home)" style="width: 20px; height: 20px;" /></th>
+                <th scope="col" class="text-center"><img src="@StaticData.GetTeamLogoByNameAbbreviation(Model.body.away)" style="width: 20px; height: 20px;" /></th>
+                <th scope="col" class="text-center"><img src="@StaticData.GetTeamLogoByNameAbbreviation(Model.body.home)" style="width: 20px; height: 20px;" /></th>
             </tr>
             <tr>
                 @if (String.IsNullOrEmpty(winnerTeam))

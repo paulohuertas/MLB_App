@@ -6,9 +6,10 @@ using MLB_App.Models.Interfaces;
 
 namespace MLB_App.Models
 {
-    public class DailySchedule : Root, IRoot<Schedule>
+    public class DailySchedule : Root
     {
         private List<Schedule> Body;
+
         public List<Schedule> body
         {
             get

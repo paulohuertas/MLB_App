@@ -73,5 +73,16 @@ namespace MLB_App.Utils
             }
             return request;
         }
+
+        public string GetApiUrl(string url)
+        {
+            string apiUrl = ConfigurationManager.AppSettings[url];
+            if (!String.IsNullOrEmpty(apiUrl))
+            {
+                return apiUrl;
+            }
+
+            return ConfigurationManager.AppSettings[0];
+        }
     }
 }

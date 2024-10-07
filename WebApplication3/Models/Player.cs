@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using MLB_App.Models.Interfaces;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -11,12 +12,20 @@ namespace MLB_App.Models
 
     public class PlayerDetail : Root
     {
-        [JsonProperty("body")]
-        public Player player { get; set; }
+        public Player body { get; set; }
+        public List<Player> players { get; set; }
     }
 
-    public class Player
+    public class Injury
     {
+        public string description { get; set; }
+        public string injDate { get; set; }
+        public string designation { get; set; }
+    }
+
+    public class Player : Root
+    {
+        
         public string espnID { get; set; }
         public string sleeperBotID { get; set; }
         public string fantasyProsPlayerID { get; set; }
@@ -48,6 +57,15 @@ namespace MLB_App.Models
         public string playerID { get; set; }
         public string fantasyProsLink { get; set; }
 
+        //public override bool Equals(object obj)
+        //{
+        //    Player p = obj as Player;
+
+        //    if (obj == null) return false;
+
+        //    return this.playerID.Equals(p.playerID);
+        //}
+
         public string ConvertHeightFromFootToCm(string height)
         {
             string altura = String.Empty;
@@ -76,12 +94,72 @@ namespace MLB_App.Models
 
             return kgs;
         }
+
+        public string ConvertLastGameDate(string dateString)
+        {
+            if (String.IsNullOrEmpty(dateString)) return "";
+
+            if (dateString.Contains("/")) dateString = dateString.Replace("/", "");
+            string dateToReturn = dateString.Substring(0, 8);
+            if (!String.IsNullOrEmpty(dateToReturn))
+            {
+                string year = dateToReturn.Substring(0, 4);
+                string month = dateToReturn.Substring(4, 2);
+                string day = dateToReturn.Substring(6, 2);
+
+                dateToReturn = day + "/" + month + "/" + year;
+            }
+
+            return dateToReturn;
+        }
+
+        public string ConvertPlayerDOB(string dob)
+        {
+            if (String.IsNullOrEmpty(dob)) return "";
+
+            if (dob.Contains("/")) dob = dob.Replace("/", "");
+
+            int numberOfChars = dob.Length;
+
+            string dateOfBirth = dob.Substring(0, numberOfChars);
+
+            //6/4/1993	
+            if(dateOfBirth.Length == 6)
+            {
+                string month = dateOfBirth.Substring(0, 1);
+                string day = dateOfBirth.Substring(1, 1);
+                string year = dateOfBirth.Substring(2, 4);
+
+                dateOfBirth = day + "/" + month + "/" + year;
+
+                return dateOfBirth;
+            }
+            //6/12/1995
+            if (dateOfBirth.Length == 7)
+            {
+                string month = dateOfBirth.Substring(0, 1);
+                string day = dateOfBirth.Substring(1, 2);
+                string year = dateOfBirth.Substring(3, 4);
+
+                dateOfBirth = day + "/" + month + "/" + year;
+
+                return dateOfBirth;
+            }
+
+            //10/17/1994
+            if (dateOfBirth.Length == 8)
+            {
+                string month = dateOfBirth.Substring(0, 2);
+                string day = dateOfBirth.Substring(2, 2);
+                string year = dateOfBirth.Substring(4, 4);
+
+                dateOfBirth = day + "/" + month + "/" + year;
+
+                return dateOfBirth;
+            }
+
+            return null;
+        }
     }
 
-    public class Injury
-    {
-        public string description { get; set; }
-        public string injDate { get; set; }
-        public string designation { get; set; }
-    }
 }

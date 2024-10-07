@@ -35,12 +35,16 @@ namespace MLB_App.Models.Data
                 .HasRequired(x => x.home)
                 .WithMany(x => x.lineScores)
                 .HasForeignKey(x => x.home_Id);
+            modelBuilder.Entity<GameDetails>()
+                .HasOptional(l => l.lineScore)
+                .WithMany(g => g.GameDetails)
+                .HasForeignKey(l => l.lineScore_Id);
         }
 
         public DbSet<Schedule> Schedules { get; set; }
         public DbSet<Player> Players { get; set; }
         public DbSet<ProbableStartingPitchers> ProbableStartingPitchers { get; set; }
-
         public DbSet<RealTimeBoxScore> RealTimeBoxScore { get; set; }
+        public DbSet<GameDetails> GameDetails { get; set; }
     }
 }

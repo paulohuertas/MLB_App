@@ -154,6 +154,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\DataController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -166,9 +167,19 @@
     <Compile Include="Migrations\202406142130521_second.designer.cs">
       <DependentUpon>202406142130521_second.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202410042301139_third.cs" />
+    <Compile Include="Migrations\202410042301139_third.designer.cs">
+      <DependentUpon>202410042301139_third.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202410051649019_fourth.cs" />
+    <Compile Include="Migrations\202410051649019_fourth.designer.cs">
+      <DependentUpon>202410051649019_fourth.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\DailySchedule.cs" />
+    <Compile Include="Models\DailyScoreboard.cs" />
     <Compile Include="Models\Data\DataContext.cs" />
+    <Compile Include="Models\Interfaces\IPlayerRoot.cs" />
     <Compile Include="Models\Interfaces\IRoot.cs" />
     <Compile Include="Models\LiveResult.cs" />
     <Compile Include="Models\Player.cs" />
@@ -214,6 +225,7 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="Scripts\PlayerDetail.js" />
+    <Content Include="Scripts\Scoreboard.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -232,10 +244,12 @@
     <Content Include="Views\Home\PlayerDetail.cshtml" />
     <Content Include="Views\Home\LiveResult.cshtml" />
     <Content Include="Views\Home\GetPlayers.cshtml" />
+    <Content Include="Views\Home\DailyScoreboard.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Content\Img\" />
+    <Folder Include="Views\Data\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -248,6 +262,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202406142130521_second.resx">
       <DependentUpon>202406142130521_second.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202410042301139_third.resx">
+      <DependentUpon>202410042301139_third.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202410051649019_fourth.resx">
+      <DependentUpon>202410051649019_fourth.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

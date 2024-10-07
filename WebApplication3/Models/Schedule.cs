@@ -10,7 +10,7 @@ using System.Web;
 
 namespace MLB_App.Models
 {
-    public class Schedule : StaticData
+    public class Schedule
     {
         [Key]
         public int Id { get; set; }
@@ -55,12 +55,19 @@ namespace MLB_App.Models
 
             var playerObject = JsonConvert.DeserializeObject<PlayerDetail>(response);
 
-            PlayerManagement playerManagement = new PlayerManagement();
-            playerManagement.Save(playerObject.player);
+            if(playerObject.body != null)
+            {
+                if (playerObject.body.longName == null) return String.Empty;
 
-            string playerName = playerObject.player.longName;
+                PlayerManagement playerManagement = new PlayerManagement();
+                playerManagement.Save(playerObject.body);
 
-            return playerName;
+                string playerName = playerObject.body.longName;
+
+                return playerName;
+            }
+
+            return String.Empty;
         }
 
         public DateTime ConvertStringToDateTime(string date)

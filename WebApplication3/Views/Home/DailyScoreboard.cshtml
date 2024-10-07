@@ -1,0 +1,114 @@
+﻿@model Dictionary<string, MLB_App.Models.GameDetails>
+@using MLB_App.Utils;
+
+@{
+    ViewBag.Title = "Daily Scoreboard";
+}
+
+<h2 class="text-uppercase text-info text-center">@ViewData["gameDate"] - Scoreboard </h2>
+
+<div class="text-center">
+    <form id="mainForm" method="post" enctype="multipart/form-data" asp-controller="Home" asp-action="GetDailyScoreboard" class="form-group text-center">
+        @*<input class="input-lg" id="date-input" type="date" name="gameDate" value="@DateTime.Today.ToString("yyyy-MM-dd")" />*@
+        <div class="input-group">
+            <input class="input-sm" id="date-input" type="date" name="gameDate" value="@ViewData["gameDate"].ToString()" />
+            <input class="btn-primary btn-sm btn-group" id="daily-schedule" formmethod="post" formaction="GetDailyScoreboard" type="submit" value="Search" />
+        </div>
+    </form>
+</div>
+
+@if (Model != null)
+{
+    <table class="table">
+        <tr>
+            @*<th scope="col" class="text-center">GameID</th>*@
+            <th scope="col" class="text-center">Result</th>
+            <th scope="col" class="text-center">Away Team</th>
+            <th scope="col" class="text-center">R</th>
+            <th scope="col" class="text-center">X</th>
+            <th scope="col" class="text-center">R</th>
+            <th scope="col" class="text-center">Home Team</th>
+            <th scope="col" class="text-center">Result</th>
+            <th scope="col" class="text-center">Current Inning</th>
+            <th scope="col" class="text-center">Strike Outs</th>
+            <th scope="col" class="text-center">Game Status</th>
+
+        </tr>
+        @foreach (var item in Model)
+        {
+            string awayResult = String.Empty;
+            string homeResult = String.Empty;
+            string awayRun = String.Empty;
+            string homeRun = String.Empty;
+            if (item.Value.lineScore != null) { awayRun = item.Value.lineScore.away.R; }
+
+            if (item.Value.lineScore != null) { homeRun = item.Value.lineScore.home.R; }
+
+            if (item.Value.homeResult != null) { homeResult = item.Value.homeResult; }
+
+            if (item.Value.awayResult != null) { awayResult = item.Value.awayResult; }
+
+            string gameId = item.Value.gameID;
+            gameId = gameId.Substring(gameId.IndexOf("_") + 1);
+            <tr>
+                <td scope="row" class="text-center">
+                    @awayResult
+                </td>
+                <td scope="row" class="text-center">
+                    <img src="@StaticData.GetTeamLogoByNameAbbreviation(item.Value.away)" style="width: 20px; height: 20px; margin: 10px;" />
+                    @item.Value.away
+                </td>
+                <td scope="row" class="text-center">
+                    <b>@awayRun</b>
+                </td>
+                <td scope="row" class="text-center">X</td>
+                <td scope="row" class="text-center">
+                    <b>@homeRun</b>
+                </td>
+                <td scope="row" class="text-center">
+                    @item.Value.home
+                    <img src="@StaticData.GetTeamLogoByNameAbbreviation(item.Value.home)" style="width: 20px; height: 20px; margin: 10px;" />
+                </td>
+                <td scope="row" class="text-center">
+                    @homeResult
+                </td>
+                <td scope="row" class="text-center">
+                    @item.Value.currentInning
+                </td>
+                <td scope="row" class="text-center">
+                    @item.Value.currentOuts
+                </td>
+                @{
+                    if (item.Value.gameStatusCode == "1")
+                    {
+                        <td scope="row" class="text-center" style="color: red">
+                            <b>@item.Value.gameStatus</b>
+                        </td>
+                    }
+                    else
+                    {
+                        <td scope="row" class="text-center">
+                            @item.Value.gameStatus
+                        </td>
+                    }
+                }
+            </tr>
+
+        }
+
+    </table>
+}
+else
+{
+    <h2 class="text-center">No games on this date &#x1F613;</h2>
+}
+
+<script src="~/Scripts/Scoreboard.js"></script>
+
+@section scripts{
+    <script>
+        $(document).ready(function () {
+            setInputDate(new Date());
+        });
+    </script>
+}

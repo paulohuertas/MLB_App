@@ -5,11 +5,11 @@ using System.Web;
 
 namespace MLB_App.Utils
 {
-    public class StaticData
+    public static class StaticData
     {
         public static Dictionary<string, string> TeamLogos = new Dictionary<string, string>();
 
-        public string GetTeamLogoByNameAbbreviation(string abbrev)
+        public static string GetTeamLogoByNameAbbreviation(string abbrev)
         {
             if(TeamLogos.Count == 0)
             {
