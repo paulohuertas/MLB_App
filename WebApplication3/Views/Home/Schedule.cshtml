@@ -75,8 +75,8 @@
         {
             <td scope="row" class="text-center">@Html.ActionLink(@awayPlayer, "PlayerInformation", new { id = awayId })</td>
         }
-        <td scope="row" class="text-center">@DateParser.ConvertTimeEpochToDate(item.gameTime_epoch.Substring(0, 10))</td>
-        <td scope="row" class="text-center">@DateParser.ConvertTimeEpochToLocalTime(@item.gameTime_epoch.Substring(0, 10))</td>
+        <td scope="row" class="text-center">@DateParser.ConvertTimeEpochToDate(item.gameTime_epoch)</td>
+        <td scope="row" class="text-center">@DateParser.ConvertTimeEpochToLocalTime(@item.gameTime_epoch)</td>
         <td scope="row" class="text-center">@Html.ActionLink("Game", "GameResult", new { gameId = @item.gameID })</td>
     </tr>
             { count = count + 1; }

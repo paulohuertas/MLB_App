@@ -1,18 +1,17 @@
 ﻿using MLB_App.Models;
 using MLB_App.Models.Data;
+using MLB_App.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
 namespace MLB_App.Utils
 {
-    public interface IDataManagement<T> where T : class
-    {
-        void Save(List<T> entity);
-    }
-    public class DataManagement : IDataManagement<Schedule>
+    
+    public class DataManagement : IDataService<Schedule>
     {
         DataContext context = new DataContext();
+
         public void Save(List<Schedule> schedule)
         {
             if (schedule != null)
@@ -26,14 +25,14 @@ namespace MLB_App.Utils
         }
     }
 
-    public interface IPlayerManagement<T> where T : class
-    {
-        void Save(T obj);
-    }
-
-    public class PlayerManagement : IPlayerManagement<Player>
+    public class PlayerManagement : IPlayerManagement
     {
         DataContext context = new DataContext();
+
+        public IEnumerable<Player> GetAllPlayers()
+        {
+            return context.Players.ToList();
+        }
 
         public void Save(Player obj)
         {
@@ -41,96 +40,70 @@ namespace MLB_App.Utils
             {
                 if (obj != null)
                 {
-                    Player player = context.Players.Where(p => p.playerID == obj.playerID).FirstOrDefault();
-
-                    if(player == null)
-                    {
-                        obj.injury = new Injury();
-                        context.Players.Add(obj);
-                        context.SaveChanges();
-
-                    }
-                    else if(!player.Equals(obj))
-                    {
-
-                        player.espnID = obj.espnID;
-                        player.sleeperBotID = obj.sleeperBotID;
-                        player.fantasyProsPlayerID = obj.fantasyProsPlayerID;
-                        player.highSchool = obj.highSchool;
-                        player._throw = obj._throw;
-                        player.weight = obj.weight;
-                        player.jerseyNum = obj.jerseyNum;
-                        player.team = obj.team;
-                        player.mlbHeadshot = obj.mlbHeadshot;
-                        player.yahooPlayerID = obj.yahooPlayerID;
-                        player.espnLink = obj.espnLink;
-                        player.yahooLink = obj.yahooLink;
-                        player.bDay = obj.bDay;
-                        player.mlbLink = obj.mlbLink;
-                        player.teamAbv = obj.teamAbv;
-                        player.espnHeadshot = obj.espnHeadshot;
-                        player.rotoWirePlayerIDFull = obj.rotoWirePlayerIDFull;
-                        player.injury = obj.injury;
-                        player.teamID = obj.teamID;
-                        player.pos = obj.pos;
-                        player.mlbIDFull = obj.mlbIDFull;
-                        player.cbsPlayerID = obj.cbsPlayerID;
-                        player.longName = obj.longName;
-                        player.bat = obj.bat;
-                        player.rotoWirePlayerID = obj.rotoWirePlayerID;
-                        player.height = obj.height;
-                        player.lastGamePlayed = obj.lastGamePlayed;
-                        player.mlbID = obj.mlbID;
-                        player.playerID = obj.playerID;
-                        player.fantasyProsLink = obj.fantasyProsLink;
-                        context.SaveChanges();
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-
-                new Exception(ex.Message, new ArgumentException("Player not found", "Player"));
-            }
-
-        }
-    }
-
-    public interface IRealTimeBoxScore<T> where T : class
-    {
-        void Save(T obj);
-        void Update(T obj);
-    }
-
-    public class RealTimeBoxScoreManagement : IRealTimeBoxScore<RealTimeBoxScore>
-    {
-        DataContext context = new DataContext();
-
-        public void Save(RealTimeBoxScore obj)
-        {
-            try
-            {
-                if (obj != null)
-                {
-                    context.RealTimeBoxScore.Add(obj);
+                    obj.injury = new Injury();
+                    context.Players.Add(obj);
                     context.SaveChanges();
                 }
             }
             catch (Exception ex)
             {
-
-                throw new Exception(ex.Message, new ArgumentException("Real time box score not found", "RealTimeBoxScore"));
+                new Exception(ex.Message, new ArgumentException("Player not found", "Player"));
             }
-
         }
 
-        public void Update(RealTimeBoxScore obj)
+        public void Update(Player obj)
         {
-            DataContext context = new DataContext();
+            if(obj != null)
+            {
+                Player player = context.Players.Where(p => p.playerID == obj.playerID).FirstOrDefault();
+                
+                if(player != null)
+                {
 
-            var game = context.RealTimeBoxScore.Where(f => f.gameID == obj.gameID).FirstOrDefault();
+                    player.espnID = obj.espnID;
+                    player.sleeperBotID = obj.sleeperBotID;
+                    player.fantasyProsPlayerID = obj.fantasyProsPlayerID;
+                    player.highSchool = obj.highSchool;
+                    player._throw = obj._throw;
+                    player.weight = obj.weight;
+                    player.jerseyNum = obj.jerseyNum;
+                    player.team = obj.team;
+                    player.mlbHeadshot = obj.mlbHeadshot;
+                    player.yahooPlayerID = obj.yahooPlayerID;
+                    player.espnLink = obj.espnLink;
+                    player.yahooLink = obj.yahooLink;
+                    player.bDay = obj.bDay;
+                    player.mlbLink = obj.mlbLink;
+                    player.teamAbv = obj.teamAbv;
+                    player.espnHeadshot = obj.espnHeadshot;
+                    player.rotoWirePlayerIDFull = obj.rotoWirePlayerIDFull;
+                    player.injury = obj.injury;
+                    player.teamID = obj.teamID;
+                    player.pos = obj.pos;
+                    player.mlbIDFull = obj.mlbIDFull;
+                    player.cbsPlayerID = obj.cbsPlayerID;
+                    player.longName = obj.longName;
+                    player.bat = obj.bat;
+                    player.rotoWirePlayerID = obj.rotoWirePlayerID;
+                    player.height = obj.height;
+                    player.lastGamePlayed = obj.lastGamePlayed;
+                    player.mlbID = obj.mlbID;
+                    player.playerID = obj.playerID;
+                    player.fantasyProsLink = obj.fantasyProsLink;
+                    player.amendedDateTime = DateTime.Now;
+                    context.SaveChanges();
+                }
+            }
+        }
+    }
 
-            if (game != null)
+    public class RealTimeScore : ServiceBase<RealTimeBoxScore>
+    {
+        public RealTimeScore(DataContext context) : base(context) { }
+
+        public void Update(RealTimeBoxScore game, RealTimeBoxScore obj)
+        {
+            if (game != null && obj != null)
             {
                 try
                 {
@@ -144,17 +117,13 @@ namespace MLB_App.Utils
                     game.homeResult = obj.homeResult;
                     game.lineScore = obj.lineScore;
                     game.Venue = obj.Venue;
-                    context.SaveChanges();
+
+                    Update(game);
                 }
                 catch (Exception ex)
                 {
                     throw new Exception(ex.Message);
                 }
-            }
-            else
-            {
-                context.RealTimeBoxScore.Add(obj);
-                context.SaveChanges();
             }
         }
     }
@@ -175,9 +144,9 @@ namespace MLB_App.Utils
             {
                 if (obj != null)
                 {
-                    foreach(var k in obj.Values)
+                    foreach(var game in obj.Values)
                     {
-                        context.GameDetails.Add(k);
+                        context.GameDetails.Add(game);
                         context.SaveChanges();
                     }
                 }

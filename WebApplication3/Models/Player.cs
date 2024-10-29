@@ -56,15 +56,24 @@ namespace MLB_App.Models
         public string mlbID { get; set; }
         public string playerID { get; set; }
         public string fantasyProsLink { get; set; }
+        private DateTime? _amendedDateTime;
 
-        //public override bool Equals(object obj)
-        //{
-        //    Player p = obj as Player;
+        public DateTime amendedDateTime
+        {
+            get
+            {
+                if(_amendedDateTime == null)
+                {
+                    _amendedDateTime = DateTime.Now;
+                }
 
-        //    if (obj == null) return false;
-
-        //    return this.playerID.Equals(p.playerID);
-        //}
+                return _amendedDateTime.Value;
+            }
+            set
+            {
+                _amendedDateTime = value;
+            }
+        }
 
         public string ConvertHeightFromFootToCm(string height)
         {

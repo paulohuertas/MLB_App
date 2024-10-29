@@ -10,9 +10,9 @@
 @using (Html.BeginForm())
 {
     <p>
-        <span class="input-group text-left text-justify family">Find player</span> 
-        @Html.TextBox("SearchString", ViewBag.CurrentFilter as string, new { placeholder = "e.g. Carlos Rodriguez ", @id = "input-search" })
-        <input type="submit" value="Search" class="input-group-lg btn-info" style="height: 26px" />
+        <span class="input-group text-uppercase family">Find your player</span> 
+        @Html.TextBox("SearchString", ViewBag.CurrentFilter as string, new { placeholder = "e.g. Nick Castellanos ", @id = "input-search" })
+    <input type="submit" value="Search" class="input-group-lg btn-info" style="height: 26px" />
     </p>
 }
 <table class="table">
@@ -44,6 +44,9 @@
         </th>
         <th scope="col" class="text-center">
             Last Game Played
+        </th>
+        <th scope="col" class="text-center">
+            Player Detail
         </th>
     </tr>
 
@@ -91,11 +94,6 @@
     <td scope="row" class="text-center">
         @Html.ActionLink("Complete Details", "PlayerInformation", new { id = item.playerID})
     </td>
-    @*<td scope="row" class="text-center">
-            @Html.ActionLink("Edit", "Edit", new { id = item.playerID }) |
-            @Html.ActionLink("Details", "Details", new { id = item.playerID }) |
-            @Html.ActionLink("Delete", "Delete", new { id = item.playerID })
-        </td>*@
 </tr>
     }
 

@@ -18,12 +18,12 @@
                     + "<td scope='row' class='text-center'>" + convertDate(item.GameDate) + "</td>"
                     + "<td scope='row' class='text-center'>" + item.GameType.replace("_", " ") + "</td>"
                     + "<td scope='row' class='text-center'>" + item.GameStatus + "</td>"
-                    + "<td scope='row' class='text-center'>" + "<img src='" + winnerTeam + "'" + "style='width: 20px; height: 20px; margin: 10px;' /> " + "</td>"
+                    + "<td scope='row' class='text-center'>" + "<img src='" + winnerTeam + "'" + "style='width: 20px; height: 20px; margin: 10px;' loading='lazy' /> " + "</td>"
                     + "<td scope='row' class='text-center'>" + item.Attendance + "</td>"
                     + "<td scope='row' class='text-center'>" + item.Venue + "</td>"
                     + "<td scope='row' class='text-center'>" + item.Home + "<img src='" + logoHome + "'" + "style='width: 20px; height: 20px; margin: 10px;' /> " + "</td>"
                     + "<td scope='row' class='text-center'>" + item.HomeRun + "X" + item.AwayRun + "</td>"
-                    + "<td scope='row' class='text-center'>" + "<img src='" + logoAway + "'" + "style='width: 20px; height: 20px; margin: 10px;' /> " + item.Away + "</td>";
+                    + "<td scope='row' class='text-center'>" + "<img src='" + logoAway + "'" + "style='width: 20px; height: 20px; margin: 10px;' loading='lazy' /> " + item.Away + "</td>";
 
                 $('#main-body').append(rows);
             });

@@ -28,6 +28,10 @@ namespace MLB_App.Utils
 
         public static string ConvertTimeEpochToLocalTime(string epoch)
         {
+            if (String.IsNullOrEmpty(epoch)) return "Time to be defined";
+
+            epoch = epoch.Substring(0, 10);
+
             long longEpoch = long.Parse(epoch);
             DateTimeOffset dateTimeOffset = DateTimeOffset.FromUnixTimeSeconds(longEpoch);
 
@@ -37,6 +41,11 @@ namespace MLB_App.Utils
 
         public static string ConvertTimeEpochToDate(string epoch)
         {
+
+            if (String.IsNullOrEmpty(epoch)) return "Date to be defined";
+
+            epoch = epoch.Substring(0, 10);
+
             long longEpoch = long.Parse(epoch);
             DateTimeOffset dateTimeOffset = DateTimeOffset.FromUnixTimeSeconds(longEpoch);
 

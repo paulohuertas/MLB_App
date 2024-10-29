@@ -9,7 +9,6 @@ namespace MLB_App.Controllers
 {
     public class DataController : Controller
     {
-        //StaticData data = new StaticData();
         // GET: Data
         public JsonResult GetTeamLogo(string logo)
         {

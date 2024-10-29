@@ -17,6 +17,10 @@
     </form>
 </div>
 
+<div>
+    <p hidden id='info' class='text-danger khand-bold'>Date can not be greater than today's date!</p>
+</div>
+
 @if (Model != null)
 {
     <table class="table">
@@ -108,7 +112,27 @@ else
 @section scripts{
     <script>
         $(document).ready(function () {
-            setInputDate(new Date());
+
+            function validateDate() {
+                let dtPicker = $("#date-input").val();
+                let pickerDateFormat = new Date(dtPicker).getUTCDate();
+                let today = new Date().getUTCDate();
+                if (pickerDateFormat > today) {
+                    $('#daily-schedule').prop("disabled", true);
+                    $('#info').show();
+                    return;
+                } else {
+                    $('#daily-schedule').prop("disabled", false);
+                    $('#info').hide();
+                }
+            }
+            $("#date-input").on("change", function () {
+                validateDate();
+            });
+
+            $('#daily-schedule').on('click', () => {
+                validateDate();
+            });
         });
     </script>
 }

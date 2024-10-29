@@ -5,6 +5,8 @@ using System.Collections.Generic;
 using System.Configuration;
 using System.IO;
 using System.Linq;
+using System.Security.Cryptography;
+using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Web;
@@ -83,6 +85,43 @@ namespace MLB_App.Utils
             }
 
             return ConfigurationManager.AppSettings[0];
+        }
+
+        public string CallApiService(string[] urls)
+        {
+            string apiUrl = GetApiUrl(urls[0]);
+
+            foreach(string url in urls)
+            {
+                if(!apiUrl.Contains(url))
+                    apiUrl += url;
+            }
+
+            return PrepareApiCall(apiUrl, "GET");
+        }
+
+        public static string EncryptApiKey(string key)
+        {
+
+            byte[] myBytes = Encoding.UTF8.GetBytes(key);
+            SHA256 mySha = SHA256.Create();
+            var hash = HexStringFromBytes(mySha.ComputeHash(myBytes, 0, myBytes.Length));
+
+            return hash;
+            
+        }
+
+        public static string HexStringFromBytes(IEnumerable<byte> bytes)
+        {
+            StringBuilder sb = new StringBuilder();
+            foreach(var b in bytes)
+            {
+                var hex = b.ToString("x2");
+                sb.Append(hex);
+            }
+
+            return sb.ToString();
+
         }
     }
 }

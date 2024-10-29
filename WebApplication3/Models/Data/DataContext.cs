@@ -11,11 +11,12 @@ namespace MLB_App.Models.Data
     {
         public DataContext() : base("DataContext")
         {
-
         }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
+            this.Configuration.AutoDetectChangesEnabled = true;
+
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
             modelBuilder.Entity<Schedule>()
             .HasRequired(s => s.probableStartingPitchers)

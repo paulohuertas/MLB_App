@@ -1,0 +1,23 @@
+﻿string url = apiCall.GetApiUrl("getMLBPlayerList");
+string json = apiCall.PrepareApiCall(url, "GET");
+var parseJson = JObject.Parse(json);
+
+var listPlayer = parseJson["body"];
+
+List<Player> players = listPlayer.ToObject<List<Player>>();
+
+PlayerDetail playerDetail = new PlayerDetail
+{
+    StatusCode = parseJson["statusCode"].ToString(),
+    players = players
+
+};
+
+if (playerDetail.StatusCode == "200" && playerDetail.players.Count > 0)
+{
+    PlayerManagement playerManagement = new PlayerManagement();
+    foreach (Player player in playerDetail.players)
+    {
+        playerManagement.Save(player);
+    }
+}
